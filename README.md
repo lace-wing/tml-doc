@@ -31,7 +31,7 @@
 
 ![明确问题][HowToDetermineIssues]
 
-2. 先浏览[常见问题][FAQs]和[热门问题][HotPotatos]，看看是否有解决方法
+2. 先浏览[常见问题][FAQs]和[热门问题][HotPotatos]，再看看[导航][导航]中是否有解决方法
 3. 若无，在对应的目录里寻找对应的问题 或 在仓库中搜索关键词
 4. 找到解决方法，按照提示操作
 
@@ -65,6 +65,7 @@
 
 [FAQs]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/FAQs.md
 [HotPotatos]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/HotPotatos.md
+[导航]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/%E5%AF%BC%E8%88%AA.md
 [HowToDetermineIssues]: Assets/Images/HowToDetermineIssues_cn.png
 [HTAQTSW]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
 [AQIGC]: Assets/Images/AskQuestionsInQroupChats_cn.jpg
