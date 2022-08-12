@@ -47,7 +47,7 @@
 - 这个问题适合在这里提吗？
 - 看看下面这几张图：
 
-![如何在群里提问](Assets/AskQuestionsInQroupChats_cn.jpg)
+![如何在群里提问](Assets/README/AskQuestionsInQroupChats_cn.jpg)
 
 ### 我要改进文档
 
