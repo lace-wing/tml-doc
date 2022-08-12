@@ -4,6 +4,7 @@
 ## 目录
 - [功能](#你能在这里……)
 - [使用指南](#使用指南)
+- [计划](#计划)
 
 ## 你能在这里……
 - [解决大部分关于tML和tmod的问题（打不开、报错……）](#我遇到了问题)
@@ -61,6 +62,14 @@
 #### 我要做其他改进
 
 `issue` or `PR`
+
+## 计划
+
+- [ ] 完善文档架构
+- [ ] 招些人来写内容
+- [ ] 完善README
+- [ ] 创建模版issue和模版PR
+- [ ] 添加更多issue标签
 
 
 [FAQs]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/FAQs.md
