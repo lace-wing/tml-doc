@@ -45,9 +45,9 @@
 - [怎样提问？][HTAQTSW]
 - 这个问题是否已经被提出了？
 - 这个问题适合在这里提吗？
-- 看看下面这几张图：
+- 看看下面这张图：
 
-![如何在群里提问](Assets/README/AskQuestionsInQroupChats_cn.jpg)
+![如何在群里提问][AQIGC]
 
 ### 我要改进文档
 
@@ -56,3 +56,4 @@
 #### 我要做其他改进
 
 [HTAQTSW]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
+[AQIGC]: Assets/README/AskQuestionsInQroupChats_cn.jpg
