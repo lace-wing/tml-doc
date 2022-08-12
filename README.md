@@ -27,8 +27,9 @@
 
 要在文档中找到对应的解决方法，你需要：
 
-1. 明确问题的具体表现
-2. 先浏览**常见问题**和**热门问题**，看看是否有解决方法
+1. 明确问题
+	![明确问题][HowToDetermineIssues]
+2. 先浏览常见问题和热门问题，看看是否有解决方法
 3. 若无，在对应的目录里寻找对应的问题 或 在仓库中搜索关键词
 4. 找到解决方法，按照提示操作
 
@@ -43,9 +44,9 @@
 在提问时，你需要注意一下几点：
 
 - [怎样提问？][HTAQTSW]
-- 这个问题是否已经被提出了？
-- 这个问题适合在这里提吗？
-- 看看下面这张图：
+- 这个问题是否**已经**被提出了？
+- 这个问题**适合**在这里提吗？
+- **仔细看看**下面这张图：
 
 ![如何在群里提问][AQIGC]
 
@@ -53,7 +54,13 @@
 
 #### 我要添加/修改解决方法
 
+`issue` or `PR`
+
 #### 我要做其他改进
 
+`issue` or `PR`
+
+
+[HowToDetermineIssues]: Assete/README/HowToDetermineIssues_cn.png
 [HTAQTSW]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
 [AQIGC]: Assets/README/AskQuestionsInQroupChats_cn.jpg
