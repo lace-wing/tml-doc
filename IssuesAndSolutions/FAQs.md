@@ -10,6 +10,6 @@
 - [卡在cmd窗口，“This can take up to 5 minutes”][tML3]
 
 
-[tML1]: IssuesAndSolutions/WhatIsTML.md
-[tML2]: IssuesAndSolutions/Dotnet6.0.md
+[tML1]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/tML/WhatIsTML.md
+[tML2]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/tML/Dotnet6.0.md
 [tML3]: ?
