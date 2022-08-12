@@ -31,7 +31,7 @@
 
 ![明确问题][HowToDetermineIssues]
 
-2. 先浏览常见问题和热门问题，看看是否有解决方法
+2. 先浏览[常见问题][FAQs]和[热门问题][HotPotatos]，看看是否有解决方法
 3. 若无，在对应的目录里寻找对应的问题 或 在仓库中搜索关键词
 4. 找到解决方法，按照提示操作
 
@@ -63,6 +63,8 @@
 `issue` or `PR`
 
 
-[HowToDetermineIssues]: Assets/README/HowToDetermineIssues_cn.png
+[FAQs]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/FAQs.md
+[HotPotatos]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/HotPotatos.md
+[HowToDetermineIssues]: Assets/Images/HowToDetermineIssues_cn.png
 [HTAQTSW]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
-[AQIGC]: Assets/README/AskQuestionsInQroupChats_cn.jpg
+[AQIGC]: Assets/Images/AskQuestionsInQroupChats_cn.jpg
