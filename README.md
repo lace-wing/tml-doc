@@ -28,7 +28,9 @@
 要在文档中找到对应的解决方法，你需要：
 
 1. 明确问题
-	![明确问题][HowToDetermineIssues]
+
+![明确问题][HowToDetermineIssues]
+
 2. 先浏览常见问题和热门问题，看看是否有解决方法
 3. 若无，在对应的目录里寻找对应的问题 或 在仓库中搜索关键词
 4. 找到解决方法，按照提示操作
@@ -61,6 +63,6 @@
 `issue` or `PR`
 
 
-[HowToDetermineIssues]: Assete/README/HowToDetermineIssues_cn.png
+[HowToDetermineIssues]: Assets/README/HowToDetermineIssues_cn.png
 [HTAQTSW]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
 [AQIGC]: Assets/README/AskQuestionsInQroupChats_cn.jpg
