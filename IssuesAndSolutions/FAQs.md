@@ -4,7 +4,7 @@
 
 ### 打开之前
 
-- [什么是tML，有什么用][tML1]
+- [什么是tML，有什么用，如何安装][tML1]
 - [卡在cmd窗口，“This can take up to 5 minutes”][tML2]
 - [卡在cmd窗口，“Press 'Enter' to remove the old files”][tML2]
 - [如何切换tML的版本][tML3]
