@@ -8,6 +8,7 @@
 下面是最常见、方便的模组获取方法:
 
 1. 在Steam库中选中**tModLoader**, 进入其创意工坊<br>
+
 ![EnterTMLSteamWorkshop](Assets/Images/tMLImages/EnterTMLSteamWorkshop.png "???")
 
 2. 在创意工坊中搜索你想要游玩的模组<br>
