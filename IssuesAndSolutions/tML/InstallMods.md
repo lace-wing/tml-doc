@@ -7,7 +7,7 @@
 
 下面是最常见、方便的模组获取方法:
 
-![EnterTMLSteamWorkshop][EnterTMLSteamWorkshop]
+![如何在群里提问][AQIGC]
 
 1. 在Steam库中选中**tModLoader**, 进入其创意工坊<br>
 	![EnterTMLSteamWorkshop][EnterTMLSteamWorkshop]
@@ -36,3 +36,4 @@
 	
 	
 [EnterTMLSteamWorkshop]: Assets/Images/tMLImages/EnterTMLSteamWorkshop.png
+[AQIGC]: Assets/Images/tMLImages/AskQuestionsInQroupChats_cn.jpg
