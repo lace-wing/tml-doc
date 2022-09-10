@@ -3,7 +3,7 @@
 ## 获取模组
 
 想要游玩模组, 首先要获取模组<br>
-与1.3不同, 1.4的模组有不同的获取方式<br>
+与1.3不同, 1.4的模组一般在创意工坊获取<br>
 
 下面是最常见、方便的模组获取方法:
 
@@ -18,6 +18,8 @@
 	![ItemIsSubscribedButMayRequireRestart](tMLAssets/ItemIsSubscribedButMayRequireRestart.png)
 	
 很好, 现在模组已经下载好了, 你只需要启用(有的模组需要你重启游戏)模组就行了
+
+## 启用模组
 
 下面是正常启用模组的方法:
 	
