@@ -7,10 +7,8 @@
 
 下面是最常见、方便的模组获取方法:
 
-![如何在群里提问][AQIGC]
-
 1. 在Steam库中选中**tModLoader**, 进入其创意工坊<br>
-	![EnterTMLSteamWorkshop][EnterTMLSteamWorkshop]
+	![EnterTMLSteamWorkshop](Assets/Images/tMLImages/EnterTMLSteamWorkshop.png)
 
 2. 在创意工坊中搜索你想要游玩的模组<br>
 	![SearchWantedMod](Assets/Images/tMLImages/SearchWantedMod.png)
@@ -33,7 +31,3 @@
 	
 3. 游戏提示**需要重新加载**而你没有看到重新加载按钮？点击返回就会自动重新加载啦<br>
 	![ClickBackWillReload](Assets/Images/tMLImages/ClickBackWillReload.png)
-	
-	
-[EnterTMLSteamWorkshop]: Assets/Images/tMLImages/EnterTMLSteamWorkshop.png
-[AQIGC]: Assets/Images/tMLImages/AskQuestionsInQroupChats_cn.jpg
