@@ -12,6 +12,7 @@
 | Angler Shop | 渔夫商店 |  | 辅助，渔夫多了一个商店，卖实用的相关物品 | 是 | 无须* |  |
 | Antisocial | 社交栏生效<br>(时装栏生效) |  | 辅助，社交栏里的饰品也会生效 | 是 | 无须 | 超模头子，破坏游戏体验 |
 | ArmamentDisplay | 武器外显 |  | 辅助，字面意思，还加入了最初分形 | 是 | 无须 | 最初分形超模 |
+| Autofish | 自动钓鱼 | Autofish | 辅助，字面意思，喝下声呐药水后还可以选择只钓宝匣等 | 是 | 国产 |  |
 | B |  |  |  |  |  |  |
 | Better Boss Health Bar | 更好的Boss血条 |  | 辅助，boss血条显示血量，血量百分比和目标玩家 | 是 | 无须 |  |
 | BloodSoul | 血魂 | BloodSoul | 内容，大型，以“血”与“魂”为主题 | 否，后预计年底更新后可用 | 国产** |  |
@@ -35,6 +36,7 @@
 | D |  |  |  |  |  |  |
 | DawnMod:Dormant | 黎明：沉睡 |  | 内容，中型，是1.3史莱姆模组的重制版，但变化很大 | 是 | 国产 | 并不是史莱姆模组，很多东西重做了 |
 | DawnMod:Weapon Rework | 黎明：武器重制 |  | 内容，小型，仅包含黎明：沉睡的武器重做部分 | 是 | 国产 | 与黎明：沉睡冲突 |
+| Dialogue Panel Rework | 更好的NPC对话框 | DialogueTweak | 美化，让NPC对话框变成手机版的样子 | 是 | 无需 |  |
 | E |  |  |  |  |  |  |
 | Elaina: Wandering Witch | 伊雷娜：魔女之旅 |  | 内容，中型，玩家可以操控灰之魔女伊蕾娜并使用独特的法术和物品 | 是 | 国产 | 兼容性不是靠口嗨做出来的，望周知 |
 | Endless Crafting | 无尽合成 |  | 辅助，为许多不可合成的物品添加了配方 | 是 | 无须 |  |
@@ -100,7 +102,7 @@
 | Structure Helper | 结构助手 |  | 前置库，为模组作者提供使用较为简便结构生成功能 | 是 | 无 |  |
 | T |  |  |  |  |  |  |
 | Teleport to pylons from anywhere! | 从任意地方传送到晶塔 |  | 辅助，字面意思 | 是 | 无须 |  |
-|  | 传送所有NPC回家 | | 辅助，右键房屋按钮可以传送所以NPC回家；为NPC指派房屋时会瞬间把NPC传送过来。 | 是 | 无需 | |
+| Teleport All NPC Home | 传送所有NPC回家 | TownNPCHome | 辅助，右键房屋按钮可以传送所以NPC回家；为NPC指派房屋时会瞬间把NPC传送过来。 | 是 | 无需 | |
 | Terraria Overhaul | 大修<br>(真实模组) |  | 内容，大型，大幅修改了原版机制，可以说是能重新体验泰拉了 | 是，测试版 | 无 | 至于兼容，你行你上 |
 | Terraria Randomizer Mod | 随机模组 |  | 辅助，字面意思 | 是 | 无 |  |
 | Terry's Boss Timer Mod | Boss战计时器 |  | 辅助，boss战结束后显示用时 | 是 | 无 |  |
