@@ -2,11 +2,12 @@
 # 用户手册
 
 ## 目录
-- [功能](#你能在这里……)
+- [功能](#功能)
 - [使用指南](#使用指南)
 - [计划](#计划)
 
-## 你能在这里……
+## 功能
+
 - [解决大部分关于tML和tmod的问题（打不开、报错……）](#我遇到了问题)
 - [提出尚未被文档收录的问题，等待解答](#文档没能解决我的问题)
 - [用你的知识帮助别人](#我要改进文档)
@@ -74,7 +75,7 @@
 
 [FAQs]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/FAQs.md
 [HotPotatos]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/HotPotatos.md
-[导航]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/%E5%AF%BC%E8%88%AA.md
+[导航]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/Redirection.md
 [HowToDetermineIssues]: Assets/Images/tMLImages/HowToDetermineIssues_cn.png
 [HTAQTSW]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
 [AQIGC]: Assets/Images/tMLImages/AskQuestionsInQroupChats_cn.jpg
