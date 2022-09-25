@@ -8,6 +8,8 @@
 
 ## 找到泰拉瑞亚
 
+你可以直接点[此链接][TerrariaSteamShop]进入泰拉瑞亚的Steam商店页面
+
 1. 进入Steam商店页面
     ![SteamShopButton](tMLAssets/SteamShopButton_zh.png)
 
@@ -49,3 +51,4 @@
 
 
 [GetSteam]: placeholder
+[TerrariaSteamShop]: https://store.steampowered.com/app/105600/Terraria/
