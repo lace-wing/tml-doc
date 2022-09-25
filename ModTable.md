@@ -107,6 +107,7 @@
 | Terraria Randomizer Mod | 随机模组 | RandomizerMod | 辅助，字面意思 | 是 | 无 |  |
 | Terry's Boss Timer Mod | Boss战计时器 | TerrynmuseTimer | 辅助，boss战结束后显示用时 | 是 | 无 |  |
 | The Amulet Of Many<br>Minions: Combat Pets! | 战斗宠物 | AmuletOfManyMinions | 内容，中型，原版宠物可以变为仆从，同时加入了大量召唤武器 | 是 | 无 |  |
+| TheCRETETale | 挑战者传说 | TheCRETETale | 内容，大型，RPG向 | 否 | 国产 |  |
 | The Stars Above | 星海双子<br>(星海之上) | StarsAbove | 内容，中型，加入了数个boss与新机制，一名星海旅者将会陪伴你 | 是 | 内置部分，有汉化模组 |  |
 | Too Many Accessories | 太多饰品 | | 辅助，添加了让时装栏饰品生效、快捷栏饰品生效、背包饰品生效、箱子饰品生效、旅行模式研究饰品生效的饰品 | 是 | 无 | 超模头子，破坏游戏体验 |
 | 東方妖々夢　～ Perfect Cherry Blossom. | 東方妖々夢　～ Perfect Cherry Blossom. |  | 内容，目标为向泰拉瑞亚加入东方系列第7作（妖妖梦）相关的内容 | 是 | 国产 |  |
