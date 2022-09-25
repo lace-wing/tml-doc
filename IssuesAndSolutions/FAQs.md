@@ -10,6 +10,6 @@
 - [如何切换tML的版本][tML3]
 
 
-[tML1]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/tML/WhatIsTML.md
-[tML2]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/tML/Dotnet6.0.md
-[tML3]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/tML/HowToChangeTMLVersion.md
+[tML1]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/WhatIsTML.md
+[tML2]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/Dotnet6.0.md
+[tML3]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/HowToChangeTMLVersion.md

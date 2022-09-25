@@ -73,9 +73,9 @@
 - [ ] 添加更多issue标签
 
 
-[FAQs]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/FAQs.md
-[HotPotatos]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/IssuesAndSolutions/HotPotatos.md
-[导航]: https://github.com/lyc-Lacewing/tML-and-tmod-issues-cn/blob/master/Redirection.md
+[FAQs]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/FAQs.md
+[HotPotatos]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/HotPotatos.md
+[导航]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Redirection.md
 [HowToDetermineIssues]: Assets/Images/tMLImages/HowToDetermineIssues_cn.png
 [HTAQTSW]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
 [AQIGC]: Assets/Images/tMLImages/AskQuestionsInQroupChats_cn.jpg
