@@ -12,4 +12,4 @@
 
 [FAQs]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/FAQs.md
 [HotPotatos]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/HotPotatos.md
-[GetTerraria]: 
+[GetTerraria]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/GetTerraria.md
