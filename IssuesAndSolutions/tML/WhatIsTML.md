@@ -10,7 +10,9 @@ tML，全称tModLoader，是泰拉瑞亚的模组加载器，实际上也是一�
 
 ## 如何安装
 
-1. 你先得购买原版泰拉瑞亚（Terraria）
+1. 你先得[购买泰拉瑞亚][GetTerraria]（Terraria）
 2. 安装泰拉瑞亚，然后在Steam中搜索“tModLoader”并下载
-3. 现在的tml默认为1.4稳定版，无需在测试版里调整（若调整过，请切换回“无”）
+3. 现在的tML默认为1.4稳定版，无需在测试版里调整（若调整过，请切换回“无”）
 
+
+[GetTerraria]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/GetTerraria.md
