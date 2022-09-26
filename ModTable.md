@@ -57,6 +57,7 @@
 | Homeward Journey | 旅人归途 | ContinentOfJourney | 内容，中型，颇具创意的模组 | 是 | 国产 | 问boss怎么召唤之前请先用脑子想一想 |
 | I |  |  |  |  |  |  |
 | Impact Library | 碰撞库 | CollisionLib | 前置库，为模组作者提供使用较为简便的碰撞与移动块功能 | 是 | 无 | 据某写了移动块的模组作者反映，不是很好用 |
+| Item Checklist | 物品清单 | ItemChecklist | 辅助，显示全物品清单，是否获得过，可分类显示，与魔法储存兼容 | 是 | 无须 |  |
 | J |  |  |  |  |  |  |
 | K |  |  |  |  |  |  |
 | Komeiji Koishi | 古明地恋 |  | 内容，小型，添加了古明地恋作为月后boss | 是 | 国产 | “这个boss不合常理的难，所以在挑战前请三思” |
