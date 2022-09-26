@@ -11,7 +11,7 @@
 | AlchemistNPC Lite | 炼金NPC轻量版 | AlchemistNPCLite | 辅助，1.3炼金NPC的轻量版 | 是 | 内置 | 超模，不建议使用 |
 | Angler Shop | 渔夫商店 | NoFishingQuests | 辅助，渔夫多了一个商店，卖实用的相关物品 | 是 | 无须* |  |
 | Antisocial | 社交栏生效<br>(时装栏生效) |  | 辅助，社交栏里的饰品也会生效 | 是 | 无须 | 超模头子，破坏游戏体验 |
-| ArmamentDisplay | 武器外显 | WeaponDisplay | 辅助，字面意思，还加入了最初分形 | 是 | 无须 | 最初分形超模 |
+| ArmamentDisplay | 武器外显 | WeaponDisplay | 辅助，字面意思，还加入了最初分形 | 是 | 无须 |  |
 | Autofish | 自动钓鱼 | Autofish | 辅助，字面意思，喝下声呐药水后还可以选择只钓宝匣等 | 是 | 国产 |  |
 | B |  |  |  |  |  |  |
 | Better Boss Health Bar | 更好的Boss血条 | BetterBossBar | 辅助，boss血条显示血量，血量百分比和目标玩家 | 是 | 无须 |  |
@@ -128,6 +128,6 @@
 | Z |  |  |  |  |  |  |
 
 *指模组完全不需要或简单查一下单词就能使用<br>
-**指模组是国产的或国人参与大部分制作，没有汉化问题<br>
+**指模组是国产的，没有汉化问题<br>
 ***指需要安装并启用专门的汉化模组来汉化<br>
 ****指需要自行获取源码并编译或通过特殊手段获得

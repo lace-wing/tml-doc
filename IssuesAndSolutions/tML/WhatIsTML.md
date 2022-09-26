@@ -14,5 +14,10 @@ tML，全称tModLoader，是泰拉瑞亚的模组加载器，实际上也是一�
 2. 安装泰拉瑞亚，然后在Steam中搜索“tModLoader”并下载
 3. 现在的tML默认为1.4稳定版，无需在测试版里调整（若调整过，请切换回“无”）
 
+## 切换tML版本
+
+你需要选择测试版本或手动调整文件，详见[切换tML版本][HowToChangeTMLVersion]
+
 
 [GetTerraria]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/GetTerraria.md
+[HowToChangeTMLVersion]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/HowToChangeTMLVersion.md
