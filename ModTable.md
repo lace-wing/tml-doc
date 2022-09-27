@@ -8,18 +8,18 @@
 | :---: | :---: | :---: | :--- | :---: | :---: | :--- |
 | A |  |  |  |  |  |  |
 | Accessories+ | 饰品+ | | 辅助，调整了一些饰品的配方和功能，比如把蛙鞋加入泰拉闪耀靴 | 是 | 无 | 在强化已有饰品的同时也增加了所需的合成材料 |
-| AlchemistNPC Lite | 炼金NPC轻量版 | AlchemistNPCLite | 辅助，1.3炼金NPC的轻量版 | 是 | 内置 | 超模，不建议使用 |
-| Angler Shop | 渔夫商店 | NoFishingQuests | 辅助，渔夫多了一个商店，卖实用的相关物品 | 是 | 无须* |  |
+| [AlchemistNPC Lite][AlchemistNPCLite] | 炼金NPC轻量版 | AlchemistNPCLite | 辅助，1.3炼金NPC的轻量版 | 是 | 内置 | 超模，不建议使用 |
+| [Angler Shop][NoFishingQuests] | 渔夫商店 | NoFishingQuests | 辅助，渔夫多了一个商店，卖实用的相关物品 | 是 | 无须* |  |
 | Antisocial | 社交栏生效<br>(时装栏生效) |  | 辅助，社交栏里的饰品也会生效 | 是 | 无须 | 超模头子，破坏游戏体验 |
-| ArmamentDisplay | 武器外显 | WeaponDisplay | 辅助，字面意思，还加入了最初分形 | 是 | 无须 |  |
-| Autofish | 自动钓鱼 | Autofish | 辅助，字面意思，喝下声呐药水后还可以选择只钓宝匣等 | 是 | 国产 |  |
+| [ArmamentDisplay][WeaponDisplay] | 武器外显 | WeaponDisplay | 辅助，字面意思，还加入了最初分形 | 是 | 无须 |  |
+| [Autofish][Autofish] | 自动钓鱼 | Autofish | 辅助，字面意思，喝下声呐药水后还可以选择只钓宝匣等 | 是 | 国产 |  |
 | B |  |  |  |  |  |  |
-| Better Boss Health Bar | 更好的Boss血条 | BetterBossBar | 辅助，boss血条显示血量，血量百分比和目标玩家 | 是 | 无须 |  |
-| BloodSoul | 血魂 | BloodSoul | 内容，大型，以“血”与“魂”为主题 | 否，后预计年底更新后可用 | 国产** |  |
+| [Better Boss Health Bar][BetterBossBar] | 更好的Boss血条 | BetterBossBar | 辅助，boss血条显示血量，血量百分比和目标玩家 | 是 | 无须 |  |
+| [BloodSoul][BloodSoul] | 血魂 | BloodSoul | 内容，大型，以“血”与“魂”为主题 | 否，后预计年底更新后可用 | 国产** |  |
 | BloodErosion | 血蚀 | BloodErosion | 附属，内容，血魂的DLC | 否 | 国产 | 现在没在做 |
-| Boss Checklist | Boss清单 | BossChecklist | 辅助，原版与模组boss的目录和清单 | 是 | 无 | 模组内容需要对应模组自行适配并汉化 |
+| [Boss Checklist][BossChecklist] | Boss清单 | BossChecklist | 辅助，原版与模组boss的目录和清单 | 是 | 无 | 模组内容需要对应模组自行适配并汉化 |
 | C |  |  |  |  |  |  |
-| Calamity Mod | 灾厄 | CalamityMod | 内容，超大型，东西很多，质量过得去 | 是 | 模组*** | 别整天大型模组双开了 |
+| [Calamity Mod][CalamityMod] | 灾厄 | CalamityMod | 内容，超大型，东西很多，质量过得去 | 是 | 模组*** | 别整天大型模组双开了 |
 | Calamity Mod Music | 灾厄音乐 | CalamityModMusic | 辅助，灾厄附属，提供灾厄独有的音乐 | 是 | 无须 |  |
 | Calamity's Vanities | 灾厄虚荣<br>(灾厄时装<br>灾厄装饰<br>灾厄宠物) |  | 内容，小型，灾厄附属，加入了大量宠物，时装，家具，一些坐骑，钩爪，翅膀和小动物 | 是 | 无 |  |
 | Calamity Alternate Exo Mechs Theme | 灾厄星流巨械主题曲替换 |  | 将星流巨械战斗曲替换为由DM Dokuro remix的'Run'并加入对应的音乐盒 | 是 | 无须 |  |
@@ -132,3 +132,13 @@
 **指模组是国产的，没有汉化问题<br>
 ***指需要安装并启用专门的汉化模组来汉化<br>
 ****指需要自行获取源码并编译或通过特殊手段获得
+
+
+[AlchemistNPCLite]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/AlchemistNPCLite.md
+[NoFishingQuests]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/NoFishingQuests.md
+[WeaponDisplay]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/WeaponDisplay.md
+[Autofish]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Autofish.md
+[BetterBossBar]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/BetterBossBar.md
+[BloodSoul]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/BloodSoul.md
+[BossChecklist]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/BossChecklist.md
+[CalamityMod]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/CalamityMod.md
