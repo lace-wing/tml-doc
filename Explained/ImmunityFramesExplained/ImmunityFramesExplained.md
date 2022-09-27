@@ -59,7 +59,7 @@ Debuff并**不攻击**, 而是通过将目标的生命回复`lifeRegen`归零再
 大多数的无敌帧时长是40, 即2/3秒<br>
 特殊无敌帧的时长可以在泰拉瑞亚或对应模组的Wiki查看
 
-更新无敌帧
+## 更新无敌帧
 
 	public void UpdateImmunity() 
 	{
@@ -97,7 +97,7 @@ Debuff并**不攻击**, 而是通过将目标的生命回复`lifeRegen`归零再
 		}
 	}
 	
-设置全局无敌帧
+## 设置全局无敌帧
 
 	public void SetImmuneTimeForAllTypes(int time) //这里传入要设置的无敌时间
 	{
@@ -109,9 +109,13 @@ Debuff并**不攻击**, 而是通过将目标的生命回复`lifeRegen`归零再
 		}
 	}
 	
-神圣庇护(暗影躲避), 混乱之脑和黑腰带
+### 神圣庇护(暗影躲避), 混乱之脑和黑腰带
 
 	SetImmuneTimeForAllTypes(longInvince ? 120 : 80);
+
+所以它们连岩浆和尖刺都能闪
+
+## 玩家无敌帧类型
 
 `hurtCooldowns`是一个int[5]: -1 普通伤害 0 其它伤害(物块等) 1 Boss单位 2 塔防兽人(除了击退外跟-1一样)
 
@@ -165,7 +169,7 @@ Debuff并**不攻击**, 而是通过将目标的生命回复`lifeRegen`归零再
 			{
 				immune = true; //得无敌才有用
 				int num14 = 0; //意义不明
-				//玩家打玩家(PvP)的话就只给8; 只有1点伤害就给20, 大于一点伤害就给40, 十字项链就翻倍
+				//玩家打玩家(PvP)的话就只给8; 只有1点伤害就给20, 大于1点伤害就给40, 十字项链就翻倍
 				num14 = (immuneTime = (pvp ? 8 : ((num2 != 1.0) ? (longInvince ? 80 : 40) : (longInvince ? 40 : 20))));
 				break;
 			}
@@ -252,19 +256,26 @@ Debuff并**不攻击**, 而是通过将目标的生命回复`lifeRegen`归零再
 
 # NPC无敌帧
 
-> NPC还有单独的无敌帧吗?<br>
 > 此处的"NPC"不是指城镇NPC, 而是指所有NPC
 
 触发方式:
 
 - 受到某些攻击
 
-NPC的无敌帧与玩家的不同
+## NPC无敌帧类型
+
+NPC的无敌帧与玩家的不同, 只有一种<br>
+由数组`NPC.immune`表示<br>
+元素0~254代表各个玩家的客户端<br>
+因此, NPC对于不同玩家的无敌帧是相互独立的<br>
+联机时不会因为其他玩家而打不出伤害
+
+但是, 射弹对于NPC有独特的判定方式:
+
+## NPC对于射弹的无敌帧
 
 翻译润色以下句段:
 
-Ignoring NPC Immunity Frames
-Terraria provides three mechanisms by which projectiles may ignore, bypass or reduce NPC immunity frames.
 
 usesLocalNPCImmunity
 This section primarily describes vanilla Terraria behavior.
