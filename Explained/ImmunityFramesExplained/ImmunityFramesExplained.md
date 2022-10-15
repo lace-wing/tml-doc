@@ -210,7 +210,7 @@ Debuff并**不攻击**, 而是通过将目标的生命回复`lifeRegen`归零再
 		}
 	}
 	
-如果`!immune = true`(不无敌)才继续进行受伤的步骤
+如果`!immune`(不无敌)才继续进行受伤的步骤
 
 	if (flag) //flag = !immune, immune为false那flag就为true
 	{
