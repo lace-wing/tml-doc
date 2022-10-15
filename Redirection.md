@@ -11,13 +11,13 @@
 
 ---
 
-### [我要获取泰拉瑞亚][GetTerraria]
+- [我要获取泰拉瑞亚][GetTerraria]
 
-### [我要了解或获取tModLoader][WhatIsTML]
+- [我要了解或获取tModLoader][WhatIsTML]
 
 ---
 
-### [无敌帧机制][ImmunityFrames]
+- [无敌帧机制][ImmunityFrames]
 
 
 [FAQs]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/FAQs.md
