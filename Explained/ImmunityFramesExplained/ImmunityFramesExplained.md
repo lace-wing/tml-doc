@@ -283,9 +283,16 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 
 > 此处的"NPC"不是指城镇NPC, 而是指所有NPC
 
-触发方式:
+### 小节目录
 
-- 受到某些攻击
+- [触发方式](#npc无敌帧触发方式)
+- [无敌帧类型](#npc无敌帧类型)
+- [对于射弹的无敌帧](#npc对于射弹的无敌帧)
+
+#### NPC无敌帧触发方式:
+
+- 受到大多数穿透性的攻击
+- 受到某些特殊攻击
 
 ### NPC无敌帧类型
 
@@ -299,25 +306,40 @@ NPC的无敌帧与玩家的不同, 只有一种<br>
 
 ### NPC对于射弹的无敌帧
 
-####usesLocalNPCImmunity
-如果弹幕设置usesLocalNPCImmunity=true，它对NPC的免疫帧机制将会彻底（fundamentally）改变。当这个proj命中一个NPC时（应该是命中后，即跳伤害数字后），它不会立刻设置这个npc的immune，而是在弹幕中设置一个计时器，它能防止这个NPC在一定时间内被特定弹幕击中多次。一旦计时结束，这个弹幕就能再次对那个NPC造成伤害。
+#### usesLocalNPCImmunity
 
-上述计时器的时间长度由变量localNPCHitCooldown决定。由于tr每秒跑60帧，如果localNPCHitCooldown被赋为60，它将限制这种弹幕，使其每秒最多对同一个npc造成一次伤害。但是，这个计时器仅对启动它的特定弹幕有用。任何其他弹幕 - 甚至是棱镜那种能穿透的弹幕 - 仍然可以在计时没有结束时击中NPC，这给人一种弹幕无视了无敌帧的印象。
+如果射弹设置`usesLocalNPCImmunity = true`，它对NPC的免疫帧机制将会从根本上改变。<br>
+当这个射弹命中一个NPC时（应该是命中后，即跳伤害数字后），它不会立刻设置这个NPC的`immune`，而是在射弹中设置一个计时器。<br>
+它能防止这个NPC在一定时间内被特定射弹击中多次。一旦计时结束，这个射弹就能再次对那个NPC造成伤害。
 
-localNPCHitCooldown在原版中有两个特殊值：-2和-1。这样它们就可以看作设置了一个负数秒数的计时器。或者如原文档所述它们根本就没有设置这个计时器。那么这个计时永远减不到0，这个NPC也就永远不可能被这个弹幕击中第二次。但是-2和-1的区别在于当usesLocalNPCImmunity是-1时，这个弹幕会将在击中NPC时（这次是命中前，即跳伤害数字之前）将它的immune赋0，保证这个弹幕一定能够对NPC造成伤害，而不管这个npc是否正处于无敌帧之中。
-然后原文档给出了一个有关localNPCHitCooldown的文字形式的总结，这里我以表格形式整理如下：
+上述计时器的时间长度由变量`localNPCHitCooldown`决定<br>
+由于泰拉瑞亚每秒跑60帧，如果`localNPCHitCooldown`被赋为60，它将限制这种射弹，使其每秒最多对同一个NPC造成一次伤害。<br>
+但是，这个计时器仅对这个射弹有用。任何其他射弹————甚至是最终棱镜激光那种能穿透的射弹————仍然可以在计时没有结束时击中NPC，这给人一种射弹无视了无敌帧的假象。
+
+`localNPCHitCooldown`在原版中有两个特殊值：-2和-1。这样它们就可以看作设置了一个负数秒数的计时器。或者如原文档所述它们根本就没有设置这个计时器。<br>
+那么这个计时永远减不到0，这个NPC也就永远不可能被这个射弹击中第二次。<br>
+但是-2和-1的区别在于: 当`usesLocalNPCImmunity`是-1时，这个射弹会将在击中NPC时（这次是命中前，即跳伤害数字之前）将它的`immune`设为0，保证这个射弹一定能够对NPC造成伤害，而不管这个NPC是否正处于无敌帧之中。
+然后原文档给出了一个有关`localNPCHitCooldown`的文字形式的总结，这里我以表格形式整理如下：
 
 
-值	特征
--2	如果NPC处于immune时，该弹幕无法对NPC造成伤害，其余与localNPCHitCooldown=-1时情况相同。
--1	击中NPC前将npc.immune赋0，保证该弹幕一定能击中目标NPC，但只能击中NPC一次
-0	如果NPC处于immune时，该弹幕无法对NPC造成伤害，一旦成功击中，这个弹幕将每帧对NPC造成一次伤害。
-1	行为几乎与 0 相同，但不同点在于它会将npc.immune赋1，使得在同一帧内这个NPC不能被其他弹幕所伤害。（和值为-1时优先级未知）
->=2	每若干帧，这个弹幕只能击中同一个NPC一次。
-####usesIDStaticNPCImmunity
-如果弹幕设置usesIDStaticNPCImmunity=true，并且给idStaticNPCHitCooldown赋值，那么它对NPC的免疫帧机制也会彻底（fundamentally）改变。像极了usesLocalNPCImmunity，当弹幕击中NPC时会设置计时器，但是，这个新的计时器只会阻止同一个玩家的弹幕的影响。并且使用usesIDStaticNPCImmunity的弹幕都会像localNPCHitCooldown=-1那样在击中NPC前将npc.immune赋0，从而保证该弹幕一定能击中目标NPC。
-####npc.immune
-设置npc.immune的弹幕攻击到npc之后仅会改变npc的无敌帧数。一般的穿透弹幕会把npc.immune设置为10，我们可以修改它为一个更低的值从而达到删除部分无敌帧的目的。
+| `localNPCHitCooldown`的值 | 射弹的特征 |
+| - | - |
+| -2 | 如果NPC处于`immune`时，该射弹无法对NPC造成伤害，其余与`localNPCHitCooldown = -1`时情况相同 |
+| -1 | 击中NPC前将`NPC.immune`设为0，保证该射弹一定能击中目标NPC，但只能击中NPC一次 |
+| 0 | 如果NPC处于`immune`时，该射弹无法对NPC造成伤害，一旦成功击中，这个射弹将每帧对NPC造成一次伤害 |
+| 1 | 行为几乎与 0 相同，但不同点在于它会将`NPC.immune`设为1，使得在同一帧内这个NPC不能被其他射弹所伤害（和值为-1时优先级未知）|
+| >=2 | 每若干帧，这个射弹只能击中同一个NPC一次 |
+
+#### usesIDStaticNPCImmunity
+
+如果射弹设置`usesIDStaticNPCImmunity = true`，并且给`idStaticNPCHitCooldown`赋值，那么它对NPC的免疫帧机制也会从根本上改变。<br>
+像极了`usesLocalNPCImmunity`，当射弹击中NPC时会设置计时器，但是，这个新的计时器只会阻止同一个玩家的射弹的影响。<br>
+并且, 使用`usesIDStaticNPCImmunity`的射弹都会像`localNPCHitCooldown = -1`那样在击中NPC前将`NPC.immune`设为0，从而保证该射弹一定能击中目标NPC。
+
+#### npc.immune
+
+设置`NPC.immune`的射弹攻击到NPC之后仅会改变NPC的无敌帧数。<br>
+一般的穿透射弹会把`NPC.immune`设置为10，我们可以修改它为一个更低的值从而达到删除部分无敌帧的目的。
 
 
 原文档如下：
