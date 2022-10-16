@@ -306,6 +306,8 @@ NPC的无敌帧与玩家的不同, 只有一种<br>
 
 ### NPC对于射弹的无敌帧
 
+> 此部分参考了[灾厄维基对于无敌帧的解释][CalamityWikiImmunityFrames]
+
 #### usesLocalNPCImmunity
 
 如果射弹设置`usesLocalNPCImmunity = true`，它对NPC的免疫帧机制将会从根本上改变。<br>
@@ -314,21 +316,20 @@ NPC的无敌帧与玩家的不同, 只有一种<br>
 
 上述计时器的时间长度由变量`localNPCHitCooldown`决定<br>
 由于泰拉瑞亚每秒跑60帧，如果`localNPCHitCooldown`被赋为60，它将限制这种射弹，使其每秒最多对同一个NPC造成一次伤害。<br>
-但是，这个计时器仅对这个射弹有用。任何其他射弹————甚至是最终棱镜激光那种能穿透的射弹————仍然可以在计时没有结束时击中NPC，这给人一种射弹无视了无敌帧的假象。
+但是，这个计时器仅对这个射弹有用。任何其他射弹——甚至是最终棱镜激光那种能穿透的射弹——仍然可以在计时没有结束时击中NPC，这给人一种射弹无视了无敌帧的假象。
 
 `localNPCHitCooldown`在原版中有两个特殊值：-2和-1。这样它们就可以看作设置了一个负数秒数的计时器。或者如原文档所述它们根本就没有设置这个计时器。<br>
 那么这个计时永远减不到0，这个NPC也就永远不可能被这个射弹击中第二次。<br>
 但是-2和-1的区别在于: 当`usesLocalNPCImmunity`是-1时，这个射弹会将在击中NPC时（这次是命中前，即跳伤害数字之前）将它的`immune`设为0，保证这个射弹一定能够对NPC造成伤害，而不管这个NPC是否正处于无敌帧之中。
 然后原文档给出了一个有关`localNPCHitCooldown`的文字形式的总结，这里我以表格形式整理如下：
 
-
-| `localNPCHitCooldown`的值 | 射弹的特征 |
+| `localNPCHitCooldown`的值 | 射弹的行为 |
 | - | - |
 | -2 | 如果NPC处于`immune`时，该射弹无法对NPC造成伤害，其余与`localNPCHitCooldown = -1`时情况相同 |
 | -1 | 击中NPC前将`NPC.immune`设为0，保证该射弹一定能击中目标NPC，但只能击中NPC一次 |
 | 0 | 如果NPC处于`immune`时，该射弹无法对NPC造成伤害，一旦成功击中，这个射弹将每帧对NPC造成一次伤害 |
-| 1 | 行为几乎与 0 相同，但不同点在于它会将`NPC.immune`设为1，使得在同一帧内这个NPC不能被其他射弹所伤害（和值为-1时优先级未知）|
-| >=2 | 每若干帧，这个射弹只能击中同一个NPC一次 |
+| 1 | 行为几乎与`localNPCHitCooldown`为0时相同，但不同点在于它会将`NPC.immune`设为1，使得在同一帧内这个NPC不能被其他射弹所伤害（和值为-1时优先级未知）|
+| >=2 | 每若干帧内，这个射弹只能击中同一个NPC一次 |
 
 #### usesIDStaticNPCImmunity
 
@@ -336,10 +337,10 @@ NPC的无敌帧与玩家的不同, 只有一种<br>
 像极了`usesLocalNPCImmunity`，当射弹击中NPC时会设置计时器，但是，这个新的计时器只会阻止同一个玩家的射弹的影响。<br>
 并且, 使用`usesIDStaticNPCImmunity`的射弹都会像`localNPCHitCooldown = -1`那样在击中NPC前将`NPC.immune`设为0，从而保证该射弹一定能击中目标NPC。
 
-#### npc.immune
+#### NPC.immune
 
 设置`NPC.immune`的射弹攻击到NPC之后仅会改变NPC的无敌帧数。<br>
-一般的穿透射弹会把`NPC.immune`设置为10，我们可以修改它为一个更低的值从而达到删除部分无敌帧的目的。
+一般的穿透射弹会把`NPC.immune`设置为10，我们可以修改它为一个更小的值从而达到删除部分无敌帧的目的。
 
 
 原文档如下：
@@ -368,3 +369,7 @@ If a projectile sets usesIDStaticNPCImmunity to true and idStaticNPCHitCooldown 
 
 npc.immune
 Projectiles which set npc.immune to a value upon striking an NPC simply change the number of immunity frames the NPC receives. Like a typical piercing projectile, the NPC will not be able to be struck by any piercing projectiles for that many frames. Normal piercing projectiles set npc.immune to 10, so typically projectiles which change this behavior set npc.immune to a lower value such as 4. This behavior is often called "partially ignoring iframes", because it removes or ignores some of the NPC's immunity frames, but not all of them.
+
+
+
+[CalamityWikiImmunityFrames]: https://calamitymod.fandom.com/wiki/Immunity_frames
