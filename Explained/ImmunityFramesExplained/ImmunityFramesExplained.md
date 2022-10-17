@@ -122,7 +122,7 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 		immuneTime = time; //无敌时间设为time
 		for (int i = 0; i < hurtCooldowns.Length; i++) 
 		{
-			hurtCooldowns[i] = time; //把所有的hurtCooldowns设为tuime
+			hurtCooldowns[i] = time; //把所有的hurtCooldowns设为time
 		}
 	}
 	
