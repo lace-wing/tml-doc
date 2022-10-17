@@ -300,9 +300,9 @@ NPC的无敌帧与玩家的不同, 只有一种<br>
 由数组`NPC.immune`表示<br>
 元素0~254代表各个玩家的客户端<br>
 因此, NPC对于不同玩家的无敌帧是相互独立的<br>
-联机时不会因为其他玩家而打不出伤害
+联机时**不会**因为其他玩家造成的无敌帧而打不出伤害
 
-但是, 射弹对于NPC有独特的判定方式:
+但是, **射弹**(可以理解为你射出去的那些东西, 包括箭矢和剑气)对于NPC有独特的判定方式:
 
 ### NPC对于射弹的无敌帧
 
@@ -334,41 +334,13 @@ NPC的无敌帧与玩家的不同, 只有一种<br>
 #### usesIDStaticNPCImmunity
 
 如果射弹设置`usesIDStaticNPCImmunity = true`，并且给`idStaticNPCHitCooldown`赋值，那么它对NPC的免疫帧机制也会从根本上改变。<br>
-像极了`usesLocalNPCImmunity`，当射弹击中NPC时会设置计时器，但是，这个新的计时器只会阻止同一个玩家的射弹的影响。<br>
+像极了`usesLocalNPCImmunity`，当射弹击中NPC时会设置计时器，但是，这个新的计时器会影响同一个玩家的所有同种射弹。<br>
 并且, 使用`usesIDStaticNPCImmunity`的射弹都会像`localNPCHitCooldown = -1`那样在击中NPC前将`NPC.immune`设为0，从而保证该射弹一定能击中目标NPC。
 
 #### NPC.immune
 
 设置`NPC.immune`的射弹攻击到NPC之后仅会改变NPC的无敌帧数。<br>
-一般的穿透射弹会把`NPC.immune`设置为10，我们可以修改它为一个更小的值从而达到删除部分无敌帧的目的。
-
-
-原文档如下：
-usesLocalNPCImmunity
-This section primarily describes vanilla Terraria behavior.
-If a projectile sets usesLocalNPCImmunity to true, its interaction with immunity frames fundamentally changes. When the projectile strikes an NPC, instead of setting the NPC's npc.immune, it sets up a timer on the projectile which stops that specific projectile from striking the NPC for a certain number of frames. Once the timer is up, the projectile can strike that NPC again.
-
-The length of the timer is determined by the variable localNPCHitCooldown. Since Terraria runs at 60 tick per second, a value of 60 for localNPCHitCooldown would limit the projectile to striking once per second. However, the timer only applies to the specific projectile which started it. Any other projectiles - even piercing ones - can still hit the NPC while the timer is running, which is what gives the impression that the projectile "ignores iframes".
-
-localNPCHitCooldown also has two special values, -2 and -1. In both of these cases, no internal timer is set. Instead, the NPC that was struck by the projectile becomes permanently immune to that specific projectile forever. This means that the NPC can only be hit by a projectile with negative localNPCHitCooldown once, no matter how long the projectile lasts. When localNPCHitCooldown is set to -1, the projectile sets npc.immune to zero on hit, ensuring that it always hits no matter what. This also lends credence to the phrase "ignores iframes", because the projectile literally ignores the immunity frames of the NPC it is hitting.
-
-Summary of the behavior of localNPCHitCooldown values:
-
--2: The NPC's immunity frames are unaffected by the projectile. If the NPC has immunity frames, the projectile does not strike. Otherwise, the NPC is struck and does not receive any immunity frames. The projectile will never hit this NPC again.
--1: The projectile explicitly removes the NPC's immunity frames on contact. It always hits. The projectile will never hit this NPC again. An example of localNPCHitCooldown -1 is Luminite Bullets.
-0: Behaves effectively the same way as -2, except that the projectile can immediately strike the NPC again on the next frame. The NPC gets no immunity frames if struck, but the projectile won't remove immunity frames if the NPC already has some.
-1: Behaves almost the same as 0. The difference is that because the NPC's npc.immune is set to 1, it is immune to all other basic piercing or -2 localNPCHitCooldown projectiles which would strike it this frame.
-2+: The projectile can only strike a particular NPC once per this many frames. This cooldown is individual per NPC.
-A table of all items with projectiles that use this code, along with the corresponding localNPCHitCooldown values is below:
-
-Additionally, the explosions created by the Chaotic Puffer also set usesLocalNPCImmunity to true, with localNPCHitCooldown set to 1.
-
-usesIDStaticNPCImmunity
-This section primarily describes vanilla Terraria behavior.
-If a projectile sets usesIDStaticNPCImmunity to true and idStaticNPCHitCooldown to a value, its interaction with immunity frames is fundamentally changed. Much like usesLocalNPCImmunity, a timer is set when the projectile strikes an NPC. However, this type of internal timer blocks out all projectiles of the same type from the same player. This means that after any instance of a usesIDStaticNPCImmunity projectile hits an enemy, the NPC is immune to all projectiles of that type from the player who struck them for a given time. All projectiles which use usesIDStaticNPCImmunity explicitly remove immunity frames from any NPCs they strike, like projectiles which set localNPCHitCooldown to -1.
-
-npc.immune
-Projectiles which set npc.immune to a value upon striking an NPC simply change the number of immunity frames the NPC receives. Like a typical piercing projectile, the NPC will not be able to be struck by any piercing projectiles for that many frames. Normal piercing projectiles set npc.immune to 10, so typically projectiles which change this behavior set npc.immune to a lower value such as 4. This behavior is often called "partially ignoring iframes", because it removes or ignores some of the NPC's immunity frames, but not all of them.
+一般的穿透射弹会把`NPC.immune`设置为10(即1/6秒)，我们可以修改它为一个更小的值从而达到缩减部分无敌帧的目的。
 
 
 
