@@ -7,8 +7,11 @@
 
 - 开始游玩
 
-    - [我要获取泰拉瑞亚][GetTerraria]
-    - [我要了解或获取tModLoader][WhatIsTML]
+    - [获取泰拉瑞亚][GetTerraria]
+    - [了解或获取tModLoader][WhatIsTML]
+    - [切换tML版本][SwitchTMLVersion]
+    - [游玩模组][GetTMods]
+    - [1.4常见模组速查表][ModTable]
 
 - 游戏机制
 
@@ -25,6 +28,9 @@
 
 [GetTerraria]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/GetTerraria.md
 [WhatIsTML]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/WhatIsTML.md
+[SwitchTMLVersion]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/HowToChangeTMLVersion.md
+[GetTMods]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/InstallMods.md
+[ModTable]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModTable.md
 
 [ImmunityFrames]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Explained/ImmunityFramesExplained/ImmunityFramesExplained.md
 
