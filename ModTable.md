@@ -24,14 +24,14 @@
 | Calamity's Vanities | 灾厄虚荣<br>(灾厄时装<br>灾厄装饰<br>灾厄宠物) |  | 内容，小型，灾厄附属，加入了大量宠物，时装，家具，一些坐骑，钩爪，翅膀和小动物 | 是 | 无 |  |
 | Calamity Alternate Exo Mechs Theme | 灾厄星流巨械主题曲替换 |  | 将星流巨械战斗曲替换为由DM Dokuro remix的'Run'并加入对应的音乐盒 | 是 | 无须 |  |
 | Calamity Regret | 灾殇 | CalamityRegret | 内容，灾厄附属 | 否 | 国产 | 没出呢急啥 |
-| Calamity Ammo Expansion | 灾厄弹药扩展 | CalamityAmmo | 内容，小型，灾厄附属，字面意思 | 是 | 国产 |  |
-| Catalyst | 灾劫 |  | 内容，中型，灾厄附属，包括末世星史莱姆 | 是 | 内置 | “大佬我星史召不出来啊” |
+| [Calamity Ammo Expansion][CalamityAmmo] | 灾厄弹药扩展 | CalamityAmmo | 内容，小型，灾厄附属，字面意思 | 是 | 国产 |  |
+| [Catalyst][Catalyst] | 灾劫 |  | 内容，中型，灾厄附属，包括末世星史莱姆 | 是 | 内置 | “大佬我星史召不出来啊” |
 |  | 灾厄Mod-汉化补丁 |  | 辅助，灾厄附属，字面意思 | 是 | (这就是个汉化模组啊) | 汉化不完全属于正常现象 |
 | Census - Town NPC Checklist | 城镇NPC清单 | Census | 辅助，原版与模组城镇NPC显示入驻条件 | 是 | 无 | 模组内容需要对应模组自行适配并汉化 |
 | Cheat Sheet | 作弊小抄 | CheatSheet | 辅助，字面意思，包含复制区块的功能 | 是 | 无须 |  |
 | The Clicker Class | 点击者 |  | 内容，中型，新增点击者职业，包含众多武器、饰品和盔甲，还有药水和前缀，能够点死敌人（字面意义上） | 是 | 内置 |  |
 | Consistent Reforging | 重做重铸 | ConsistentReforging | 辅助，在哥布林处重铸完后可以免费重做 | 是 | 无须 |  |
-| Consolaria | (主机瑞亚) | Consolaria | 内容，中型，加入了大量主机版和移动版泰拉瑞亚的内容，并且做了改进：奥库瑞姆，蜻蛉切，龙套装，中国新年，神圣手雷…… | 是 | 无 | 我超！是主机瑞亚 |
+| [Consolaria][Consolaria] | (主机瑞亚) | Consolaria | 内容，中型，加入了大量主机版和移动版泰拉瑞亚的内容，并且做了改进：奥库瑞姆，蜻蛉切，龙套装，中国新年，神圣手雷…… | 是 | 无 | 我超！是主机瑞亚 |
 | Cooler Item Visual Effects | 更酷的物品视觉效果 |  | 辅助，添加了手持武器和更酷的挥刃效果，“备注：那个b作者不想让你用最终分形以及它的材料” | 是 | 国产 | 并不能适配于所有mod |
 | D |  |  |  |  |  |  |
 | DawnMod:Dormant | 黎明：沉睡 |  | 内容，中型，是1.3史莱姆模组的重制版，但变化很大 | 是 | 国产 | 并不是史莱姆模组，很多东西重做了 |
@@ -143,3 +143,6 @@
 [BloodSoul]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/BloodSoul.md
 [BossChecklist]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/BossChecklist.md
 [CalamityMod]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/CalamityMod.md
+[CalamityAmmo]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/CalamityAmmo.md
+[Catalyst]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Catalyst.md
+[Consolaria]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Consolaria.md
