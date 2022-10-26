@@ -90,7 +90,7 @@
 | R |  |  |  |  |  |  |
 | Recipe Browser | 合成表 | RecipeBrowser | 辅助，查看某物品的合成表或由什么掉落，强烈建议使用 | 是 | 无须 | 模组快捷键是可以绑定的 |
 | REMNANTS MOD | (泰拉残躯<br>残片) |  | 内容，大型，对世界生成进行了大量修改，主打探索 | 是 | 否 | 你觉得它和其它大型模组兼容吗？ |
-| Replace String | 本地化模组 | \_ReplaceString\_ | 辅助，用于对其它模组的本地化 | 是 | 国产 | 联网功能尚未完善 |
+| [Replace String][_ReplaceString_] | 本地化模组 | \_ReplaceString\_ | 辅助，用于对其它模组的本地化 | 是 | 国产 | 联网功能尚未完善 |
 | Radiance | 辐光女皇 | Radiance | 内容，小型，重制了白天光女的战斗，分为两种形态，难度和观赏性极高 | 是 | 无 | 真的很难 |
 | S |  |  |  |  |  |  |
 | Secrets Of The Shadows | 暗影奥秘 |  | 内容，大型，主打地牢探索，制作精良 | 是 | 无 |  |
@@ -146,3 +146,4 @@
 [CalamityAmmo]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/CalamityAmmo.md
 [Catalyst]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Catalyst.md
 [Consolaria]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Consolaria.md
+[_ReplaceString_]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/_ReplaceString_.md
