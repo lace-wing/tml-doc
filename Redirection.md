@@ -19,6 +19,7 @@
 
 - 资源
 
+    - [外部链接][ExternalLinks]
     - [泰拉瑞亚材质][TerrariaTexture]
     - [.NET6.0][.NET6.0]
 
@@ -34,5 +35,6 @@
 
 [ImmunityFrames]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Explained/ImmunityFramesExplained/ImmunityFramesExplained.md
 
+[ExternalLinks]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ExternalLinks.md
 [TerrariaTexture]: https://github.com/lyc-Lacewing/tMLAllInOne/tree/master/Resources/TerrariaImages
 [.NET6.0]: https://github.com/lyc-Lacewing/tMLAllInOne/tree/master/Resources/.NET6.0
