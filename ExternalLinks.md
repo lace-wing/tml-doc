@@ -8,6 +8,12 @@
 - 泰拉瑞亚官方英文Wiki: https://terraria.wiki.gg/wiki/Terraria_Wiki
 - 泰拉瑞亚官方论坛: https://forums.terraria.org/index.php
 
+### 社区工具
+
+- 人物编辑器(在线网页): https://yal.cc/r/terrasavr/
+- 地图编辑器(TEdit): https://github.com/TEdit/Terraria-Map-Editor/releases
+- tShock开服器: https://github.com/Pryaxis/TShock
+
 ## tModLoader
 
 - tModLoader官方网站: https://tmodloader.net/
@@ -20,6 +26,8 @@
 - 官方模组Wiki(1.4): https://terrariamods.wiki.gg/wiki/Terraria_Mods_Wiki
 - 官方模组Wiki(1.3): https://terrariamods.fandom.com/wiki/Terraria_Mods_Wiki
 - 中文模组制作教程: https://fs49.org
+- 官方灾厄Wiki(英): https://calamitymod.wiki.gg/wiki/Calamity_Mod_Wiki
+- 灾厄中文维基: https://soammer.com/calamitywiki/%E9%A6%96%E9%A1%B5
 
 ### ExampleMod
 
