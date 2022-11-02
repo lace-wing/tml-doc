@@ -28,6 +28,7 @@
 | [Catalyst][Catalyst] | 灾劫 |  | 内容，中型，灾厄附属，包括末世星史莱姆 | 是 | 内置 | “大佬我星史召不出来啊” |
 |  | 灾厄Mod-汉化补丁 |  | 辅助，灾厄附属，字面意思 | 是 | (这就是个汉化模组啊) | 汉化不完全属于正常现象 |
 | Census - Town NPC Checklist | 城镇NPC清单 | Census | 辅助，原版与模组城镇NPC显示入驻条件 | 是 | 无 | 模组内容需要对应模组自行适配并汉化 |
+| [Cheap Reforging][CheapReforging] | 便宜重铸 | CheapReforging | 辅助, 允许玩家调整重铸价格并在敲到负面前缀时获得退款 | 是 | 国产 |  |
 | Cheat Sheet | 作弊小抄 | CheatSheet | 辅助，字面意思，包含复制区块的功能 | 是 | 无须 |  |
 | The Clicker Class | 点击者 |  | 内容，中型，新增点击者职业，包含众多武器、饰品和盔甲，还有药水和前缀，能够点死敌人（字面意义上） | 是 | 内置 |  |
 | Consistent Reforging | 重做重铸 | ConsistentReforging | 辅助，在哥布林处重铸完后可以免费重做 | 是 | 无须 |  |
@@ -145,5 +146,6 @@
 [CalamityMod]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/CalamityMod.md
 [CalamityAmmo]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/CalamityAmmo.md
 [Catalyst]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Catalyst.md
+[CheapReforging]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/CheapReforging.md
 [Consolaria]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Consolaria.md
 [_ReplaceString_]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/_ReplaceString_.md
