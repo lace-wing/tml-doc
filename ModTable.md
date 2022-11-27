@@ -51,7 +51,7 @@
 | Fargo's Souls Mod | 法狗魂 | FargowiltasSouls | 内容，大型，法狗突变附属，加入了大量饰品，数个boss以及超多原版AI改动，以精良的AI著称 | 是 | 内置，即将改进 |  |
 | Fargo's Music Mod | 法狗魂音乐 |  | 辅助，法狗魂附属，提供法狗魂独有的音乐 | 是 | 无须 |  |
 | Fargo's Enemy Modifier | 法狗敌怪词条 |  | 辅助，让敌怪获得各种强化词条，可自定义配置 | 是 | 无 | “【泰拉瑞亚】tML1.4.3.6危机18BR手刹” |
-| For One |  | I | 内容，辅助，中型，将各种功能和玩法集于一身的模组 | 否 | 国产 |  |
+| [For One][I] | (暂无) | I | 内容，辅助，中型，将各种功能和玩法集于一身的模组 | 否 | 国产 |  |
 | G |  |  |  |  |  |  |
 | Gensokyo | (幻想乡) |  | 内容，大型，以“东方project”为主题，有月后内容，包含17个boss，1个小boss，1个新地形 | 是 | 无 |  |
 | H |  |  |  |  |  |  |
@@ -123,7 +123,7 @@
 | Victima Mod Rebirth |  | VictimaMod2 | 内容，小型，我不到啊 | 是 | 无 |  |
 | Vitality Mod | (重焕生机) | VitalityMod | 内容，中型，基于原版内容添加了数个boss和大量物品等 | 是 | 无 | “我奶奶都比他会写AI” |
 | W |  |  |  |  |  |  |
-| Wild | 蛮荒 |  | 内容，中型，看起来挺有趣的（待补充） | 否 | 国产 | 迁移进度未知 |
+| [Wild Mod][Wild] | 蛮荒 |  | 内容，中型，讲述了荒芜之神的传说，完成度较高 | 否，预计2023年春节发布1.1版本（1.4版） | 国产 |  |
 | Which Mod Is This From? | 这是哪个模组的? |  | 辅助，允许查看某物品来源于何模组 | 是 | 无须 | 更好的体验包含此功能 |
 | Wing Slot Extra | 翅膀栏 |  | 辅助，玩家多出一个专门用于装备翅膀的饰品栏 | 是 | 无须 | 超模，不建议使用 |
 | WorldGen Previewer | 世界生成查看器 |  | 辅助，允许在生成世界时查看并自定义效果 | 是 | 无 |  |
@@ -149,4 +149,6 @@
 [Catalyst]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Catalyst.md
 [CheapReforging]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/CheapReforging.md
 [Consolaria]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Consolaria.md
+[I]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/I.md
 [_ReplaceString_]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/_ReplaceString_.md
+[Wild]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Wild.md
