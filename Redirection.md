@@ -15,6 +15,7 @@
 
 - 游戏机制
 
+    - [伤害性减益][DotBuffList]
     - [无敌帧机制][ImmunityFrames]
 
 - 资源
@@ -33,6 +34,7 @@
 [GetTMods]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/InstallMods.md
 [ModTable]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModTable.md
 
+[DotBuffList]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Explained/BuffExplained/DotBuffList.md
 [ImmunityFrames]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Explained/ImmunityFramesExplained/ImmunityFramesExplained.md
 
 [ExternalLinks]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ExternalLinks.md
