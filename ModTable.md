@@ -123,7 +123,7 @@
 | Victima Mod Rebirth |  | VictimaMod2 | 内容，小型，我不到啊 | 是 | 无 |  |
 | Vitality Mod | (重焕生机) | VitalityMod | 内容，中型，基于原版内容添加了数个boss和大量物品等 | 是 | 无 | “我奶奶都比他会写AI” |
 | W |  |  |  |  |  |  |
-| Where's My Items | 我的物品在哪 |  | 辅助，允许你查找物品所在的箱子 | 是 | 无需 |  |
+| Where's My Items | 我的物品在哪 | WheresMyItems | 辅助，允许你查找物品所在的箱子 | 是 | 无需 |  |
 | [Wild Mod][Wild] | 蛮荒 |  | 内容，中型，讲述了荒芜之神的传说，完成度较高 | 否，预计2023年春节发布1.1版本（1.4版） | 国产 |  |
 | Which Mod Is This From? | 这是哪个模组的? |  | 辅助，允许查看某物品来源于何模组 | 是 | 无须 | 更好的体验包含此功能 |
 | Wing Slot Extra | 翅膀栏 |  | 辅助，玩家多出一个专门用于装备翅膀的饰品栏 | 是 | 无须 | 超模，不建议使用 |
