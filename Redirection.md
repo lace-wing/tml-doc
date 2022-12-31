@@ -15,6 +15,7 @@
 
 - 游戏机制
 
+    - [内置本地化支持][InternalLocalization]
     - [伤害性减益][DotBuffList]
     - [无敌帧机制][ImmunityFrames]
 
@@ -34,6 +35,7 @@
 [GetTMods]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/InstallMods.md
 [ModTable]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModTable.md
 
+[InternalLocalization]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Explained/LocalizationExplained/InternalLocalization.md
 [DotBuffList]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Explained/BuffExplained/DotBuffList.md
 [ImmunityFrames]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Explained/ImmunityFramesExplained/ImmunityFramesExplained.md
 
