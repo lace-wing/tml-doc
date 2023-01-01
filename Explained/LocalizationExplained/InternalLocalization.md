@@ -143,4 +143,22 @@ MyKey: "{name}已经造成了{DamageDealt}点伤害!"
 其中, `KeybindName`是键位的名称<br>
 例: `MyKey: "<right>以使用特殊攻击"`
 
+#### 引用HJSON条目
+
+你可以使用`{$Key}`来引用HJSON条目<br>
+例: 
+````
+Common: 
+{
+  Sleep: "sleep"
+}
+Action: 
+{
+  WhatIsThis: 
+  {
+    Bed: "{$Common.Sleep}!"
+  }
+}
+````
+
 ---施工中---
