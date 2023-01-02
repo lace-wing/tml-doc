@@ -115,11 +115,11 @@ MyKey: "Player {0} has dealt {1} damage!"
 # zh-Hans.hjson里的写法
 MyKey: "{0}已经造成了{1}点伤害!"
 ````
-你也可以使用`Language.GetTextValue(string key, params object[] args)`, 此时HJSON里所写的是传入变量的变量名: 
+你也可以使用`Language.GetTextValueWith(string key, params object[] args)`, 此时HJSON里所写的是传入变量的变量名: 
 ````
 // 对应文件中从HJSON文件加载文本的方法
 string name = npc.GivenName
-Language.GetTextValue("MyKey", name, DamageDealt)
+Language.GetTextValueWith("MyKey", name, DamageDealt)
 ````
 ````
 # zh-Hans.hjson里的写法
