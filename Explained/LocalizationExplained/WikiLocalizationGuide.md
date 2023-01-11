@@ -76,6 +76,64 @@ public override LocalizedText Tooltip => Language.GetText("Mods.ExampleMod.Commo
 ```
 如果你有其它的物品继承此类, 你只需要在此基类中重写描述. 当然, 如果有需要, 你还可以在子类中继续重写. 
 
----
+## 文本换元
+如果你的本地化文件里有重复出现的文本, 或你想要使用游戏里已有的文本, 你可以使用换元来保持文件整洁. 在值中使用`{$Key}`来换元. 当游戏加载时, 这一段将会被替换为其`Key`所指的文本. 
 
-施工中...
+比如说, 游戏里已经有 "右键以打开" 的翻译, 储存在键`CommonItemTooltip.RightClickToOpen`中. 模组可以使用换元复用它的值. HJSON条目`Tooltip: "{$CommonItemTooltip.RightClickToOpen}"`将被展示为用户语言的 "右键以打开" 翻译. 其它已有翻译, 诸如物品名称和常用描述也都可以这样使用. 
+
+模组内的翻译也可以换元. 比如[示例模组本地化文件](https://github.com/tModLoader/tModLoader/blob/1.4/ExampleMod/Localization/en-US.hjson)中的例子, `DisplayName: "{$Mods.ExampleMod.Common.PaperAirplane}"`就复用了键`Mods.ExampleMod.Common.PaperAirplane`对应的翻译. 
+
+## 格式化字符串
+模组作者可以使用[字符串格式化](https://learn.microsoft.com/en-us/dotnet/api/system.string.format?view=net-7.0#insert-a-string)在翻译中给要填的文本留出空位. 这是个C#的普通特性. 你可以用方法`string.Format`或`Language.GetTextValue`来格式化字符串. 
+
+## 聊天标签
+本地化值中可以加入颜色和物品图标等 (译注: 参见本仓库的[内置本地化指南](https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Explained/LocalizationExplained/InternalLocalization.md)) 聊天标签. 参考[示例模组的本地化文件](https://github.com/tModLoader/tModLoader/blob/1.4/ExampleMod/Localization/en-US.hjson)中的`ExampleTooltipsItem`. 
+
+# 自动更新本地化
+tML会在有新内容或本地化键加入时自动更新`.hjson`文件. 英文的文件`en-US.hjson`将会被用作其它语言的模板, 注释和排版将会被自动继承. 
+
+## 加入新内容
+当模组作者向模组中添加内容时, 就拿一个`ModItem`来说, 一开始并没有被本地化. 模组作者应该生成并重载模组. 一旦重载完成, `.hjson`文件将会自动更新. 英文的文件`en-US.hjson`会包含所有新内容的默认本地化条目. 非英文的文件也会包含一样的条目, 但是都被注释掉了. 为了进行本地化, 需要修改`.hjson`文件, 填入翻译, 保存 (译注: 记得以`UTF-8`编码保存), 重新生成并加载. 
+
+## HJSON语法
+`.hjson`文件包含HJSON数据. 与JSON相似, 但是可读性更高. 详细语法参见[Hjson官网](https://hjson.github.io/), 但你也可以看看下面的示例初步了解一下. 
+
+## 注释
+`.hjson`文件可以包含多种注释. tML用两种Hjson注释表达不同的含义. 
+
+以`#`开头的注释可被用做提示. 它们得被置于对应的键的上一行. 否则就有可能在本地化文件自动更新后消失或错位. 
+
+例: 
+```
+...
+			ExampleCanStackItem: {
+				DisplayName: Example CanStack Item: Gift Bag
+				# References a language key that says "Right Click To Open" in the language of the game
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+...
+```
+
+英文文件中的此类注释会被自动复制进其它语言的文件, 可以用于向译者说明情况. 
+
+以`/* */`包裹或以`//`开头的注释被tML用于指示非英文文件中未翻译的键. 译者可以将标出的值翻译并移除注释. 模组作者**不应该**将它们作为常规注释, 因为它们可能在自动更新时丢失. 
+
+## 前缀
+模组作者可以使用一种特殊文件名格式让文件中所有的本地化条目共享同一个前缀. 此特性最常见的用途是省去`Mod.模组名`条目. 这样该文件就少了几层缩进也更容易编辑了. 绝大部分模组不会用到它们本模组前缀以外的值. 
+
+比如说, 一个名为`Localization/en-US_Mods.ExampleMod.hjson`的文件会继承`Mods.ExampleMod`, 意味着此文件里的所有条目可以省去`Mods`和`ExampleMod`, 直接从下一级开始. 
+
+文件名前缀的格式遵循一下规则: 首先以文件夹, 再是以下划线分隔. 语言确定以后, 剩下的部分将被作为前缀. 下面的这些例子都是用于中文且以`Mods.ExampleMod`作为前缀的文件名. 
+
+```
+Localization/zh-Hans_Mods.ExampleMod.hjson
+Localization/zh-Hans/Mods.ExampleMod.hjson
+zh-Hans_Mods.ExampleMod.hjson
+zh-Hans/Mods.ExampleMod.hjson
+Localization/CoolBoss_zh-Hans_Mods.ExampleMod.hjson
+```
+
+## 多个同语言文件
+模组作者可以用多个`.hjson`文件来管理翻译 (尤其是当本地化条目非常多时). 假设有一个内含`en-US_Mods.ExampleMod.Items.hjson`和`en-US_Mods.ExampleMod.hjson`的模组, 文件`en-US_Mods.ExampleMod.Items.hjson`可以存放所有物品的本地化条目, 其它文件放剩下的本地化条目. 新增内容的本地化条目会被自动添加进*含有与其最相似条目的*`.hjson`文件. 
+
+如果你要分开本地化文件, 仅需编辑英文的文件再重新生成并加载模组. 其它语言的文件将会自动调整为相同的布局. 
