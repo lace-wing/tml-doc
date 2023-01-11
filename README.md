@@ -1,7 +1,7 @@
 # 导航
 
 - [用户手册](#用户手册)
-- [文档目录][Redirection]
+- [文档目录][Navigation]
 
 # 用户手册
 
@@ -37,7 +37,7 @@
 
 ![明确问题][HowToDetermineIssues]
 
-1. 先浏览[**常见问题**][FAQs]，再看看[**导航**][Redirection]中是否有解决方法
+1. 先浏览[**常见问题**][FAQs]，再看看[**导航**][Navigation]中是否有解决方法
 2. 若无，在对应的目录里寻找对应的问题 或 在仓库中搜索关键词
 3. 找到解决方法，按照提示操作
 
@@ -82,7 +82,7 @@
 
 [UsersManual]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/README.md#%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C
 [FAQs]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/FAQs.md
-[Redirection]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Redirection.md
+[Navigation]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Navigation.md
 [HowToDetermineIssues]: GeneralAssets/HowToDetermineIssues_cn.png
 [HTAQTSW]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
 [AQIGC]: GeneralAssets/AskQuestionsInQroupChats_cn.jpg
