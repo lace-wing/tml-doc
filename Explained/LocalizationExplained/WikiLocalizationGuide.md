@@ -3,10 +3,10 @@
 
 这些本地化文件很容易制作, 使得不懂编程的人也能翻译模组. 然后作者便可以将这些翻译加入模组中, 允许更多人游玩. (译注: 而无需加载翻译补丁)
 
-此指南将涵盖模组作者需要知道的本地化专题教程. 如果你想要翻译一个已有的模组, 或者是翻译tML本身, 请参阅[贡献本地化 维基页面](https://github.com/tModLoader/tModLoader/wiki/Contributing-Localization).
+此指南将涵盖模组作者需要知道的本地化专题教程. 如果你想要翻译一个已有的模组, 或者是翻译tML本身, 请参阅[贡献本地化](https://github.com/tModLoader/tModLoader/wiki/Contributing-Localization).
 
 # 从1.4.3迁移到1.4.4
-从tMLv2023.01开始, 所有的本地化都在`.hjson`文件中完成. 不再支持在代码中声明翻译(译注: 然而可以硬写文本, 呃呃). 这项改动将大幅精简改良本地化管理并使翻译模组更简单. 如果你对逻辑层面的改动更感兴趣的话, 参阅[重大本地化改动建议](https://github.com/tModLoader/tModLoader/issues/3074). 
+从tMLv2023.01开始, 所有的本地化都在`.hjson`文件中完成. 不再支持在代码中声明翻译 (译注: 然而可以硬写文本). 这项改动将大幅精简改良本地化管理并使翻译模组更简单. 如果你对逻辑层面的改动更感兴趣的话, 参阅[重大本地化改动建议](https://github.com/tModLoader/tModLoader/issues/3074). 
 
 **如果你没在使用Git或其它形式的版本控制的话, 建议在迁移之前备份好你的模组.**
 
@@ -101,14 +101,14 @@ tML会在有新内容或本地化键加入时自动更新`.hjson`文件. 英语�
 ## 注释
 `.hjson`文件可以包含多种注释. tML用两种Hjson注释表达不同的含义. 
 
-以`#`开头的注释可被用做提示. 它们得被置于对应的键的上一行. 否则就有可能在本地化文件自动更新后消失或错位. 
+以`#`开头的注释可被用做提示. 它们需要被置于对应的键的上一行. 否则就有可能在本地化文件自动更新后消失或错位. 
 
 例: 
 ```
 ...
 			ExampleCanStackItem: {
-				DisplayName: Example CanStack Item: Gift Bag
-				# References a language key that says "Right Click To Open" in the language of the game
+				DisplayName: Example CanStack Item: 礼物袋
+				# 引用一个指向游戏语言对应的 "右键以打开" 文本的键
 				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
 			}
 ...
@@ -123,7 +123,7 @@ tML会在有新内容或本地化键加入时自动更新`.hjson`文件. 英语�
 
 比如说, 一个名为`Localization/en-US_Mods.ExampleMod.hjson`的文件会继承`Mods.ExampleMod`, 意味着此文件里的所有条目可以省去`Mods`和`ExampleMod`, 直接从下一级开始. 
 
-文件名前缀的格式遵循一下规则: 首先以文件夹, 再是以下划线分隔. 语言确定以后, 剩下的部分将被作为前缀. 下面的这些例子都是用于汉语且以`Mods.ExampleMod`作为前缀的文件名. 
+前缀的格式遵循以下规则: 首先以文件夹, 再是以下划线分隔. 语言确定以后, 剩下的部分将被作为前缀. 下面的这些例子都是用于汉语且以`Mods.ExampleMod`作为前缀的文件名. 
 
 ```
 Localization/zh-Hans_Mods.ExampleMod.hjson
@@ -154,11 +154,11 @@ public LocalizedText 随便什么信息 => this.GetOrRegisterLocalization(nameof
 在代码的其它地方, 该属性可被用于向用户显示本地化的文本: 
 
 ```cs
-Main.NewText(Language.GetTextValue(this.GetLocalizationKey("SwitchingToMessage")));
+Main.NewText(Language.GetTextValue(this.GetLocalizationKey("随便什么信息")));
 ```
 
 # 添加新语言
 默认情况下, tML仅会为模组生成tML认为模组支持的语言的本地化文件要添加新语言. 要添加新的语言, 仅需新建一个文本文档, 重命名为与现有本地化文件相同的格式. 文件名或其路径中需要包含对应的语言代码: 英语 ("en-US"), 德语 ("de-DE"), 意大利语 ("it-IT"), 法语 ("fr-FR"), 西班牙语 ("es-ES"), 俄语 ("ru-RU"), 汉语 ("zh-Hans"), 葡萄牙语 ("pt-BR"), 或波兰语 ("pl-PL"). 创建好文件并确保其有正确的文件扩展名`.hjson`之后, 重新生成模组. 这样该文件就会更新出可供翻译的条目, 其它文件也会依据英语的`.hjson`文件的结构一并生成. 
 
 # `ModType`与`ILocalizedModType`
-有实现自定义`ModType`的模组可以实现`ILocalizedModType`来轻松地推进本地化. 仅需在类继承后面加上`, ILocalizedModType`并添加`public string LocalizationCategory => "自定义类别名称";`以实现属性`LocalizationCategory`. 对于你自定义的`ModType`中的每一个`Localizedtext`, 你可以使用`public virtual LocalizedText 随便什么名字 => this.GetOrAddLocalization(nameof(DisplayName), 默认显示的随便什么名字);`以允许它们像已有`ModType`里的`Localizedtext`属性一样成为`.hjson`文件中分好类的属性. 
+有实现自定义`ModType`的模组可以实现`ILocalizedModType`来轻松地推行本地化. 仅需在类继承后面加上`, ILocalizedModType`并添加`public string LocalizationCategory => "自定义类别名称";`以实现属性`LocalizationCategory`. 对于你自定义的`ModType`中的每一个`Localizedtext`, 你可以使用`public virtual LocalizedText 随便什么名字 => this.GetOrAddLocalization(nameof(随便什么名字), 默认显示的随便什么名字);`以允许它们像已有`ModType`里的`Localizedtext`属性一样成为`.hjson`文件中分好类的属性. 
