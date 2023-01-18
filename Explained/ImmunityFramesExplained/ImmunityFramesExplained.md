@@ -78,6 +78,7 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 
 #### 更新无敌帧
 
+```cs
 	public void UpdateImmunity() 
 	{
 		if (immune) //要是无敌,就
@@ -113,9 +114,11 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 				hurtCooldowns[i]--; //同时也减少对应 hurtCooldowns 的值
 		}
 	}
+```
 	
 #### 设置全局无敌帧
 
+```cs
 	public void SetImmuneTimeForAllTypes(int time) //这里传入要设置的无敌时间
 	{
 		immune = true; //得无敌才有用
@@ -125,10 +128,13 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 			hurtCooldowns[i] = time; //把所有的hurtCooldowns设为time
 		}
 	}
+```
 	
 ##### 神圣庇护(暗影躲避), 混乱之脑和黑腰带
 
+```cs
 	SetImmuneTimeForAllTypes(longInvince ? 120 : 80);
+```
 
 所以它们连岩浆和尖刺的伤害都能闪避
 
@@ -136,6 +142,7 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 
 `hurtCooldowns`是一个int[5]: -1 普通伤害 0 其它伤害(物块等) 1 Boss单位 2 塔防兽人(除了击退外跟-1一样)
 
+```cs
 	public static class ImmunityCooldownID
 	{
 		// 默认的, 没啥特别的,就是 Player.immuneTime
@@ -157,9 +164,11 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 		// 岩浆伤害
 		public const int Lava = 4;
 	}
+```
 	
 `Hurt`方法中判断`cooldownCounter`的部分
 
+```cs
 	bool flag = !immune;
 	bool flag2 = false; //用于判断是否用特殊击退公式
 	switch (cooldownCounter) {
@@ -174,9 +183,11 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 			cooldownCounter = -1; //其它还是用 -1 的
 			break;
 	}
+```
 	
 #### 给伤害和无敌帧
 
+```cs
 	Color color = Crit ? CombatText.DamagedFriendlyCrit : CombatText.DamagedFriendly; //普通跟暴击有不同的颜色
 	CombatText.NewText(new Rectangle((int)position.X, (int)position.Y, width, height), color, (int)num2, Crit); //头上跳数字
 	statLife -= (int)num2; //扣血
@@ -205,9 +216,11 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 				hurtCooldowns[cooldownCounter] = (longInvince ? 80 : 40);
 			break;
 	}
+```
 
 #### 塔防兽人的攻击
 
+```cs
 	if (flag2 && hitDirection != 0) //如果是塔防兽人的攻击且要击退
 	{
 		if (!mount.Active || !mount.Cart) //不在坐骑上也不在矿车上
@@ -226,9 +239,11 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 			fallStart = (int)(position.Y / 16f);
 		}
 	}
+```
 	
 #### 如果`!immune`(不无敌)才继续进行受伤的步骤
 
+```cs
 	if (flag) //bool flag = !immune, immune为false那flag就为true
 	{
 		if (whoAmI == Main.myPlayer && blackBelt && Main.rand.Next(10) == 0) 
@@ -259,9 +274,11 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 			AddBuff(63, 480);
 		...
 	}
+```
 
 #### 物块的接触伤害
 
+```cs
 	else if (vector3.Y != 0f) //这个 vector3 是 HurtTile 返回的一个 Vector2
 	{
 		int damage3 = Main.DamageVar(vector3.Y, 0f - luck);
@@ -269,6 +286,7 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 		if (vector3.Y == 60f || vector3.Y == 80f) //原版不是这么搞的, tML才是 These values have to match TileID.Sets.TouchDamageOther, which is unused in vanilla and was not up to date with 1.4 --direwolf420
 			AddBuff(30, Main.rand.Next(240, 600));
 	}
+```
 
 ### 玩家无敌帧结论与技巧
 
