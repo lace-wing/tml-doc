@@ -170,6 +170,7 @@ Steam 是一个游戏平台。
 安装好 tModLoader 后就可以尝试启动了。
 
 在 Steam 库中选中 tModLoader，点击按钮“开始游戏”即可。
+Steam 会启动
 
 如果在这一步遇到问题，参见@subsec:t-s-launch
 
@@ -180,3 +181,5 @@ Steam 是一个游戏平台。
 
 == 启动问题
 <subsec:t-s-launch>
+
+章节施工中……
