@@ -1,4 +1,3 @@
-#let asset = "./Assets/"
 #let c-red = red.darken(30%)
 #let c-blue = blue.darken(30%)
 #let c-green = green.darken(30%)
