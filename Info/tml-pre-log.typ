@@ -29,15 +29,17 @@
 
 #h(5%)
 
-== 为爆炸物添加数组 ProjectileID.Sets.PlayerHurtDamageIgnoresDifficultyScaling
-by ChickenBones 已合并 \
-*Pull Request*：#link("https://github.com/tModLoader/tModLoader/pull/3796") \
+= Extra Jump API
+by absoluteAquarian 已合并 \
+*Pull Request*：#link("https://github.com/tModLoader/tModLoader/pull/3552") \
+*tModLoader 版本*：2023.07.1.24 \
 *更新至 Preview*：已完成 \
 *更新至 Stable*：2023/10/01 08:00 \
-*运行时破坏性*：#info[*无*] \
-*代码破坏性*：#info[*无*]
+*运行时破坏性*：#reminder[微（用IL实现二段跳的模组可能会炸）] \
+*代码破坏性*：#info[无]
 
-== Short Summary
-- 原版 `friendly` 的爆炸物现将 `ProjectileID.Sets.PlayerHurtDamageIgnoresDifficultyScaling[Type]` 设为 `true`。
-- 此更新修复了炸弹之类爆炸物在专家或大师模式下造成巨额伤害的问题。
-- 模组需要在玩家产生的炸弹、手雷和火箭等的 `SetStaticDefaults` 做出相同的改动，_如果_ 它们有“友方伤害”的话。
+== 简要总结
+- 新增类型 `ExtraJump` 给模组自定义跳跃。
+- `Player` 新增了字段和方法给模组控制跳跃（包括原版的）的开关与刷新。
+- `ModPlayer` 新增了调整原版和模组跳跃的钩子。
+- 更多信息参见 Example Mod 和 PR。
