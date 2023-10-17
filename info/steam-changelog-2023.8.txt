@@ -1,0 +1,102 @@
+It is time for the October 2023 Stable Update!
+
+Over the last month the tModLoader team has been busy fixing bugs and incorporating new functionality into tModLoader. This month's update includes many bug fixes, as usual, but this month's release has a particularly large amount of new functionality for modders to play with.
+
+New features include support for modded Builders Toggles, modded Emote Bubbles, Rubblemaker support, a reworked NPC buff immunity system, a way to store world header data, and the long awaited Extra Jump API. These new features have made their way into tModLoader from the efforts of our amazing community of modders willing to contribute to tModLoader, we encourage modders to continue contributing features to tModLoader. These code changes will allow modders the ability to make things previously prohibitively complex to implement.
+
+We hope players look forward to mods incorporating these new features and encourage modders to take a moment to test their mods today to ensure that they still load, especially if your mod relates in any way to the newly implemented features.
+
+We look forward to seeing how mods make use of these new features. As always, if you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub [/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+
+[h1]New Changes' Highlights[/h1]
+
+The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202308]Update Migration Guide[/url] to see how to adapt to the new changes after running tModPorter.
+
+[h3][b][url=https://github.com/tModLoader/tModLoader/pull/3552]Extra Jump API[/url][/b] by [b]absoluteAquarius[/b][/h3]
+[quote]• Adds an API for adding modded extra jumps. 
+• Extra jumps were previously extremely hard to implement.
+• Please read the [url=https://github.com/tModLoader/tModLoader/pull/3552]Extra Jump API pull request page[/url] and the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#extra-jump-api]Update Migration Guide[/url] for more information.
+
+[b]Porting Notes: [/b]If you previously used your own approach, please use the tModLoader approach. The [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#extra-jump-api]Update Migration Guide[/url] has more information on how to port your code.
+[/quote]
+[h3][b][url=https://github.com/tModLoader/tModLoader/pull/3746]Add modded world header data[/url][/b] by [b]Chicken-Bones[/b][/h3]
+[quote]• Modded world data can be now be saved into a 'header' in the .twld file. The header can be read without deserializing the entire .twld file, and the modded data is accessible in the world select menu and during vanilla world loading.
+• The list of mods the world was last played with is now shown in the world select menu, just like for players
+• The list of mods (and version of those mods) the world was generated with is now stored in the header. Only applies to worlds generated in the future of course.
+[/quote]
+[h3][b][url=https://github.com/tModLoader/tModLoader/pull/2918]Modded Emote Bubble[/url][/b] by [b]-Cyril-[/b][/h3]
+[quote]• Modders can now make custom emotes
+• Modders can adjust how NPC pick emotes
+• ExampleMod shows off several custom emotes and custom emote spawning
+[/quote]
+[h3][b][url=https://github.com/tModLoader/tModLoader/pull/3453]Rework NPCID.Sets.DebuffImmunitySets[/url][/b] by [b]JavidPack[/b][/h3]
+[quote]• Buff immunities for NPC has been reworked to be easier to work with and more functional.
+• NPCID.Sets.DebuffImmunitySets has been replaced with NPCID.Sets.SpecificDebuffImmunity, NPCID.Sets.ImmuneToAllBuffs, and NPCID.Sets.ImmuneToRegularBuffs to simplify modder code.
+• Added buff immunity inheritance through the BuffID.Sets.GrantImmunityWith set and corresponding methods.
+
+[b]Porting Notes: [/b] If your mod has any NPCs or does anything with buff immunity, you'll need to update their buff immunity code. Read the [url=https://github.com/tModLoader/tModLoader/pull/3453]Porting Notes section[/url] for more information on how to port to the new code.
+Mods should consider using the new buff immunity inheritance system for buff inheritance compatibility.
+[/quote]
+[h3][b][url=https://github.com/tModLoader/tModLoader/pull/3731]Added support for Modded Builder Toggles[/url][/b] by [b]xKirtle[/b][/h3]
+[quote]• Modders can now make builder toggles, which are those small icons top left of the inventory that are used for block swap, wire visibility, etc.
+
+[b]Porting Notes: [/b]If you previously made builders toggles using your own approach, use the tModLoader approach.
+[/quote]
+[h3][b][url=https://github.com/tModLoader/tModLoader/pull/3568]Rubblemaker support[/url][/b] by [b]GeorgeFeldy[/b][/h3]
+[quote]• Modders can now add tiles to the Rubblemaker
+[/quote]
+
+[h1]Bug Fixes[/h1]
+[h2]Gameplay Fixes[/h2]
+[b]Rijam[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3814]Fixed Moon Lord Treasure Bag Weapons[/url]
+[b]Chicken-Bones[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3808]Fix item use sounds playing multiple times for remote clients[/url]
+[b]JavidPack[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3800]Call ItemCheck_ApplyManaRegenDelay on 1st frame of item use[/url]
+[b]Chicken-Bones[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3796]Add ProjectileID.Sets.PlayerHurtDamageIgnoresDifficultyScaling for explosives[/url]
+[b]Chicken-Bones[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3795]Fix melee speed affecting tool use speed[/url]
+[b]Cerbrus[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3576]Check UseStandardCritCalcs in ProcessHitAgainstNPC[/url]
+
+[h2]Quality of Life and Other Fixes[/h2]
+[b]Cerbrus[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3628]Automatically enable mod dependencies[/url]
+[b]JavidPack[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3841]Disable roll forward when launching using local dotnet install[/url]
+[b]Chicken-Bones[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3804]Enable hotbar key item swap and smart select while auto-reusing items[/url]
+[b]Chicken-Bones[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3843]Fixes and improvements to smart select while using auto reusing[/url]
+[b]Chicken-Bones[/b] - [url=https://github.com/tModLoader/tModLoader/commit/e64e561f4a4a9b890df8330dadee366882c1493c]Fix favorite status transferring to hand in PickupItemIntoMouse[/url]
+[b]blushiemagic[/b] - [url=https://github.com/tModLoader/tModLoader/commit/1ccac010fc2a8d43051ccd3dc5e687c4b90b6dda]Patron sets for HER0zero and Mayne; adjusted rates for patron/dev sets[/url]
+[b]JavidPack[/b] - [url=https://github.com/tModLoader/tModLoader/commit/2091d8d2448fc8f55c368eb5ac6d3701ab56e5ce]Fix -host command line argument[/url]
+[b]JavidPack[/b] - [url=https://github.com/tModLoader/tModLoader/commit/3c4edc60a95c70c73760b28241237cfce6b62a1d]Added a special icon for translation mods[/url]
+[b]Chicken-Bones[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3844]Add general purpose SDL driver fallbacks, error reporting and CLI args[/url]
+[b]Chicken-Bones[/b] - [url=https://github.com/tModLoader/tModLoader/commit/eb3a3df49ccdefb72347b2cd018fc93b563c39fd]Silence SteelSeries connection errors and http failures on async threads[/url]
+
+[h2]API Fixes and Changes[/h2]
+[b]stormytuna[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3835]Add missing tooltips to TooltipLine docs[/url]
+[b]Lion8cake[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3606]Remix Hallow worldgen is now in the "Hardmode Good" genpass[/url]
+[b]Destructor_Ben[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3385]Added field for items to not change player direction on shoot[/url]
+[b]Chicken-Bones[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3805]Add useTurnOnAnimationStart to restore turn behavior of earlygame vanilla swords[/url]
+[b]direwolf420[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3616]Modded toilet poo support[/url]
+[b]stormytuna[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3759]Added ModPlayer.OnPickup hook[/url]
+[b]JavidPack[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3770]Rename (Mod|Global)Projectile.Kill hook to OnKill[/url]
+[b]BasicallyIAmFox[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3761]ItemID.Sets.IsSpaceGun[/url]
+[b]BasicallyIAmFox[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3642]Made GenPass instances hideable for greater compatibility[/url]
+[b]BasicallyIAmFox[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3641]Made TooltipLine instances hideable for greater compatibility[/url]
+[b]Tyfyter[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3634]Made Player.shimmerImmune public[/url]
+[b]Cerbrus[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3595]Add ModTile.IsTileBiomeSightable hook[/url]
+[b]direwolf420[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3558]BelongsToInvasion NPC sets[/url]
+[b]Destructor_Ben[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3710]Better Changelogs[/url]
+[b]JavidPack[/b] - [url=https://github.com/tModLoader/tModLoader/commit/1352e4b5c8109de9f86cc20735bceb91ebdb5198]ShakeTree createLeaves parameter now defaults to True to match 1.4.4 behavior[/url]
+[b]Destructor_Ben[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3604]Add support for tweaking shadow color for in InfoDisplay class[/url]
+[b]JavidPack[/b] - [url=https://github.com/tModLoader/tModLoader/commit/3ca9bf16a3722c35ea86377b7a28f4456b072743]GlobalInfoDisplay.ModifyDisplayParameters supersedes ModifyDisplayValue/ModifyDisplayName/ModifyDisplayColor[/url]
+[b]JavidPack[/b] - [url=https://github.com/tModLoader/tModLoader/commit/c6afafcf9f803292d5c7a8e63ac88d5404f74327]Restore ModConfig and PrefixDefinition functionality[/url]
+[b]direwolf420[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3840]Fix princess not using the intended translation key[/url]
+[b]JavidPack[/b] - [url=https://github.com/tModLoader/tModLoader/commit/aee3e5ece65982d28dd0e4c5930e4fbc501e3882]TranslationsNeeded.txt file can be used to automatically track needed translation counts[/url]
+
+[h2]ExampleMod[/h2]
+[b]VaemaVoid[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3783]ExampleStaff ported[/url]
+[b]direwolf420[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3477]Example Minecart added[/url]
+[b]VaemaVoid[/b] - [url=https://github.com/tModLoader/tModLoader/pull/3646]Example Last Prism ported[/url]
+
+[h1]Localization[/h1]
+[b]RazzSG and Blueberryy[/b] - Russian
+[b]Pixelnando[/b] - [url=][/url] - Brazilian Portuguese
+[b]Solxan[/b] - [url=https://github.com/tModLoader/tModLoader/commit/dbd01317c631964829f6efb76c733abbd480cfd2]Support localizing Steam workshop and Store pages[/url]
+
+We recently started localizing the store page and workshop tags. We are also lacking a great deal of in-game translations for several languages still. If you are interested in translating these, please get in contact with us on [url=https://discord.gg/tmodloader]Discord[/url] to ask how to contribute translations or visit [url=https://github.com/tModLoader/tModLoader/wiki/Contributing-Localization#tmodloader-translations]the tModLoader wiki[/url] for instructions.
