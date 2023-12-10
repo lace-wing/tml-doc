@@ -1,16 +1,14 @@
-# 允许创意工坊“贡献者”更新模组
-by **Solxanich** 已合并  
-**Pull Request**：<https://github.com/tModLoader/tModLoader/pull/3893>  
-**更新至 Preview**：`未完成`  
-**更新至 Stable**：`未完成`  
-**运行时破坏性**：🟢 - **无**  
-**代码破坏性**：🟢 - **无**
+# `ChangeDir` 现在正确地更新 `itemRotation`（修复了射弹的剑有一刻错误转向的问题）
+by **jopojelly** 已合并  
+**Pull Request:** <https://github.com/tModLoader/tModLoader/commit/05f30a6ad8a0987142131e456132274a8b4a22c4>  
+**更新至 Preview**: 2023/11/01 08:00  
+**更新至 Stable**: 2023/12/01 09:00  
+**运行时破坏性**: 🟡 - **不太可能**  
+**代码破坏性**: 🟢 - **无**  
 
 ## 简要总结
-
-- 允许创意工坊物品的“贡献者”更新模组（此前只有模组发布者可以）。
-- 为了能够在意外情况下转移所有者/添加贡献者，我们仍在对相关讨论进行调研。如果遇到了此类问题，请联系 tModLoader 开发者。
+- 为了修复剑的一个视效错误，方法 `Player.ChangeDir` 现在会影响手臂转向，物品转向和物品位置。
 
 ## 迁移提示
-
-- 确认你模组创意工坊上的“贡献者”应有发布更新的权力。如果不应该有，我们建议你将其移出“贡献者”。
+- 无需改动
+- 如果您手动修改了 `Player.direction`，推荐改用方法 `Player.ChangeDir`，因为它能帮忙修正边缘情况下的视效。
