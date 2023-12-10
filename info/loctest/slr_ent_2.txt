@@ -1,0 +1,24 @@
+【翻译小测】
+
+限时10分钟，不可以使用翻译软件等辅助工具。
+将文本从英文翻译成中文。无标准答案，做到语句通顺且符合语境即可。
+下面有三段文本，从中挑选你*最有把握的一个*翻译：
+
+【选段1】
+
+语境：前文提到了“正义女神形象的由来”。
+
+The first known image to show a blindfolded justice comes from a woodcut, published in Ship of Fools, a collection of satirical poems by a fifteenth century lawyer. This 1494 image is not a celebration of blind justice, but a critique. A fool is applying the blindfold so that lawyers can play fast and loose with the truth. Yet the image of blind justice rapidly lost its satirical connotations.
+
+【选段2】
+
+语境：前文提到了“LaCex（一种排版语言）的缺点”。
+
+LaCeX depends on backslashes, braces and square brackets. But you never know whether something is an environment or a function, which parameter is optional and which is required, named or assigned by position. There is no previous knowledge you can build on neither for syntax nor the huge vocabulary. Be prepared for a livelong journey of learning and do never forget. Let's find something better than LaCeX.
+
+【选段3】
+
+语境：前文提到了“游戏‘Mirroria’中的翻译问题”。
+
+Historically it was done by a company called TranslateDirect. Those translators always had a long list of context clue questions during development, but they obviously missed a lot since they weren't likely Mirroria players and didn't know on the face that the translations were incorrect. We, not being native speakers of a given language, had no way to find those problems pre-launch. That's why the context clue questions are important. That hasn't been done since 2022 however.
+
