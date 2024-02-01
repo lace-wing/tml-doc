@@ -1,0 +1,31 @@
+GUIDE:
+- 将所有“{{条目}}”替换为对应的值，如：
+	:%s/{{year}}/2024/g
+- 删除多余内容；
+- 将非语法英文标点替换为中文的；
+- 翻译；英文与汉字之间要加空格；不必照搬原文，可根据实际内容调整；
+- 可以在小节“本地化”中加入自己的名字，也可以加上个人主页链接，如：
+	[b]名称[/b]：[url=个人主页链接]此公告的英译中[/url]
+
+TITLE：
+{{year}}年{{month}}月稳定版更新
+
+---
+
+tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModLoader。本次月度更新将于{{year}}年{{month}}月{{date}}日发布，主要包含漏洞修复。
+
+这个月，{{month-summary}}。
+
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]重要改动[/h1]
+
+下面是该版本中最值得注意的更新。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v{{release-version}}]（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
+
+[h1]新功能[/h1]
+[h2]API 改动[/h2]
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他修复[/h2]
+[h2]API 修复和改动[/h2]
+[h2]示例模组（ExampleMod）和 API 文档[/h2]
+[h1]本地化[/h1]
