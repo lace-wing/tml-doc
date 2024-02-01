@@ -1,9 +1,0 @@
-[*][url=https://github.com/tModLoader/tModLoader/commit/a30d9e086e437a0b7e2503f8559541d789822e38 ]添加方法 Mod.GetLocalization，将 GetOrRegister(GetLocalizationKey） 转为 GetLocalization（#3847)[/url] By: JavidPack
- [*][url=https://github.com/tModLoader/tModLoader/commit/d45a52880cfae1e1525e2e51787beb1df58a371b ]添加选项 BuffDefinition（#3827）[/url] By: Edoan
- [*][url=https://github.com/tModLoader/tModLoader/commit/89d407f518804819abd363bb939ba990c56f9758 ]修复 #3825 - 回声漆可见性[/url] By: JavidPack
- [*][url=https://github.com/tModLoader/tModLoader/commit/6c441d04dd905781dc4cdeee20b8ab844d5b30c8 ]为 NPCBestiaryDrawModifiers 添加无参构造函数（#3809）[/url] By: Destructor_Ben
- [*][url=https://github.com/tModLoader/tModLoader/commit/0a0f59d2614e8467d6bd292af6cf785482711201 ]用 TileID.Sets 控制物块能否放在非实心块旁（#3684）[/url] By: Rijam
- [*][url=https://github.com/tModLoader/tModLoader/commit/d892f2b72b1917928c63b7130b8e0990b02ad5f4 ]模组配置列表重做（模组配置重做第1部分）（#3810）[/url] By: Destructor_Ben
- [*][url=https://github.com/tModLoader/tModLoader/commit/2ab44f8c6d324beada86c19035b8d6239fe665cc ]更新 ExampleCritter 及相关示例，修复一些漏洞（#3752）[/url] By: Kogsey
- [*][url=https://github.com/tModLoader/tModLoader/commit/22831fc6b771ed3429a8d56bd765ee0f29d65635 ]AcceptClientChanges 消息本地化，添加 ModConfigShowcaseAcceptClientChanges[/url] By: JavidPack
- [*][url=https://github.com/tModLoader/tModLoader/commit/136c7b34da5606abb81db09ba302615e9c22a2db ]修复物品描述“UseMana”（#3774）[/url] By: stormytuna
