@@ -24,7 +24,7 @@ tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModL
 [h2]游戏体验及其他修复[/h2]
 [b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/7dada24f2fe5c7fda8e32a9d06018b71985ba695]修复发布模组时由异常引发的 UI 问题[/url]
 [b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/fc62cd67e823a65747944b2eacf4279fd77c090f]启动时若存在 Rosetta（软件）则自动切换至 x86 架构（#4017）[/url]
-[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/e95465c5dfca5629f1a7035c8179d66f09f9ba68]支持 OSX 上的 GOG 默认安装路径，修复 #3526（#4018）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/e95465c5dfca5629f1a7035c8179d66f09f9ba68]支持 OSX 上 GOG 的默认安装路径，修复 #3526（#4018）[/url]
 [b]-Cyril-[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b177f77ffc62ed6d9a6b1fd9dc1b361804e2c903]修复无法读取语言包的问题（#2617）[/url]
 [b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/17b426605f77dbd9da761cd7d1c47134be149419]阻止 ModMenu.UserInterface 的过量 Recalculate()[/url]
 [b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/77019e91d79e3b6523619e5f40b73fe5d358e912]修复 #4007（“删除模组”菜单的问题）[/url]
@@ -33,7 +33,7 @@ tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModL
 [h2]API 修复和改动[/h2]
 [b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/5fa79188fd086fed8f9ee1bcd99b53739b1f3926]使 type 为0的实体在 SetDefaults 和 TurnToAir 中不活跃（#4032）[/url]
 
-[h2]示例模组（ExampleMod）和 API 的文档[/h2]
+[h2]示例模组（ExampleMod）和 API 文档[/h2]
 [b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/de0e8eb4ea708b40e1dc1035ed4ed7a9d85e15e7]修复 NuGet 库文件夹名的大小写问题（#3965 [1/2]）[/url]
 [b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2fdc29daaadaa3fac365d76ec19155b536a3c6de]用 C# MSBuild Tasks 重新实现 Terraria.csproj 的逻辑，修复“.Remove(-1)”的问题（#3965）[/url]
 [b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2121043fb59465ba2c0c456517b7b5da3145f056]添加 ResetStaticMembers 的测试[/url]
