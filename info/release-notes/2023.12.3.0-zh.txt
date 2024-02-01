@@ -1,0 +1,42 @@
+TITLE：
+2024年2月稳定版更新
+
+----------------------------------------------------
+
+DETAILS:
+
+tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModLoader。本次月度更新将于2024年2月1日发布，主要包含漏洞修复。
+
+这个月，我们改进了对 Apple Silicon 芯片的支持、与 GoG 的兼容性和在 Unix 系统上的配置，并且修复了无法读取语言包的问题。
+
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]重要改动[/h1]
+
+下面是该版本中最值得注意的更新。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202312]（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
+
+[h1]新功能[/h1]
+[h2]API 改动[/h2]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/35b5d0c9e62c31eee65cf2de6db364f283474d05]为 PreJITFilter 特性检查外层类型并改进报错信息（#4033）[/url]
+[b]ThomasThePencil[/b]：[url=https://github.com/tModLoader/tModLoader/commit/4e798fae66391925ba7113dd21688c66e67a9340]GlobalNPC.SetDefaultsFromNetId（#3955）[/url]
+
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他修复[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/7dada24f2fe5c7fda8e32a9d06018b71985ba695]修复发布模组时由异常引发的 UI 问题[/url]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/fc62cd67e823a65747944b2eacf4279fd77c090f]启动时若存在 Rosetta（软件）则自动切换至 x86 架构（#4017）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/e95465c5dfca5629f1a7035c8179d66f09f9ba68]支持 OSX 上的 GOG 默认安装路径，修复 #3526（#4018）[/url]
+[b]-Cyril-[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b177f77ffc62ed6d9a6b1fd9dc1b361804e2c903]修复无法读取语言包的问题（#2617）[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/17b426605f77dbd9da761cd7d1c47134be149419]阻止 ModMenu.UserInterface 的过量 Recalculate()[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/77019e91d79e3b6523619e5f40b73fe5d358e912]修复 #4007（“删除模组”菜单的问题）[/url]
+[b]-Cyril-[/b]：[url=https://github.com/tModLoader/tModLoader/commit/6bdb2e2520931ac6b03b6102eab7f6e7cce9f635]根据 OS 匹配 dotnet 路径以解决部分 IDE，如 Rider，里的问题（#3944）[/url]
+
+[h2]API 修复和改动[/h2]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/5fa79188fd086fed8f9ee1bcd99b53739b1f3926]使 type 为0的实体在 SetDefaults 和 TurnToAir 中不活跃（#4032）[/url]
+
+[h2]示例模组（ExampleMod）和 API 的文档[/h2]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/de0e8eb4ea708b40e1dc1035ed4ed7a9d85e15e7]修复 NuGet 库文件夹名的大小写问题（#3965 [1/2]）[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2fdc29daaadaa3fac365d76ec19155b536a3c6de]用 C# MSBuild Tasks 重新实现 Terraria.csproj 的逻辑，修复“.Remove(-1)”的问题（#3965）[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2121043fb59465ba2c0c456517b7b5da3145f056]添加 ResetStaticMembers 的测试[/url]
+
+[h1]本地化[/h1]
+[b]Lacewing[/b]: [url=https://github.com/lace-wing]此公告的英译中[/url]
