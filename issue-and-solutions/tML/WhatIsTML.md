@@ -19,5 +19,5 @@ tML，全称tModLoader，是泰拉瑞亚的模组加载器，实际上也是一�
 你需要选择测试版本或手动调整文件，详见[切换tML版本][HowToChangeTMLVersion]
 
 
-[GetTerraria]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/GetTerraria.md
-[HowToChangeTMLVersion]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/HowToChangeTMLVersion.md
+[GetTerraria]: ../tML/GetTerraria.md
+[HowToChangeTMLVersion]: ../tML/HowToChangeTMLVersion.md

@@ -27,20 +27,20 @@
     - [.NET6.0][.NET6.0]
 
 
-[FAQs]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/FAQs.md
-[UsersManual]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/README.md#%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C
+[FAQs]: ./issue-and-solutions/FAQs.md
+[UsersManual]: README.md#%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C
 
-[GetTerraria]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/GetTerraria.md
-[WhatIsTML]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/WhatIsTML.md
-[SwitchTMLVersion]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/HowToChangeTMLVersion.md
-[GetTMods]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/tML/InstallMods.md
-[ModTable]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModTable.md
+[GetTerraria]: ./issue-and-solutions/tML/GetTerraria.md
+[WhatIsTML]: ./issue-and-solutions/tML/WhatIsTML.md
+[SwitchTMLVersion]: ./issue-and-solutions/tML/HowToChangeTMLVersion.md
+[GetTMods]: ./issue-and-solutions/tML/InstallMods.md
+[ModTable]: mod-table.md
 
 [WikiLocalizationGuide]: https://github.com/tModLoader/tModLoader/wiki/zh-Localization-%E6%9C%AC%E5%9C%B0%E5%8C%96
-[InternalLocalization]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Explained/LocalizationExplained/InternalLocalization.md
-[DotBuffList]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Explained/BuffExplained/DotBuffList.md
-[ImmunityFrames]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Explained/ImmunityFramesExplained/ImmunityFramesExplained.md
+[InternalLocalization]: ./explained/LocalizationExplained/InternalLocalization.md
+[DotBuffList]: ./explained/BuffExplained/DotBuffList.md
+[ImmunityFrames]: ./explained/ImmunityFramesExplained/ImmunityFramesExplained.md
 
-[ExternalLinks]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ExternalLinks.md
-[TerrariaTexture]: https://github.com/lyc-Lacewing/tMLAllInOne/tree/master/Resources/TerrariaImages
-[.NET6.0]: https://github.com/lyc-Lacewing/tMLAllInOne/tree/master/Resources/.NET6.0
+[ExternalLinks]: external-links.md
+[TerrariaTexture]: ./resources/TerrariaImages
+[.NET6.0]: ./resources/.NET6.0
