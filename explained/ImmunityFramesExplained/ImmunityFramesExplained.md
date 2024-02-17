@@ -81,37 +81,37 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 ```cs
 	public void UpdateImmunity() 
 	{
-		if (immune) //要是无敌,就
+		if (immune) // 要是无敌,就
 		{
-			immuneTime--; //减少无敌时长
-			if (immuneTime <= 0) //无敌时长 <= 0 就不无敌了
+			immuneTime--; // 减少无敌时长
+			if (immuneTime <= 0) // 无敌时长 <= 0 就不无敌了
 			{
-				immune = false; //不无敌
-				immuneNoBlink = false; //重置这个bool, 不然下次也不闪
+				immune = false; // 不无敌
+				immuneNoBlink = false; // 重置这个bool, 不然下次也不闪
 			}
 
-			if (immuneNoBlink) //如果不闪烁
+			if (immuneNoBlink) // 如果不闪烁
 			{
-				immuneAlpha = 0; //透明度 = 0
+				immuneAlpha = 0; // 透明度 = 0
 			}
 			else 
 			{
-				immuneAlpha += immuneAlphaDirection * 50; //变化透明度
+				immuneAlpha += immuneAlphaDirection * 50; // 变化透明度
 				if (immuneAlpha <= 50)
-					immuneAlphaDirection = 1; //透明度加还是减, 1 是加 -1 是减
+					immuneAlphaDirection = 1; // 透明度加还是减, 1 是加 -1 是减
 				else if (immuneAlpha >= 205)
 					immuneAlphaDirection = -1;
 			}
 		}
 		else 
 		{
-			immuneAlpha = 0; //完全不透明, 正常显示
+			immuneAlpha = 0; // 完全不透明, 正常显示
 		}
 
 		for (int i = 0; i < hurtCooldowns.Length; i++) 
 		{
 			if (hurtCooldowns[i] > 0)
-				hurtCooldowns[i]--; //同时也减少对应 hurtCooldowns 的值
+				hurtCooldowns[i]--; // 同时也减少对应 hurtCooldowns 的值
 		}
 	}
 ```
@@ -119,13 +119,13 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 #### 设置全局无敌帧
 
 ```cs
-	public void SetImmuneTimeForAllTypes(int time) //这里传入要设置的无敌时间
+	public void SetImmuneTimeForAllTypes(int time) // 这里传入要设置的无敌时间
 	{
-		immune = true; //得无敌才有用
-		immuneTime = time; //无敌时间设为time
+		immune = true; // 得无敌才有用
+		immuneTime = time; // 无敌时间设为time
 		for (int i = 0; i < hurtCooldowns.Length; i++) 
 		{
-			hurtCooldowns[i] = time; //把所有的hurtCooldowns设为time
+			hurtCooldowns[i] = time; // 把所有的hurtCooldowns设为time
 		}
 	}
 ```
@@ -170,17 +170,17 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 
 ```cs
 	bool flag = !immune;
-	bool flag2 = false; //用于判断是否用特殊击退公式
+	bool flag2 = false; // 用于判断是否用特殊击退公式
 	switch (cooldownCounter) {
-		case 0: //物块的接触伤害, 在HurtTile里给伤害
-		case 1: //Boss单位
-		case 3: //抓岩浆生物
-		case 4: //岩浆伤害
-			flag = (hurtCooldowns[cooldownCounter] <= 0); //只有受击冷却<=0了才受伤
+		case 0: // 物块的接触伤害, 在HurtTile里给伤害
+		case 1: // Boss单位
+		case 3: // 抓岩浆生物
+		case 4: // 岩浆伤害
+			flag = (hurtCooldowns[cooldownCounter] <= 0); // 只有受击冷却<=0了才受伤
 			break;
-		case 2: //塔防兽人攻击
-			flag2 = true; //使用特殊的击退公式
-			cooldownCounter = -1; //其它还是用 -1 的
+		case 2: // 塔防兽人攻击
+			flag2 = true; // 使用特殊的击退公式
+			cooldownCounter = -1; // 其它还是用 -1 的
 			break;
 	}
 ```
@@ -188,28 +188,28 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 #### 给伤害和无敌帧
 
 ```cs
-	Color color = Crit ? CombatText.DamagedFriendlyCrit : CombatText.DamagedFriendly; //普通跟暴击有不同的颜色
-	CombatText.NewText(new Rectangle((int)position.X, (int)position.Y, width, height), color, (int)num2, Crit); //头上跳数字
-	statLife -= (int)num2; //扣血
-	switch (cooldownCounter) //判断要给予的无敌帧类型
+	Color color = Crit ? CombatText.DamagedFriendlyCrit : CombatText.DamagedFriendly; // 普通跟暴击有不同的颜色
+	CombatText.NewText(new Rectangle((int)position.X, (int)position.Y, width, height), color, (int)num2, Crit); // 头上跳数字
+	statLife -= (int)num2; // 扣血
+	switch (cooldownCounter) // 判断要给予的无敌帧类型
 	{
-		case -1: //普通无敌帧
+		case -1: // 普通无敌帧
 			{
-				immune = true; //得无敌才有用
-				int num14 = 0; //意义不明
-				//玩家打玩家(PvP)的话就只给8; 只有1点伤害就给20, 大于1点伤害就给40, 十字项链就翻倍
+				immune = true; // 得无敌才有用
+				int num14 = 0; // 意义不明
+				// 玩家打玩家(PvP)的话就只给8; 只有1点伤害就给20, 大于1点伤害就给40, 十字项链就翻倍
 				num14 = (immuneTime = (pvp ? 8 : ((num2 != 1.0) ? (longInvince ? 80 : 40) : (longInvince ? 40 : 20))));
 				break;
 			}
-		case 0: //物块伤害
-			if (num2 == 1.0) //如果是1伤害
-				hurtCooldowns[cooldownCounter] = (longInvince ? 40 : 20);//只给20
+		case 0: // 物块伤害
+			if (num2 == 1.0) // 如果是1伤害
+				hurtCooldowns[cooldownCounter] = (longInvince ? 40 : 20); // 只给20
 			else
-				hurtCooldowns[cooldownCounter] = (longInvince ? 80 : 40);//给40
+				hurtCooldowns[cooldownCounter] = (longInvince ? 80 : 40); // 给40
 			break;
 		case 1:
 		case 3:
-		case 4: //岩浆伤害
+		case 4: // 岩浆伤害
 			if (num2 == 1.0)
 				hurtCooldowns[cooldownCounter] = (longInvince ? 40 : 20);
 			else
@@ -221,13 +221,13 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 #### 塔防兽人的攻击
 
 ```cs
-	if (flag2 && hitDirection != 0) //如果是塔防兽人的攻击且要击退
+	if (flag2 && hitDirection != 0) // 如果是塔防兽人的攻击且要击退
 	{
-		if (!mount.Active || !mount.Cart) //不在坐骑上也不在矿车上
+		if (!mount.Active || !mount.Cart) // 不在坐骑上也不在矿车上
 		{
-			float num23 = 10.5f; //水平方向击飞的乘数
-			float y2 = -7.5f; //竖直方向的击飞
-			if (noKnockback) //如果"免疫击退"则受到更小的击退
+			float num23 = 10.5f; // 水平方向击飞的乘数
+			float y2 = -7.5f; // 竖直方向的击飞
+			if (noKnockback) // 如果"免疫击退"则受到更小的击退
 			{
 				num23 = 2.5f;
 				y2 = -1.5f;
@@ -244,7 +244,7 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 #### 如果`!immune`(不无敌)才继续进行受伤的步骤
 
 ```cs
-	if (flag) //bool flag = !immune, immune为false那flag就为true
+	if (flag) // bool flag = !immune, immune为false那flag就为true
 	{
 		if (whoAmI == Main.myPlayer && blackBelt && Main.rand.Next(10) == 0) 
 		{
@@ -279,11 +279,11 @@ Debuff并不通过**攻击**来造成伤害, 而是通过将目标的生命回�
 #### 物块的接触伤害
 
 ```cs
-	else if (vector3.Y != 0f) //这个 vector3 是 HurtTile 返回的一个 Vector2
+	else if (vector3.Y != 0f) // 这个 vector3 是 HurtTile 返回的一个 Vector2
 	{
 		int damage3 = Main.DamageVar(vector3.Y, 0f - luck);
 		Hurt(PlayerDeathReason.ByOther(3), damage3, 0, pvp: false, quiet: false, Crit: false, 0);
-		if (vector3.Y == 60f || vector3.Y == 80f) //原版不是这么搞的, tML才是 These values have to match TileID.Sets.TouchDamageOther, which is unused in vanilla and was not up to date with 1.4 --direwolf420
+		if (vector3.Y == 60f || vector3.Y == 80f) // 原版不是这么搞的, tML才是 These values have to match TileID.Sets.TouchDamageOther, which is unused in vanilla and was not up to date with 1.4 --direwolf420
 			AddBuff(30, Main.rand.Next(240, 600));
 	}
 ```

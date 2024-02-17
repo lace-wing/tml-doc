@@ -138,18 +138,18 @@
 ****指需要自行获取源码并编译或通过特殊手段获得
 
 
-[AlchemistNPCLite]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/AlchemistNPCLite.md
-[NoFishingQuests]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/NoFishingQuests.md
-[WeaponDisplay]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/WeaponDisplay.md
-[Autofish]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Autofish.md
-[BetterBossBar]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/BetterBossBar.md
-[BloodSoul]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/BloodSoul.md
-[BossChecklist]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/BossChecklist.md
-[CalamityMod]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/CalamityMod.md
-[CalamityAmmo]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/CalamityAmmo.md
-[Catalyst]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Catalyst.md
-[CheapReforging]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/CheapReforging.md
-[Consolaria]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Consolaria.md
-[I]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/I.md
-[_ReplaceString_]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/_ReplaceString_.md
-[Wild]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/ModDetails/Wild.md
+[AlchemistNPCLite]: ./mod-details/AlchemistNPCLite.md
+[NoFishingQuests]: ./mod-details/NoFishingQuests.md
+[WeaponDisplay]: ./mod-details/WeaponDisplay.md
+[Autofish]: ./mod-details/Autofish.md
+[BetterBossBar]: ./mod-details/BetterBossBar.md
+[BloodSoul]: ./mod-details/BloodSoul.md
+[BossChecklist]: ./mod-details/BossChecklist.md
+[CalamityMod]: ./mod-details/CalamityMod.md
+[CalamityAmmo]: ./mod-details/CalamityAmmo.md
+[Catalyst]: ./mod-details/Catalyst.md
+[CheapReforging]: ./mod-details/CheapReforging.md
+[Consolaria]: ./mod-details/Consolaria.md
+[I]: ./mod-details/I.md
+[_ReplaceString_]: ./mod-details/_ReplaceString_.md
+[Wild]: ./mod-details/Wild.md
