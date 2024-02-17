@@ -13,7 +13,7 @@ Repalce String (以下简称RS) 是一个用于其它模组的本地化的模组
 你也可以在[本仓库里][RSLocPacks]找到一些RS汉化包
 
 ## 使用方法
-[此文档](https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Explained/ReplaceStringExplained/replace_string_1.4.3.6_usage.md)讲解了RS的使用方法  
+[此文档](../explained/ReplaceStringExplained/replace_string_1.4.3.6_usage.md)讲解了RS的使用方法  
 [此视频][RSIntroVid]详细讲解了RS的使用方法
 
 
