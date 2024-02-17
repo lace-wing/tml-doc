@@ -80,9 +80,9 @@
 - [ ] 添加更多issue标签
 
 
-[UsersManual]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/README.md#%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C
-[FAQs]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/IssuesAndSolutions/FAQs.md
-[Navigation]: https://github.com/lyc-Lacewing/tMLAllInOne/blob/master/Navigation.md
-[HowToDetermineIssues]: GeneralAssets/HowToDetermineIssues_cn.png
+[UsersManual]: README.md#%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C
+[FAQs]: ./issue-and-solutions/FAQs.md
+[Navigation]: Navigation.md
+[HowToDetermineIssues]: ./assets/HowToDetermineIssues_cn.png
 [HTAQTSW]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
-[AQIGC]: GeneralAssets/AskQuestionsInQroupChats_cn.jpg
+[AQIGC]: ./assets/AskQuestionsInQroupChats_cn.jpg
