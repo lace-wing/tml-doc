@@ -1,0 +1,62 @@
+TITLE: 
+March 2024 Stable Update
+
+----------------------------------------------------
+
+DETAILS:
+
+It is time for the March 2024 Stable Update!
+
+The tModLoader team and our amazing community of contributors continues to improve tModLoader.  This month's release mainly contains bug fixes.
+
+This month we've continued our work to harden multiplayer by updating the server host scripts, made several improvements to Mod Config support, and fixed a dozen or so bugs..
+
+As always, if you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub [/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+
+[h1]New Changes' Highlights[/h1]
+
+The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202401]Update Migration Guide[/url] to see how to adapt to the new changes after running tModPorter.
+
+[h1]New Features[/h1]
+[h2]API Changes[/h2]
+[b]Destructor_Ben[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7cf5fbde5c5ce29d500d36fec9910b09a9c1788e]Description Parameter Interpolation (#4036)[/url]
+[b]Destructor_Ben[/b]: [url=https://github.com/tModLoader/tModLoader/commit/d1609a74f62d2e1221110121097d435919428c5a]TileDefinition class implemented (#3928)[/url]
+[b]direwolf420[/b]: [url=https://github.com/tModLoader/tModLoader/commit/945c281e19839e3b0edb7d3dba25390b989aa4d1]Add Player.hasGemRobe (#4043)[/url]
+
+[h1]Bug Fixes[/h1]
+[h2]Quality of Life and Other Fixes[/h2]
+[b]John Baglio[/b]: [url=https://github.com/tModLoader/tModLoader/commit/0191c75de1587f1a0aba2183413cd781940db4f8]Implement Caching for Mod.GetContent() Results (#4005)[/url]
+[b]turtletowerz[/b]: [url=https://github.com/tModLoader/tModLoader/commit/baa7ff18ba86b87c9fc47016c4fd16b722749ee1]Docker and Management Script Bugfixes (#3900)[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/e8f9b46342e28250440def603387a81a4009b78c]Fix #4035, -skipselect now works on server launches[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/885674a6cd8dd4454fbb0837e395feacfec2060e]Reorder log message so ControlledFolderAccessDetected noted before porting files[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/1b8213742dbd067ddd8d37e45ad0dd212fbdfe62]trycatch UIModBrowser.OnActivate to allow uistate to display properly despite exception[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/9d3cbc347269ba8b100e221226a7ed9d1b7ce3c3]Fix WaspNest accessory not resetting properly[/url]
+[b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/commit/728cc608492060b7a3af0c3e51b1dbb59e8be9ef]Remove redundant and erroneous PPID reassignment in launch script (#4016)[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/4f461137aeae3aa9c305c7ffafd705a1378f1c1c]Fix Author Search in Mod Browser[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2fee0aade6f24d77bd72584633a15fd65e57bbfd]Add log message to indicate which mod's config is triggering reload in MP join[/url]
+[b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/commit/16cac83bd15170cb5be8d5eb780564d41e69af98]Fix a missing load time performance optimization when building global hook lists.[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/b20d48808b5fe7bb918dbc49d8789473873c37dd]Clarify serverconfig.txt being automatic default[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/247c77b853aa299c39328d3484ab9e072d4cc1d1]Fix #4042 Display Issue for Sonar Buff , also fix multilure sonar popups not clearing properly[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/bb604a9e700335567896bcea60c8e54e5ab9b0a8]Fix #4081 For Mods Not Loading On Initial GoG run[/url]
+
+[h2]API Fixes and Changes[/h2]
+[b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/commit/d053a672f899174f3c043c0f78633ff8ab98d0d0]Update MonoMod (fixes #3766)[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/03a47b82c764e73243aa809f0d033f4dfbaaa793]HitModifiers.DisableKnockback to fix Flat modifier applying to knockBackResist==0 NPC[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/b5b14d5adc1ec356df07bbbb6baca30c47d304ca]Fix #3999 (bad patch for ModProjectile.CooldownSlot) and update docs.[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/b1faab1398c5f229b664636b19eae08daa00bdd6]Fix #3977, language workshop tags will persist with some leniency.[/url]
+[b]Michael Scott[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2d72c19d51f555ab63896a9901aac92c38d7553b]Toilet Fishing (#3970)[/url]
+[b]Destructor_Ben[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6900154a22560db05c00252cbe7dc3d66ce81a17]Config List Fixes (#4040)[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/aececf8a7cffcbbb42090806706ba66c27889d70]Fix #4031 (Fix sorting in Mod Config List menu)[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/b9897390e0f6a07e1ac51ccc2e3bff2c4697415e]Fix #3980 (Show class name in GetLoadableTypesException when inheriting) (#4021)[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2f34f11ab3b57a95f00d22671742c91a4716f1d2]Fix #4044 IL Edit Error Visibility[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/8a204049b7ff282fcb624a727f235cd3b39b4037]Fix #3989 Clarity of Audio File Related Errors[/url]
+
+[h2]ExampleMod & API Documentation[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/69738d6527984ce0b1524c98f00d2ffc1f00e815]Loads of docs[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/5fb6418713952e7ca85814d714cc3cc7e3cabd53]Loads more docs[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/39aadde92895e235dd00a9b22848ae6334727ac1]Fix FewFromRulesRule ctor typo (chanceDenominator)[/url]
+[b]Clay Sweetser[/b]: [url=https://github.com/tModLoader/tModLoader/commit/56c016b1e769e941bdc99be31b9ba19a13dcc729]Minor punctuation changes. (#4038)[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/b62bbdca129455283bc46e4fa1a71c7740a797c1]Fix a Typo[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/9d2744a9d0289ab54c4f45738e901a89bf0d3804]Update Projectile.noDropItem docs for 1.4 changes[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/1b105d730df9e99519a0a3f6f86dcc4181c780e1]Update various life regen and related hook docs.[/url]
+[b]Destructor_Ben[/b]: [url=https://github.com/tModLoader/tModLoader/commit/58f56e3436a72197012129ef628b902d5594abbd]Add docs to ModTile.MineResist and ModTile.MinPick (#3958)[/url]
