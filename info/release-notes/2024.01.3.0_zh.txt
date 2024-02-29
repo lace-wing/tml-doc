@@ -58,5 +58,4 @@ tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModL
 [b]Destructor_Ben[/b]：[url=https://github.com/tModLoader/tModLoader/commit/58f56e3436a72197012129ef628b902d5594abbd]添加 ModTile.MineResist 和 ModTile.MinPick 的文档（#3958）[/url]
 
 [h1]本地化[/h1]
-[b][url=]Lacewing[/url][/b]：[url=]本公告的中文翻译[/url]
-
+[b]Lacewing[/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2024.01.3.0_zh.txt]本公告的中文翻译[/url]
