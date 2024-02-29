@@ -1,0 +1,62 @@
+TITLE：
+2024年3月稳定版更新
+
+---
+
+tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModLoader。本次月度更新主要包含漏洞修复。
+
+这个月，我们继续完善多人模式：更新服务器脚本、改进模组配置支持并修复了许多漏洞。
+
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]重要改动[/h1]
+
+下面是该版本中最值得注意的更新。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202401]更新适配指南（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
+
+[h1]新功能[/h1]
+[h2]API 改动[/h2]
+[b]Destructor_Ben[/b]：[url=https://github.com/tModLoader/tModLoader/commit/7cf5fbde5c5ce29d500d36fec9910b09a9c1788e]模组描述的内插参数（#4036）[/url]
+[b]Destructor_Ben[/b]：[url=https://github.com/tModLoader/tModLoader/commit/d1609a74f62d2e1221110121097d435919428c5a]实现类 TileDefinition（储存某类物块特征的类）（#3928）[/url]
+[b]direwolf420[/b]：[url=https://github.com/tModLoader/tModLoader/commit/945c281e19839e3b0edb7d3dba25390b989aa4d1]添加 Player.hasGemRobe（宝石长袍）（#4043）[/url]
+
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他修复[/h2]
+[b]John Baglio[/b]：[url=https://github.com/tModLoader/tModLoader/commit/0191c75de1587f1a0aba2183413cd781940db4f8]实现对 Mod.GetContent() 结果的缓存（#4005）[/url]
+[b]turtletowerz[/b]：[url=https://github.com/tModLoader/tModLoader/commit/baa7ff18ba86b87c9fc47016c4fd16b722749ee1]修复 Docker 和服务器管理脚本（#3900）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/e8f9b46342e28250440def603387a81a4009b78c]修复 #4035，选项 -skipselect 现可用于启动服务器[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/885674a6cd8dd4454fbb0837e395feacfec2060e]在迁移文件前检测异常 ControlledFolderAccessDetected（[url=https://learn.microsoft.com/zh-cn/microsoft-365/security/defender-endpoint/customize-controlled-folders?view=o365-worldwide#allow-specific-apps-to-make-changes-to-controlled-folders]无权限访问受控文件夹[/url]）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/1b8213742dbd067ddd8d37e45ad0dd212fbdfe62]在 UIModBrowser.OnActivate 里使用 try-catch 隐藏异常，始终显示 UIState[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/9d3cbc347269ba8b100e221226a7ed9d1b7ce3c3]修复示例模组的饰品黄蜂巢（WaspNest）不使用 ResetEffects 的问题[/url]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/728cc608492060b7a3af0c3e51b1dbb59e8be9ef]移除启动脚本中错误的 PPID 再赋值（#4016）[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/4f461137aeae3aa9c305c7ffafd705a1378f1c1c]修复模组浏览器的搜索作者功能[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2fee0aade6f24d77bd72584633a15fd65e57bbfd]添加“加入多人游戏时某模组配置触发了重载”的日志[/url]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/16cac83bd15170cb5be8d5eb780564d41e69af98]补回构建全局钩子列表时的性能优化[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/247c77b853aa299c39328d3484ab9e072d4cc1d1]修复 #4042：多鱼线和声呐增益使物品拾取显示比实际多1[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/bb604a9e700335567896bcea60c8e54e5ab9b0a8]修复 #4081：GoG 平台的 tModLoader 初次启动不加载模组[/url]
+
+[h2]API 修复和改动[/h2]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/d053a672f899174f3c043c0f78633ff8ab98d0d0]修复 #3766，更新 MonoMod[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/03a47b82c764e73243aa809f0d033f4dfbaaa793]添加 HitModifiers.DisableKnockback 来修复 Knockback.Flat 影响 knockBackResist 为0的 NPC 的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b5b14d5adc1ec356df07bbbb6baca30c47d304ca]修复 #3999：ModProjectile.CooldownSlot 的错误补丁；更新文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b1faab1398c5f229b664636b19eae08daa00bdd6]修复 #3977，降低发布模组时启用某语言标签的翻译进度门槛（此前超过75%且当时超过50%）[/url]
+[b]Michael Scott[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2d72c19d51f555ab63896a9901aac92c38d7553b]支持模组马桶的渔力提升（#3970）[/url]
+[b]Destructor_Ben[/b]：[url=https://github.com/tModLoader/tModLoader/commit/6900154a22560db05c00252cbe7dc3d66ce81a17]改进模组配置列表的选择与排序（#4040）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/aececf8a7cffcbbb42090806706ba66c27889d70]修复 #4031，移除模组配置列表中不必要的排序[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b9897390e0f6a07e1ac51ccc2e3bff2c4697415e]修复 #3980，由跨模组继承引发 GetLoadableTypesException 时报告类名（#4021）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2f34f11ab3b57a95f00d22671742c91a4716f1d2]修复 #4044，提高 IL 异常的可读性[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/8a204049b7ff282fcb624a727f235cd3b39b4037]修复 #3989，提高音频文件异常信息的可读性[/url]
+
+[h2]示例模组（ExampleMod）和 API 文档[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b20d48808b5fe7bb918dbc49d8789473873c37dd]注明 serverconfig.txt 为默认配置文件[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/69738d6527984ce0b1524c98f00d2ffc1f00e815]写了很多文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/5fb6418713952e7ca85814d714cc3cc7e3cabd53]写了更多文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/39aadde92895e235dd00a9b22848ae6334727ac1]修复 FewFromRulesRule 构造函数参数的错名（chanceNumerator 改为 chanceDenominator）[/url]
+[b]Clay Sweetser[/b]：[url=https://github.com/tModLoader/tModLoader/commit/56c016b1e769e941bdc99be31b9ba19a13dcc729]微调标点（#4038）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b62bbdca129455283bc46e4fa1a71c7740a797c1]修复个手误[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/9d2744a9d0289ab54c4f45738e901a89bf0d3804]更新1.4的 Projectile.noDropItem 文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/1b105d730df9e99519a0a3f6f86dcc4181c780e1]更新生命恢复相关钩子的文档[/url]
+[b]Destructor_Ben[/b]：[url=https://github.com/tModLoader/tModLoader/commit/58f56e3436a72197012129ef628b902d5594abbd]添加 ModTile.MineResist 和 ModTile.MinPick 的文档（#3958）[/url]
+
+[h1]本地化[/h1]
+[b][url=]Lacewing[/url][/b]：[url=]本公告的中文翻译[/url]
+
