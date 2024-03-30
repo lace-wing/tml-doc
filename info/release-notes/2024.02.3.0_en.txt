@@ -30,7 +30,7 @@ The following is a list of the most noteworthy changes made for this release. As
 [b]Chicken-Bones, JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/3822]Massive rework to mod version selection and multiplayer mod syncing user experience[/url]
 [b]Ishigh1, JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/3296]Edit ModConfig directly on server console before loading world[/url]
 [b]Brian Hansen, JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4053]Modded Sand and Sandgun support, ExampleSandBlock[/url]
-[b]-Cyril-[/b]: [url=https://github.com/tModLoader/tModLoader/pull/3943]Add more features to BuilderToggle API[/url]
+[b]Cyrilly[/b]: [url=https://github.com/tModLoader/tModLoader/pull/3943]Add more features to BuilderToggle API[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4052]Mod.DisplayNameClean added for situations where DisplayName chat tags are not desired[/url]
 [b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4118]Added Main.ActiveNPCs/Projectiles/Players/Items iterators to write more convenient code for correctly iterating over active entities[/url]
 [b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/commit/d3fc1cee429985639fe05aae664e04222ab4ee62]Active Entity Iterators (#4118)[/url]
