@@ -46,7 +46,7 @@ The following is a list of the most noteworthy changes made for this release. As
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/06ae60113f05a42a11f8558125c44f1d6154ad2d]Fix malformed language packs preventing game launch[/url]
 [b]Johannes Grimm, JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4067]Improved handling of world save and load errors[/url]
 [b]Mirsario[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4096]Fix incorrect date handling and other logging issues[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7c479d1708968a9f140468e17bbfdf0d14697ce8]Item/NPC/Projectille/NPCDefinition config elements are now more responsive[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7c479d1708968a9f140468e17bbfdf0d14697ce8]Item/NPC/Projectile/NPCDefinition config elements are now more responsive[/url]
 [b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4113]Improve speed of AssetRequestMode.ImmediateLoad during mod loading[/url]
 [b]Johannes Grimm[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4079]Allow Journeys End menu to persist on restart[/url]
 [b]Johannes Grimm[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4047]Fix sorting of searched mods in download mods menu[/url]
