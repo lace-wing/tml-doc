@@ -35,7 +35,7 @@ tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModL
 [h2]游戏体验及其他[/h2]
 [b]NexusXe[/b]：[url=https://github.com/tModLoader/tModLoader/commit/5966ff924c799c80fb1e96123d3639863003ee2f]使用 chmod +x 令 manage-tModLoaderServer.sh可执行（#4091）[/url]
 [b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/d2897ac93fc456bf05d416554f4ccd56db179ab8]令 JIT（即时编译）模组的流程并行（译者注：提高模组加载速度，但是对于模组开发者，可能导致 JIT 报错延迟抛出，需注意）（#4114）[/url]
-[b]Golfing7[/b]：[url=https://github.com/tModLoader/tModLoader/commit/496783b6d6527f1e3dae0f22a43ce601e8ce01aa]减少LoaderManager.Get调用次数以提高性能（#4101）[/url]
+[b]Golfing7[/b]：[url=https://github.com/tModLoader/tModLoader/commit/496783b6d6527f1e3dae0f22a43ce601e8ce01aa]减少 LoaderManager.Get 调用次数以提高性能（#4101）[/url]
 [b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/41b8f2b6cbbd7faf63b1b9201d459ed55d0dbda0]修复 #4082，与玩家数据和世界数据相关的保存错误会跟踪并报告（#4086）[/url]
 [b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/9951249727b72a445ef1c1ec5dd7afc7eb7dff4b]添加链接，以获取有关创意工坊问题的更多建议[/url]
 [b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/a36f5f0941d708baf81ff23f1359b8b1bbb0ed08]修复展示新闻的功能，修复后续通知消息被略过的漏洞[/url]
