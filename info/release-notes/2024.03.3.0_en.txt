@@ -1,0 +1,72 @@
+It is time for the May 2024 Stable Update.
+
+The tModLoader team and our amazing community of contributors continues to improve tModLoader.
+
+This month we've fixed a few crash conditions when using a large amount of mods, made some improvements to mod loading time, and made a major upgrade from using Dotnet 6 to Dotnet 8 for increased performance and capability.
+
+Mod makers can look forward to the new features of C# 12 and [Dotnet 8](<https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8/overview>). 
+
+As always, if you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub [/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+
+[h1]New Changes' Highlights[/h1]
+The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202403]Update Migration Guide[/url] to see how to adapt to the new changes after running tModPorter.
+
+[h1]New Features[/h1]
+[h2]API Changes[/h2]
+[b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/commit/942af42147cfe0267a20dcbcf24173854f2f3308]Publicizes PlayerEyeHelper members (#4135)[/url]
+[b]Mirsario[/b]: [url=https://github.com/tModLoader/tModLoader/commit/e2efed715285927878889d6f5c1382ab01f18734]Port TML from .NET 6 to .NET 8 (#4037)[/url]
+[b]Mirsario[/b]: [url=https://github.com/tModLoader/tModLoader/commit/dde87b499781cc465ddaa06ac587919481567cbf]Refactored mod creation to use a file tree of templates. (#4134)[/url]
+
+
+[h1]Bug Fixes[/h1]
+[h2]Gameplay Fixes[/h2]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6451322e88d0de4e613c918f9678fd16a7c205e1]Fix Legacy Splash Sound for Shimmer (#4124)[/url]
+[b]Mirsario[/b]: [url=https://github.com/tModLoader/tModLoader/commit/5229c3c02fb4d7eb95bd2f2a3d53b44b94fa7cae]Fixed an OverflowException thrown in case of >4GB texture memory usage.[/url]
+[b]lhzlhz419[/b]: [url=https://github.com/tModLoader/tModLoader/commit/e3b2d2f666c4bf5ec76fda89c06b81e2a70d41d1]Fix typo in EnvironmentFix.sh causing TML crash with Vulkan on Mac (#4174)[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7b73952833fc2b9a40bb0c1abe2d4b030a559e76]Fix #4104 Gun Aim Alignment (#4105)[/url]
+
+[h2]Quality of Life and Other Fixes[/h2]
+[b]NexusXe[/b]: [url=https://github.com/tModLoader/tModLoader/commit/5966ff924c799c80fb1e96123d3639863003ee2f]Assert executability of manage-tModLoaderServer.sh (#4091)[/url]
+[b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/commit/d2897ac93fc456bf05d416554f4ccd56db179ab8]JIT mods in parallel on the thread pool (#4114)[/url]
+[b]Golfing7[/b]: [url=https://github.com/tModLoader/tModLoader/commit/496783b6d6527f1e3dae0f22a43ce601e8ce01aa]Minor performance improvement LoaderManager.Get (#4101)[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/41b8f2b6cbbd7faf63b1b9201d459ed55d0dbda0]Track and report lost player world save data, Fixes #4082 (#4086)[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/9951249727b72a445ef1c1ec5dd7afc7eb7dff4b]Add link to more suggestions for workshop issues[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/a36f5f0941d708baf81ff23f1359b8b1bbb0ed08]Fix ShowWhatsNew feature, also fixes ui bug where later notifications in chain were skipped[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/a74fa1afbecaedc91804fa4722da7dd5642044c6]Delay loading migratable worlds for performance[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/c556ec58c5ff669da99d206a400188f6c01d152d]Fix #4168 , fix forward slashes in save path on windows causing some issues[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/1048e2b3a3f1369c0884606527284146638207c2]Terraria legacy beta branch support (#4178)[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2c3abf868b90b8f13a80801f932390d61e0c554b]Fix server kick when reloading mods takes more than 2 minutes (#4056)[/url]
+
+[h2]API Fixes and Changes[/h2]
+[b]Leon Gies[/b]: [url=https://github.com/tModLoader/tModLoader/commit/51e1fa2f4970c9b11e6815d9c16b5ee6d4cc28f2]Fixed AltGr not working in chat (#3910) (#4133)[/url]
+[b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/commit/285fa0479979b226a8045a37076adc335b804de5]Moved `BestiaryFilledPercent` in `Conditions` type (#4138)[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/f8c0bfe65a5af4ecea07df14269380a686755380]Fix #4097 Get/Heal Life Hooks as well as CanUseItem not being checked for mana potions.[/url]
+
+[h1]Other[/h1]
+[h2]ExampleMod and API Documentation[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/34c1d30e1a63f1d287a85dbb52e391c6f619cb4d]Docs for Request and expert/master mode confusion[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/b3d656d9492d4b646639b8cbb2567697d325d825]Use HelpLink from InnerExceptions of MultipleException[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/c227fc568aaea41209644c8546dc37e82b87dfb4]Document autoloading logic[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/92b66603a9c1a7a273dbd6b5093040c87a1fa63e]Document AutoloadEquipAttribute, message for autoloaded equip texture missing[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/175408ae610b5b6e5baed0b5aee0cfe2dd518d36]Document ChatHelper methods[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/cbff15fec375beccb6eb6aacc0d65322506fe328]Additional CanChooseAmmo example[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/14b090de033f866d9c6bee292f0bb71848f23c6f]Apply research sorting to examplemod[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/5333d0a39c2a38a9e5558d6471df9bc55d4cd5e1]Clarify GetFileBytes docs[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/84ec60780b683df816a2599fa78283a6300b91d5]Player.GetItem docs[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/a76df844b0b3bdc499179989931aefd143b367f9]ExtractinatorUse docs update[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/f7afde1e033327aa056c20842d53a17cbde50a0f]NetMessage.SendTileSquare docs[/url]
+
+[h2]Localization[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/de49ac2112b45f2d92749ef5201bc87fdf34228f]Fix #4123 Localization Info Displays[/url]
+
+
+
+
+
+
+
+
+
+
+
+

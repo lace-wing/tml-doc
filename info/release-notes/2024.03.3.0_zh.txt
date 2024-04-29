@@ -1,0 +1,69 @@
+TITLE：
+2024年5月稳定版更新
+
+----------------------------------------------------
+
+DETAILS:
+
+劳动节快乐！2024年5月稳定版 tModLoader 已发布！
+
+tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModLoader。
+
+这个月，我们进展颇多，内容包括修复了在开启大量模组时出现的一些崩溃问题、提高了模组加载的速度、并从使用 Dotnet 6 升级到 Dotnet 8，以提高性能和功能。
+
+模组制作者可以期待一下 C# 12 和 [url=https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8/overview]Dotnet 8[/url] 的新功能。
+
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]重要改动[/h1]
+下面是该版本中最值得注意的更新。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202403]更新适配指南（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
+
+[h1]新功能[/h1]
+[h2]API 改动[/h2]
+[b]BasicallyIAmFox[/b]：[url=https://github.com/tModLoader/tModLoader/commit/942af42147cfe0267a20dcbcf24173854f2f3308]使 PlayerEyeHelper 的成员公开（#4135）[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/e2efed715285927878889d6f5c1382ab01f18734]将 TML 从 .NET 6 移植到 .NET 8（#4037）[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/dde87b499781cc465ddaa06ac587919481567cbf] 重构模组创建，使用模板文件树（#4134）[/url]
+
+
+[h1]漏洞修复[/h1]
+[h2]游戏内容[/h2]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/commit/6451322e88d0de4e613c918f9678fd16a7c205e1]修复了某些情况下微光音效错误的问题（#4124）[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/5229c3c02fb4d7eb95bd2f2a3d53b44b94fa7cae]修复了纹理内存使用量大于 4GB 时会抛出 OverflowException 异常的问题[/url]
+[b]lhzlhz419[/b]：[url=https://github.com/tModLoader/tModLoader/commit/e3b2d2f666c4bf5ec76fda89c06b81e2a70d41d1]修复 EnvironmentFix.sh 中的拼写错误，以免在 Mac 上使用 Vulkan 时导致 TML 崩溃（#4174）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/7b73952833fc2b9a40bb0c1abe2d4b030a559e76]修复了 #4104 中报告的枪类射击显示错位的问题（#4105）[/url]
+
+[h2]游戏体验及其他[/h2]
+[b]NexusXe[/b]：[url=https://github.com/tModLoader/tModLoader/commit/5966ff924c799c80fb1e96123d3639863003ee2f]使用 chmod +x 令 manage-tModLoaderServer.sh可执行（#4091）[/url]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/d2897ac93fc456bf05d416554f4ccd56db179ab8]令 JIT（即时编译）模组的流程并行（译者注：提高模组加载速度，但是对于模组开发者，可能导致 JIT 报错延迟抛出，需注意）（#4114）[/url]
+[b]Golfing7[/b]：[url=https://github.com/tModLoader/tModLoader/commit/496783b6d6527f1e3dae0f22a43ce601e8ce01aa]减少LoaderManager.Get调用次数以提高性能（#4101）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/41b8f2b6cbbd7faf63b1b9201d459ed55d0dbda0]修复 #4082，与玩家数据和世界数据相关的保存错误会跟踪并报告（#4086）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/9951249727b72a445ef1c1ec5dd7afc7eb7dff4b]添加链接，以获取有关创意工坊问题的更多建议[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/a36f5f0941d708baf81ff23f1359b8b1bbb0ed08]修复展示新闻的功能，修复后续通知消息被略过的漏洞[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/a74fa1afbecaedc91804fa4722da7dd5642044c6]延迟加载可迁移的世界以提高性能[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/c556ec58c5ff669da99d206a400188f6c01d152d]修复 #4168，修复 Windows 系统中保存路径带有正斜杠时导致的一系列问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/1048e2b3a3f1369c0884606527284146638207c2]提供对泰拉瑞亚遗留测试分支的支持（#4178）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2c3abf868b90b8f13a80801f932390d61e0c554b]修复了当重新加载模组需要 2 分钟以上时，服务器会将客户端判定为连接超时的问题（#4056）[/url]
+
+[h2]API 修复与改动[/h2]
+[b]Leon Gies[/b]：[url=https://github.com/tModLoader/tModLoader/commit/51e1fa2f4970c9b11e6815d9c16b5ee6d4cc28f2]修复了无法输入需要按下 AltGr 或 ALt + Ctrl 的字符的问题（#3910、#4133）[/url]
+[b]BasicallyIAmFox[/b]：[url=https://github.com/tModLoader/tModLoader/commit/285fa0479979b226a8045a37076adc335b804de5]将 BestiaryFilledPercent 移动至 Conditions 类中（#4138）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/f8c0bfe65a5af4ecea07df14269380a686755380]修复了 #4097：GetHealLife/Mana 和 CanUseItem 不会被魔力药水文本检测的问题[/url]
+
+[h1]其他改动[/h1]
+[h2]示例模组（ExampleMod）与 API 文档[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/34c1d30e1a63f1d287a85dbb52e391c6f619cb4d]补充 Request 的文档；注明 Main.expertMode/masterMode 存在的小问题，避免混淆[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b3d656d9492d4b646639b8cbb2567697d325d825]对 MultipleException 中的 InnerException 使用 HelpLink[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/c227fc568aaea41209644c8546dc37e82b87dfb4]补充自动加载逻辑的文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/92b66603a9c1a7a273dbd6b5093040c87a1fa63e]补充 AutoloadEquipAttribute 的文档，增加查找不到自动加载装备贴图时的报错消息[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/175408ae610b5b6e5baed0b5aee0cfe2dd518d36]补充 ChatHelper 中方法的文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/cbff15fec375beccb6eb6aacc0d65322506fe328]更多的 CanChooseAmmo 示例[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/14b090de033f866d9c6bee292f0bb71848f23c6f]在示例模组中增加研究分类示例[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/5333d0a39c2a38a9e5558d6471df9bc55d4cd5e1]优化 GetFileBytes 文档的描述[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/84ec60780b683df816a2599fa78283a6300b91d5]补充 Player.GetItem 的文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/a76df844b0b3bdc499179989931aefd143b367f9]更新 ExtractinatorUse 的文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/f7afde1e033327aa056c20842d53a17cbde50a0f]补充 NetMessage.SendTileSquare 的文档[/url]
+
+[h2]本地化[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/de49ac2112b45f2d92749ef5201bc87fdf34228f]修复了 #4123 本地化信息显示的问题[/url]
+[b][url=https://github.com/Lastprismer]五一还在劳动者[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2024.03.3.0_zh.txt]本公告的中文翻译[/url]
+[b][url=https://github.com/lace-wing]Lacewing[/url][/b]：本公告的中文校对
