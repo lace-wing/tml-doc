@@ -6,9 +6,7 @@ Details:
 
 2024年6月稳定版 tModLoader 已发布！
 
-tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModLoader。
-
-这个月，我们修复了模组整合包、多人游戏和模组浏览器下载模组的UI界面的一些问题
+tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModLoader，这个月，我们修复了模组整合包、多人游戏和模组浏览器下载模组的UI界面的一些问题
 
 像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
 
@@ -17,33 +15,33 @@ tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModL
 
 [h1]新功能[/h1]
 [h2]API 改动[/h2]
-[b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/commit/30b2b9b1e3347a1c98ebe6924811ba5e82391dc3]Shader 现在会忽略无用的传参[/url]
+[b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/commit/30b2b9b1e3347a1c98ebe6924811ba5e82391dc3]Shader 现在会忽略无用的参数[/url]
 [b]JackerAcid[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4120]添加了 ItemID.Sets.DuplicationMenuToolsFilter 以便将物品分类为工具（用于旅行模式物品菜单）[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/06996a53d6071cbd33653b8bfda2628ca47c8777]添加了 GoreID.Sets.LiquidDroplet 并相应地更新了 ExampleDroplet[/url]
 
 [h1]漏洞修复[/h1]
 [h2]游戏内容[/h2]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/198c60502b9dc417fb52be6df6f620949dad9d97]修复了日耀喷发剑和破晓之光可暴击的问题[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/321c638f76daa625180a093a53469c8493a157a1]修复了使用 shopCustomPrice 的商店物品的回购价出错的问题[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/321c638f76daa625180a093a53469c8493a157a1]修复了使用 shopCustomPrice 的商店物品回购价出错的问题[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/e679c55174f3fa71ff01606b9887784168b0e8a8]修复了制作人员表有时不显示的问题[/url]
 
 [h2]游戏体验及其他[/h2]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6b3d84582ee24778c96237b7ca4c829e36cad950]修复了“物块消失了但仍然显示”的问题[/url]
-[b]JavidPack, MacaylaMarvelous81[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4112]使模组依赖更加直观，便于操作。修复了当依赖项加载失败时，依赖于其的模组无法正常禁用的问题[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/9ed88a3ad40daa6658530a2039bf9ca2783d9ae8]修复了开服并开始游戏无法正常应用自定义存档文件夹的问题[/url]
+[b]JavidPack, MacaylaMarvelous81[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4112]使模组依赖更加直观，便于操作。修复了被依赖的模组加载失败时，依赖其的模组无法正常禁用的问题[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/9ed88a3ad40daa6658530a2039bf9ca2783d9ae8]修复了“开服并开始游戏”无法正常应用自定义存档文件夹的问题[/url]
 [b]Anshroid Nemo[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4164]修复了罗技 RGB 和 G Hub 的检测问题[/url]
-[b]Jack Ashmore[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4163]更新了 OneDrive 的开启逻辑以使其静默开启[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7b342144cd09c088c99a954bc68da45c81864035]修复了开屏信息中依赖项相关信息会造成误导的问题，同时修复了“安装依赖”操作会导致游戏卡在下载模组界面的问题[/url]
+[b]Jack Ashmore[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4163]更新了 OneDrive 的开启逻辑，使其能静默开启[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7b342144cd09c088c99a954bc68da45c81864035]改正了开屏时有误导性的依赖项信息，同时修复了“安装依赖”操作会导致游戏卡在下载模组界面的问题[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/0c96c8c145bb36a57a8938f9bd618b54a525e21d]在日志和模组菜单中说明当前是否正在使用模组整合包[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/13d5536936fd1d944d8a1f478d9c3c30105da30c]在 UIServerModsDifferMessage 中使用模组外显名，使其更加清晰明了[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6b1ad2eab766c51b98002c1549bc9ab71587b2e6]修复了一些情况下无法正确保存所选的本地/冻结的模组整合包的问题[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6b1ad2eab766c51b98002c1549bc9ab71587b2e6]修复了一些情况下无法正确保存本地/冻结模组整合包的问题[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/af1adaa8cd1da108f8325b3a26ce5fcdbf96e8ac]为模组源码界面添加了新的按钮图标[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/d864fa5cb1ed10946746843e46790f5d3ddff85c]修复了极少数情况下鼠标光标在某些界面消失的问题[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2079943fe92c9863060376ba6fd72bc586ea3af8]为泰拉瑞亚原版处于 v1.1.2 测试版分支的玩家提供了错误检测和报错提示[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2079943fe92c9863060376ba6fd72bc586ea3af8]为泰拉瑞亚原版处于 v1.1.2 测试版分支的玩家提供了错误检测和提示[/url]
 
 [h2]API 修复与改动[/h2]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6e66b805a8ba15adf1a3b25710d558cea3a5416d]恢复了 ModTile/GlobalTile.CanPlace 的功能[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4019]现在当尝试发布与现有模组同名的模组时，会出现警告[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4019]试图发布同名模组时显示合适的警告信息[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/63eb7e511b7802128beb779d420af2217aa7a138]修复了 LoaderUtils.MustOverrideTogether 的报错信息不显示方法名的问题[/url]
 
 [h1]其他改动[/h1]
@@ -61,3 +59,4 @@ tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModL
 [b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4155]使 MagicSummonHybrid 伤害类型相关文本可被本地化[/url]
 [b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4186]俄文翻译[/url]
 [b][url=https://github.com/Cyrillya]Cyrilly[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2024.04.3.0_zh.txt]本公告的中文翻译[/url]
+[b][url=https://github.com/lace-wing]Lacewing[/url][/b]：本公告的中文校对
