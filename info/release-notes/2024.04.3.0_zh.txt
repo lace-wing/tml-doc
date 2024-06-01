@@ -1,62 +1,63 @@
 Title:
 
-June 2024 Stable Update
+2024年6月稳定版更新
 
 Details:
 
-It is time for the June 2024 Stable Update.
+2024年6月稳定版 tModLoader 已发布！
 
-The tModLoader team and our amazing community of contributors continues to improve tModLoader.
+tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModLoader。
 
-This month we've fixed a few UI issues: some fixes for the ModPacks feature, some UI fixes for multiplayer connections, and a UI fix for Mod Browser / downlading mods.
+这个月，我们修复了模组整合包、多人游戏和模组浏览器下载模组的UI界面的一些问题
 
-As always, if you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub [/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
 
-[h1]New Changes' Highlights[/h1]
-The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202404]Update Migration Guide[/url] to see how to adapt to the new changes after running tModPorter.
+[h1]重要改动[/h1]
+下面是该版本中最值得注意的更新。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202403]更新适配指南（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
 
-[h1]New Features[/h1]
-[h2]API Changes[/h2]
-[b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/commit/30b2b9b1e3347a1c98ebe6924811ba5e82391dc3]Allow shaders to omit parameters they don't use[/url]
-[b]JackerAcid[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4120]ItemID.Sets.DuplicationMenuToolsFilter added to allow categorizing items as tools[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/06996a53d6071cbd33653b8bfda2628ca47c8777]GoreID.Sets.LiquidDroplet added and ExampleDroplet updated[/url]
+[h1]新功能[/h1]
+[h2]API 改动[/h2]
+[b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/commit/30b2b9b1e3347a1c98ebe6924811ba5e82391dc3]Shader 现在会忽略无用的传参[/url]
+[b]JackerAcid[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4120]添加了 ItemID.Sets.DuplicationMenuToolsFilter 以便将物品分类为工具（用于旅行模式物品菜单）[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/06996a53d6071cbd33653b8bfda2628ca47c8777]添加了 GoreID.Sets.LiquidDroplet 并相应地更新了 ExampleDroplet[/url]
 
-[h1]Bug Fixes[/h1]
-[h2]Gameplay Fixes[/h2]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/198c60502b9dc417fb52be6df6f620949dad9d97]Fix Daybreak and Solar Eruption Explosions erroneously delivering critical hits[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/321c638f76daa625180a093a53469c8493a157a1]Fix sellback price issue with shop items using shopCustomPrice[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/e679c55174f3fa71ff01606b9887784168b0e8a8]Fix credits not working sometimes[/url]
+[h1]漏洞修复[/h1]
+[h2]游戏内容[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/198c60502b9dc417fb52be6df6f620949dad9d97]修复了日耀喷发剑和破晓之光可暴击的问题[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/321c638f76daa625180a093a53469c8493a157a1]修复了使用 shopCustomPrice 的商店物品的回购价出错的问题[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/e679c55174f3fa71ff01606b9887784168b0e8a8]修复了制作人员表有时不显示的问题[/url]
 
-[h2]Quality of Life and Other Fixes[/h2]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6b3d84582ee24778c96237b7ca4c829e36cad950]Fix error causing "tiles disappeared but still there" issue[/url]
-[b]JavidPack and MacaylaMarvelous81[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4112]Greatly improve mod dependencies user experience. Fix dependent mods failing to be disabled when dependency mod fails to load.[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/9ed88a3ad40daa6658530a2039bf9ca2783d9ae8]Fix host and play to correctly use custom save directories[/url]
-[b]Anshroid Nemo[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4164]Fix Logitech RGB and G Hub detection[/url]
-[b]Jack Ashmore[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4163]Update OneDrive opening logic to open in background[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7b342144cd09c088c99a954bc68da45c81864035]Fix misleading install dependencies launch message. Also fix Install Dependencies action getting stuck on download mod progress screen[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/0c96c8c145bb36a57a8938f9bd618b54a525e21d]Clarify in logs and mods menu if mod is loading from an active modpack[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/13d5536936fd1d944d8a1f478d9c3c30105da30c]Use mod display name in UIServerModsDifferMessage to reduce confusion[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6b1ad2eab766c51b98002c1549bc9ab71587b2e6]Fix issue preventing selected local/frozen modpack saving properly in some situations[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/af1adaa8cd1da108f8325b3a26ce5fcdbf96e8ac]New button icons for mod sources menu[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/d864fa5cb1ed10946746843e46790f5d3ddff85c]Fix rare issue causing cursor to disappear on some menus[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2079943fe92c9863060376ba6fd72bc586ea3af8]Improve error detection and error messages for users currently on v1.1.2 Terraria beta option[/url]
+[h2]游戏体验及其他[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6b3d84582ee24778c96237b7ca4c829e36cad950]修复了“物块消失了但仍然显示”的问题[/url]
+[b]JavidPack, MacaylaMarvelous81[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4112]使模组依赖更加直观，便于操作。修复了当依赖项加载失败时，依赖于其的模组无法正常禁用的问题[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/9ed88a3ad40daa6658530a2039bf9ca2783d9ae8]修复了开服并开始游戏无法正常应用自定义存档文件夹的问题[/url]
+[b]Anshroid Nemo[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4164]修复了罗技 RGB 和 G Hub 的检测问题[/url]
+[b]Jack Ashmore[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4163]更新了 OneDrive 的开启逻辑以使其静默开启[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7b342144cd09c088c99a954bc68da45c81864035]修复了开屏信息中依赖项相关信息会造成误导的问题，同时修复了“安装依赖”操作会导致游戏卡在下载模组界面的问题[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/0c96c8c145bb36a57a8938f9bd618b54a525e21d]在日志和模组菜单中说明当前是否正在使用模组整合包[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/13d5536936fd1d944d8a1f478d9c3c30105da30c]在 UIServerModsDifferMessage 中使用模组外显名，使其更加清晰明了[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6b1ad2eab766c51b98002c1549bc9ab71587b2e6]修复了一些情况下无法正确保存所选的本地/冻结的模组整合包的问题[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/af1adaa8cd1da108f8325b3a26ce5fcdbf96e8ac]为模组源码界面添加了新的按钮图标[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/d864fa5cb1ed10946746843e46790f5d3ddff85c]修复了极少数情况下鼠标光标在某些界面消失的问题[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2079943fe92c9863060376ba6fd72bc586ea3af8]为泰拉瑞亚原版处于 v1.1.2 测试版分支的玩家提供了错误检测和报错提示[/url]
 
-[h2]API Fixes and Changes[/h2]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6e66b805a8ba15adf1a3b25710d558cea3a5416d]ModTile/GlobalTile.CanPlace functionality restored[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4019]Add warning when attempting to publish a mod with the same name as an existing mod[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/63eb7e511b7802128beb779d420af2217aa7a138]Fix LoaderUtils.MustOverrideTogether error messages to display method name again[/url]
+[h2]API 修复与改动[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6e66b805a8ba15adf1a3b25710d558cea3a5416d]恢复了 ModTile/GlobalTile.CanPlace 的功能[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4019]现在当尝试发布与现有模组同名的模组时，会出现警告[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/63eb7e511b7802128beb779d420af2217aa7a138]修复了 LoaderUtils.MustOverrideTogether 的报错信息不显示方法名的问题[/url]
 
-[h1]Other[/h1]
-[h2]ExampleMod and API Documentation[/h2]
-[b]James[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4171]Fix ExampleMusicBoxTile not emitting note particles[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/68d0da6dcf5a93308d2e46f753feb97573ba6bf3]Add example of spawning ore when boss is first defeated[/url]
-[b]direwolf420[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4142]Fix minion boss loot order[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2a259f58b7343d17d83e16dffc44f37300ea0093]Fix some ExampleMod tiles with inconsistent preview/place horizontal flip[/url]
-[b]MrQuba[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4167]Clarify CanEquipAccessory and CanAccessoryBeEquippedWith docs[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/f6e23724e0a575c8c774c30f3d000dca88757bd4]Document various coordinate conversion and geometry methods[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/723652218fd06e03b02c8cd2660db59a9f10f277]Document Lighting.GetColor methods[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/4223f5e26e55c4eca5f8b0110bcfea04131d0c80]Document StructureMap and GeneralPlacementTiles[/url]
+[h1]其他改动[/h1]
+[h2]示例模组（ExampleMod）与 API 文档[/h2]
+[b]James[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4171]修复了 ExampleMusicBoxTile 不放出音符粒子的问题[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/68d0da6dcf5a93308d2e46f753feb97573ba6bf3]添加了在 Boss 首次被击败后生成矿石的示例[/url]
+[b]direwolf420[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4142]修复了 Minion Boss 掉落物的排列顺序问题[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2a259f58b7343d17d83e16dffc44f37300ea0093]修复了一些 ExampleMod 物块的预览和放置后朝向不一致的问题[/url]
+[b]MrQuba[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4167]优化了 CanEquipAccessory 和 CanAccessoryBeEquippedWith 的文档[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/f6e23724e0a575c8c774c30f3d000dca88757bd4]为各种坐标转换和几何方法添加了文档[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/723652218fd06e03b02c8cd2660db59a9f10f277]为 Lighting.GetColor 相关方法添加了文档[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/4223f5e26e55c4eca5f8b0110bcfea04131d0c80]为 StructureMap 和 GeneralPlacementTiles 添加了文档[/url]
 
-[h2]Localization[/h2]
-[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4155]Localized MagicSummonHybrid damage class[/url]
-[b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4186]Russian[/url]
+[h2]本地化[/h2]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4155]使 MagicSummonHybrid 伤害类型相关文本可被本地化[/url]
+[b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4186]俄文翻译[/url]
+[b][url=https://github.com/Cyrillya]Cyrilly[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2024.04.3.0_zh.txt]本公告的中文翻译[/url]
