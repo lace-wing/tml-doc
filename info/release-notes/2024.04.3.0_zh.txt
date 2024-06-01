@@ -36,7 +36,7 @@ tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModL
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7b342144cd09c088c99a954bc68da45c81864035]修复了开屏信息中依赖项相关信息会造成误导的问题，同时修复了“安装依赖”操作会导致游戏卡在下载模组界面的问题[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/0c96c8c145bb36a57a8938f9bd618b54a525e21d]在日志和模组菜单中说明当前是否正在使用模组整合包[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/13d5536936fd1d944d8a1f478d9c3c30105da30c]在 UIServerModsDifferMessage 中使用模组外显名，使其更加清晰明了[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6b1ad2eab766c51b98002c1549bc9ab71587b2e6]修复了一些情况下无法正确保存所选的本地/冻结模整合包的问题[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6b1ad2eab766c51b98002c1549bc9ab71587b2e6]修复了一些情况下无法正确保存所选的本地/冻结的模组整合包的问题[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/af1adaa8cd1da108f8325b3a26ce5fcdbf96e8ac]为模组源码界面添加了新的按钮图标[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/d864fa5cb1ed10946746843e46790f5d3ddff85c]修复了极少数情况下鼠标光标在某些界面消失的问题[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2079943fe92c9863060376ba6fd72bc586ea3af8]为泰拉瑞亚原版处于 v1.1.2 测试版分支的玩家提供了错误检测和报错提示[/url]
