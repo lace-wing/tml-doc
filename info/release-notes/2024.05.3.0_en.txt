@@ -1,0 +1,58 @@
+Title: July 2024 Stable Update
+
+----------------------
+It is time for the July 2024 Stable Update.
+
+The tModLoader team and our amazing community of contributors continues to improve tModLoader.
+
+This month's release contains many improvements to the user experience, some gameplay bug fixes, as well as new examples and documentation for mod makers.
+
+As always, if you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub [/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+
+[h1]New Changes' Highlights[/h1]
+The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202405]Update Migration Guide[/url] to see how to adapt to the new changes after running tModPorter.
+
+[h1]New Features[/h1]
+[h2]API Changes[/h2]
+None this month.
+
+[h1]Bug Fixes[/h1]
+[h2]Gameplay Fixes[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2c78d9c64033f9e870e8e3c83889899d25790b50]Fix sellback exploits with shopCustomPrice[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/95f99c6eb120960d21c33fc0b7f145568dde0504]Fix crash caused by duplicated launch arguments[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4194]Better error message for unsupported 32 bit Windows users[/url]
+[b]Michael Scott[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4219]Fix issue with dresser menu by unloading Main.dresserInterfaceDummy correctly[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4207]Remove ValidModBrowserSignature usage and remove unusable OnlyDownloadSignedModsFromServers config to fix a rare issue with some Linux users[/url]
+[b]Solaestas[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4220]Fix issue causing IL edit crashes by clearing ReflectionHelper cache[/url]
+
+[h2]Quality of Life and Other Fixes[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/cb8a660a5f37b8e7b42d3b49aa95ec3525b849ca]Fix escape key behavior on menus and an input text issue[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/36b15838674c600d4839fc640998377def0f3024]Update Download Mods menu, added backgrounds to tooltips[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/ff5e30bb4ef89256f4dd8151812d79cd8d5930a0]Added icons to indicate client and server configs.[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/04710b280e1a03bc6e4ac34a5c4b894cefc792f0]Remove memory estimates feature temporarily[/url]
+
+[h2]API Fixes and Changes[/h2]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4182]Added support to publish a mod using the Unlisted visibility option[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4208]Publish mod menu now says "update" when updating an existing mod[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/e7a13070800f150ed14611bdc8d2d548475acd6b]Fix an issue preventing republishing a mod that had been removed from the workshop[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/f362845a67285fd8df0e89a7b5ae22e48c20148f]Fix ModifyActiveShop items parameter, items should not be null[/url]
+[b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/commit/b74c21a9e272a4a787273c57a6abb5c98636fdca]Improve FastParallel.For deadlock logging. Add crash dump option for exceptions[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/cf50ccf7a309c0168acd18c37765e6da8a7a9585]Improve error messages and behavior for mod sources with invalid versions[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2c2fd23f591b331106849b916c47712457b76e85]Add processor count logging[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/98872a6cfeecadbf657dbe19483a02f13190a548]Add RAM logging[/url]
+
+[h1]Other[/h1]
+[h2]ExampleMod and API Documentation[/h2]
+[b]TacoConKvass[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4198]Example Boots and document movement stats[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/cf679c4994e0aa842926d8a366dd56fae458bcaf]Document proper ProjectileID.Sets.DontAttachHideToAlpha usage[/url]
+[b]Blu3[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4199]Example Arrow[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/c932af81e40f5ce14237e83c6a34705805740f04]Some more notes about ExampleMod class being a partial class[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/45d71f0de361f7ef59349b64ee9ce504f9161845]Documentation on disabling TerrariaSteamClient if needed[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/16ed139ae9efa0c4719595eec134a6873ab0a09e]Preformatted Dotnet Environment Dump Variables in case CTD with no natives.log context. Default Off.[/url]
+[b]Vadim Placinta[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4201]Update serverconfig.txt to mention -nosteam option[/url]
+
+[h2]Localization[/h2]
+[b]Pixelnando[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4189]Brazilian Portuguese - Steam page[/url]
+[b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4234]Russian[/url]
+[b]Tomasz[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4227]Polish[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/e836a68e86d31b3e1f332660191f2b6ec7e02379]Localize Create Mod menu and some missing ModConfig text[/url]
