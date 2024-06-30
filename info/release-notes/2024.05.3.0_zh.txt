@@ -1,0 +1,57 @@
+Title: 2024年6月稳定版更新
+
+----------------------
+2024年6月稳定版 tModLoader 已发布！
+
+tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModLoader。这个月，我们修复了一些游戏内容的问题，改善了用户体验，还为模组制作者们添加了新的示例和文档。
+
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]重要改动[/h1]
+下面是该版本中最值得注意的更新。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202405]更新适配指南（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
+
+[h1]新功能[/h1]
+[h2]API 改动[/h2]
+啥也没加……
+
+[h1]漏洞修复[/h1]
+[h2]游戏内容[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2c78d9c64033f9e870e8e3c83889899d25790b50]修复 shopCustomPrice 导致的刷钱漏洞[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/95f99c6eb120960d21c33fc0b7f145568dde0504]修复重复的启动参数导致崩溃的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4194]改进“不支持32位 Windows 系统”的报错信息[/url]
+[b]Michael Scott[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4219]修复梳妆台菜单的问题，正确地卸载 Main.dresserInterfaceDummy[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4207]修复 Linux 上一个罕见的问题，弃用 ValidModBrowserSignature 并移除不可用的 OnlyDownloadSignedModsFromServers 配置[/url]
+[b]夜谷紫幽[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4220]修复一个使 IL 编辑产生崩溃的问题，清除 ReflectionHelper 的缓存[/url]
+
+[h2]游戏体验及其他[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/cb8a660a5f37b8e7b42d3b49aa95ec3525b849ca]修复 ESC 键在菜单中的异常行为和一个文本输入的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/36b15838674c600d4839fc640998377def0f3024]更新下载模组菜单，为提示文本添加背景[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/ff5e30bb4ef89256f4dd8151812d79cd8d5930a0]添加标示客户端和服务端配置的图标[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/04710b280e1a03bc6e4ac34a5c4b894cefc792f0]由于对模组内存消耗的估算不够准确，暂时移除该功能[/url]
+
+[h2]API 修复与改动[/h2]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4182]支持发布不公开列出的模组[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4208]令原“发布模组”按钮在更新模组时改为显示“更新已有模组”[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/e7a13070800f150ed14611bdc8d2d548475acd6b]修复无法再次发布创意工坊上被移除过的模组的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/f362845a67285fd8df0e89a7b5ae22e48c20148f]修复 ModifyActiveShop 传入 null 物品的问题[/url]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b74c21a9e272a4a787273c57a6abb5c98636fdca]改进 FastParallel.For 死锁的日志。为异常提供 dump 选项（Exception.Data 中的 "dump" 键，若有，其值可以是 "full" 或 "normal"）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/cf50ccf7a309c0168acd18c37765e6da8a7a9585]改进对无效模组版本的报错信息和后续处理[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2c2fd23f591b331106849b916c47712457b76e85]将处理器数量录入日志[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/98872a6cfeecadbf657dbe19483a02f13190a548]将内存消耗录入日志[/url]
+
+[h1]其他改动[/h1]
+[h2]示例模组（ExampleMod）与 API 文档[/h2]
+[b]TacoConKvass[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4198]添加示例靴子和移动力数值的文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/cf679c4994e0aa842926d8a366dd56fae458bcaf]修正 ProjectileID.Sets.DontAttachHideToAlpha 的文档[/url]
+[b]Blu3[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4199]添加示例箭矢[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/c932af81e40f5ce14237e83c6a34705805740f04]针对 ExampleMod 为 partial 类的特点加注[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/45d71f0de361f7ef59349b64ee9ce504f9161845]注明有时禁用 TerrariaSteamClient 的原因[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/16ed139ae9efa0c4719595eec134a6873ab0a09e]提供预设的 Dump 环境变量，以便在无预兆崩溃，无 natives.log 的情况下使用。默认不设置。[/url]
+[b]Vadim Placinta[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4201]在 serverconfig.txt 中注明选项 -nosteam[/url]
+
+[h2]本地化[/h2]
+[b]Pixelnando[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4189]Steam 页面的巴西葡萄牙语翻译[/url]
+[b]RazzSG[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4234]俄语翻译[/url]
+[b]Tomasz[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4227]波兰语翻译[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/e836a68e86d31b3e1f332660191f2b6ec7e02379]使“创建模组”菜单和一些模组配置可被本地化[/url]
+[b][url=https://github.com/lace-wing]Lacewing[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2024.05.3.0_zh.txt]本公告的中文翻译[/url]
