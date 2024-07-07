@@ -1,9 +1,9 @@
 tag::common[]
+:assetsdir: ../assets
+:iconsdir: {assetsdir}/images/icons
+:imagesdir: {assetsdir}/images
+:stylesdir: {assetsdir}/styles
 :icons: font
-:iconsdir: ../images/icons
-:imagesdir: ../images
-:stylesdir: ../styles
-:srcdir: ../src
 :sectanchors:
 :toc:
 :!last-update-label:

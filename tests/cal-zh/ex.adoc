@@ -1,0 +1,8 @@
+.{ext}
+[%collapsible%open]
+====
+=====
+include::excerpts/{exn}.adoc[]
+=====
+{gotoc}
+====

@@ -1,0 +1,30 @@
+= Translation Test A
+Lacewing
+v0.2.0, {docdate}
+include::../../plates/header.adoc[tags="common"]
+include::plates/header.adoc[]
+
+include::plates/requirements.adoc[]
+
+{gotoc}
+
+== Questions
+
+=== Choice 1
+
+:ext: An item's wiki description.
+:exn: stella-reaper-wiki
+include::ex.adoc[]
+
+=== Choice 2
+
+:ext: Explanation to a game mechanism.
+:exn: immunity-frame
+include::ex.adoc[]
+
+=== Choice 3
+
+:ext: Elaboration to an idea.
+:exn: sleep-on-calamitas-laps
+include::ex.adoc[]
+
