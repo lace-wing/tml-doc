@@ -1,0 +1,16 @@
+tag::common[]
+:icons: font
+:iconsdir: ../images/icons
+:imagesdir: ../images
+:stylesdir: ../styles
+:srcdir: ../src
+:sectanchors:
+:toc:
+:!last-update-label:
+end::common[]
+
+tag::zh-hans[]
+:lang: zh-hans
+:toc-title: 目录
+:version-label: 版本
+end::zh-hans[]
