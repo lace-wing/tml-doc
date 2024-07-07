@@ -1,0 +1,5 @@
+Terraria's game logic updates 60 times per second, meaning that if there is no immunity frame, any player in contact with a hostile entity will be hit 60 times in just a single second: even the weakest slime can instakill an unarmored player at this rate.
+
+Hence, immunity frame was introduced to create a window for escaping from the next hit, which is typically indicated by a distinct blinking visual effect on affected entities. It sometimes serves as a bonus rather than a compensation. For instance, Brain of Confusion enables players to directly dodge an attack instead of being invulnerable only after taking the damage.
+
+However, said mechanism can be exploited to make fights way easier than they should be. Constantly taking low damage, players may buy immunity frames that negate high-damage attacks from elites or bosses. Not all hostiles would be tricked by this technique, though.

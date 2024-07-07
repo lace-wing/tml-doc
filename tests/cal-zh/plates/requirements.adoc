@@ -1,0 +1,7 @@
+== Requirements
+
+[big]##A##ll tasks should be completed within 30 minutes.
+
+You will be provided with 3 English excerpts which are related to the game _Terraria_ and its mods, mostly the _Calamity Mod_. You need to choose 1 excerpt from the 3, transform it to Simplified Chinese, should you practice your abilities of translation and localization with a balance of equivalence, purpose and culture in mind.
+
+You may utilize tools including but not limited to the Internet and artificial intelligence. However, do not ask another human to do the tasks for you.

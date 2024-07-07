@@ -1,0 +1,2 @@
+:example-caption!:
+:gotoc: 🚀 <<toc,Table of Contents>>
