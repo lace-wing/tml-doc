@@ -6,6 +6,10 @@
 # macOS files
 .DS_Store
 
+# locals
+local-*
+local-*/*
+
 # User-specific files
 *.rsuser
 *.suo
