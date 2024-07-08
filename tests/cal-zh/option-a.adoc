@@ -8,23 +8,23 @@ include::plates/requirements.adoc[]
 
 {gotoc}
 
-== Questions
+== Excerpts
 
-=== Choice 1
+=== (1) Descriptive
 
-:ext: An item's wiki description.
+:ext: Wiki description of an item.
 :exn: stella-reaper-wiki
 include::ex.adoc[]
 
-=== Choice 2
+=== (2) Expository
 
-:ext: Explanation to a game mechanism.
+:ext: Explanation of a game mechanism.
 :exn: immunity-frame
 include::ex.adoc[]
 
-=== Choice 3
+=== (3) Argumentative
 
-:ext: Elaboration to an idea.
+:ext: Elaboration of an idea.
 :exn: sleep-on-calamitas-laps
 include::ex.adoc[]
 

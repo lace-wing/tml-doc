@@ -1,0 +1,30 @@
+= Translation Test B
+Lacewing
+v0.1.0, {docdate}
+include::../../plates/header.adoc[tags="common"]
+include::plates/header.adoc[]
+
+include::plates/requirements.adoc[]
+
+{gotoc}
+
+== Excerpts
+
+=== (1) Narrative
+
+:ext: A piece of a mod's backstory.
+:exn: cal-lore-like-5-prologue
+include::ex.adoc[]
+
+=== (2) Expository
+
+:ext: Introduction to some boss changes.
+:exn: cal-vanilla-bosses
+include::ex.adoc[]
+
+=== (3) Descriptive
+
+:ext: Description of a merchandise.
+:exn: signus-stickers-shop
+include::ex.adoc[]
+
