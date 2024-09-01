@@ -1,0 +1,55 @@
+Title: 2024年9月稳定版更新
+
+----------------------
+2024年9月稳定版 tModLoader 已发布！
+
+tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModLoader。这个月，我们修复了一些漏洞，改善了用户体验，还为模组制作者们添加了新的示例和文档。
+
+我们最想展示的新功能是：游戏内创意工坊标签筛选；语言标签应该尤为实用。
+
+[img]{STEAM_CLAN_IMAGE}/37627134/d52e6185a8ec969d39d61aa7742b0ae09b8db9b1.png[/img]
+
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]改动说明[/h1]
+下面是该版本中最值得注意的改动。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202407]更新适配指南（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
+
+[h1]重要改动[/h1]
+
+[h2]新功能[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4291]支持在模组浏览器中筛选创意工坊标签[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/cdf82097e4a50768f4e8fc69a3a39c048dd61522]支持在模组列表与浏览器中上下翻页[/url]
+[b]Wojciech Nawa[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4309]支持 podman 容器开服[/url]
+
+[h2]API 改动[/h2]
+[b]direwolf420[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4249]添加 ProjectileID.Sets.FiresFewerFromDaedalusStormbow（减少代达罗斯弓生成对应箭矢的数量）[/url]
+
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/cd89f9b38baa193024263ba458d2ef3c909cb9fb]修复模组版本更新提示，更准确地检测出只能在预览版运行的模组[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/4a703f1d3fc18874f473b7438b4b98e8cd2f029c]修复 language=languageCode 服务器配置选项[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/81d24c13d4e93402da933a12cfcef323e36a971a]修复 WorldGen Pass 不重置，而一直被禁用的漏洞[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4342]检查、筛选、记录文件名不标准的本地模组[/url]
+
+[h2]API 修复与改动[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4275]修复一些 TileObjectData 的漏洞，添加 TileObjectData 的文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/7390d9350482cd5295b8b1f49f35b4e53455f34a]修复重置物品时 Item.ArmorPenetration 不复原的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/91850cf8b0e9466168d8be2a88deb7b5aa7b4554]补齐 BuffLoader.Update 漏掉的一些原版 buff[/url]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/fec1777ad7fb2da4e8b7bb09f563eca151ead53d]修复 TagCompound 的数组序列化问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/0c4b631674ca21cd0f8c161d8dee2bd758a22f75]添加 Main.dayTime 及相关接口的文档；改正 SortingPriorityBossSpawns 的一些条目[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/cf35243a749311b7645ed2c1c7b96d29376c2349]将 MonoMod 更新至 25.1.1，这样就补齐了它的文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4256]修复 nuget 包不引用一些代码库文档的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/45ddcf51f8e44e3c82235a330c27c2888db47a9f]修复 ModConfig 成员声明为 Object 导致崩溃的问题[/url]
+
+[h1]其他改动[/h1]
+[h2]ExampleMod（示例模组）与 API 文档[/h2]
+[b]direwolf420[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4328]修复 ExampleChest（示例箱子）不满足条件时也消耗钥匙的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/95f057f5759903184b43878531190b192180be3c]更新 ExampleHomingProjectile，标注相关字段和方法[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/02831a18f7430668364dd5d7973c70d15e4e2f7a]StatModifier 的文档[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/7da84c079e59b14f09003af04a2ba1e18bfb905f]更新 ModXX 和 GlobalXX 的注释[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/88993ac65939224b51abf9eea533581ec874abfd]解释加载 ModMount 材质的流程[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/ae9c808e9d0bf60c12f08e6f073653a58cae0f76]注解关于 JIT 的属性[/url]
+
+[h2]本地化[/h2]
+[b]RazzSG[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4318]俄语[/url]
+[b][url=https://github.com/lace-wing]Lacewing[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2024.07.3.0_zh.txt]本公告的中文翻译[/url]

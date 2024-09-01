@@ -1,0 +1,55 @@
+Title: September 2024 Stable Update
+
+----------------------
+It is time for the September 2024 Stable Update.
+
+The tModLoader team and our amazing community of contributors continues to improve tModLoader.
+
+This month's release contains many improvements to the user experience, various bug fixes, as well as new features with examples and documentation for mod makers.
+
+One new feature we want to showcase in particular is in-game workshop tag filtering. We hope this new filter will help users find the mods they want more easily in-game. We expect this feature to especially help users find mods that support their native language.
+
+[img]{STEAM_CLAN_IMAGE}/37627134/d52e6185a8ec969d39d61aa7742b0ae09b8db9b1.png[/img]
+
+As always, if you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub [/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+
+[h1]Changelog[/h1]
+The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202407]Update Migration Guide[/url] to see how to adapt to the new changes after running tModPorter.
+
+[h1]Major Changes[/h1]
+[h2]New Features[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4291]Added workshop tag filtering in Mod Browser[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/cdf82097e4a50768f4e8fc69a3a39c048dd61522]Add page up and page down support to Mods and Mod Browser menus[/url]
+[b]Wojciech Nawa[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4309]Add podman support for dedicated servers[/url]
+
+[h2]API Changes[/h2]
+[b]direwolf420[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4249]Add ProjectileID.Sets.FiresFewerFromDaedalusStormbow[/url]
+
+[h1]Bug Fixes[/h1]
+[h2]Quality of Life and Other Fixes[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/cd89f9b38baa193024263ba458d2ef3c909cb9fb]Fix version upgrade hints to more reliably detect and inform when a mod is preview only[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/4a703f1d3fc18874f473b7438b4b98e8cd2f029c]Fix language=languageCode server config file option[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/81d24c13d4e93402da933a12cfcef323e36a971a]Fix WorldGen passes staying disabled instead of resetting[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4342]Added checks, filtering, and logging for local mods with non-standard filenames[/url]
+
+[h2]API Fixes and Changes[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4275]Fix several TileObjectData issues and document TileObjectData class[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7390d9350482cd5295b8b1f49f35b4e53455f34a]Fix Item.ArmorPenetration not properly resetting[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/91850cf8b0e9466168d8be2a88deb7b5aa7b4554]Fix BuffLoader.Update not being called for some vanilla buffs[/url]
+[b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/commit/fec1777ad7fb2da4e8b7bb09f563eca151ead53d]Fix serialization of arrays in TagCompound[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/0c4b631674ca21cd0f8c161d8dee2bd758a22f75]Document Main.dayTime and related. Fix incorrect entries in SortingPriorityBossSpawns[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/cf35243a749311b7645ed2c1c7b96d29376c2349]Update MonoMod to 25.1.1 to fix missing MonoMod documentation[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4256]Fix documentation references for nuget packages[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/45ddcf51f8e44e3c82235a330c27c2888db47a9f]Fix ModConfig members declared as Object crashing[/url]
+
+[h1]Other[/h1]
+[h2]ExampleMod and API Documentation[/h2]
+[b]direwolf420[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4328]Fix ExampleChest consuming key when other conditions are not met[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/95f057f5759903184b43878531190b192180be3c]Update ExampleHomingProjectile and document related fields and methods[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/02831a18f7430668364dd5d7973c70d15e4e2f7a]StatModifier Documentation[/url]
+[b]Mirsario[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7da84c079e59b14f09003af04a2ba1e18bfb905f]Updated outdated (Mod|Global)X summaries[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/88993ac65939224b51abf9eea533581ec874abfd]Document ModMount texture autoloading uniqueness[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/ae9c808e9d0bf60c12f08e6f073653a58cae0f76]Document JIT related attributes/annotations[/url]
+
+[h2]Localization[/h2]
+[b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4318]Russian[/url]
