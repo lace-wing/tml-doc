@@ -1,43 +1,45 @@
-Title: November 2024 Stable Update
+Title：2024年11月稳定版更新
 
 ----------------------
+2024年11月稳定版 tModLoader 已发布！
 
-It is time for the November 2024 Stable Update.
+tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModLoader。这个月，我们修复了一些游戏内容的问题，改善了用户体验，还为模组制作者们添加了新的示例和文档。
 
-The tModLoader team and our amazing community of contributors continues to improve tModLoader. Once again this month's release contains many improvements to the user experience, some gameplay bug fixes, as well as new features with examples and documentation for mod makers.
+如果模组作者想提前测试 tModLoader 的新功能，可以切换到预览版。正式发布前，我们会在 GitHub 上和 Discord #preview-update-log 频道里列出改动，并更新到预览版中。衷心感谢所有在预览版测试、反馈的模组制作者。（使用预览版：Steam 库中右键 tModLoader，进入“属性”→“测试版”，选择想要的“preview”版。）
 
-We'd like to remind modders about the preview branch where we test new features before they arrive in stable the following month. Modders interested in new these features, listed both on our GitHub and in the #preview-update-log of our Discord, can join the preview branch to get early access to the new features and test them in their mods. We really appreciate the feedback from modders using the preview branch to try out the new features.
+我们正在测试模组物块与风和玩家移动的反应，比如吊灯、旗帜、藤蔓。欢迎模组制作者们来预览版测试该功能。
 
-One feature we are currently previewing is additional support for modded tiles that react to wind and player movement, as some vanilla tiles do. Modders on the preview branch can test it out and make sure it works correctly for chandeliers, banners, vines, and other similar tiles.
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
 
-As always, if you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub[/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
 
-[h1]Changelog[/h1]
-The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202409]Update Migration Guide[/url] to see how to adapt to the new changes after running tModPorter.
+[h1]改动说明[/h1]
+下面是该版本中最值得注意的改动。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202409]更新适配指南（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
 
-[h1]Major Changes[/h1]
-[h2]API Changes[/h2]
-[b]Destructor_Ben[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4369]Add hooks for armor set bonus activation (ModPlayer.ArmorSetBonusHeld and ArmorSetBonusActivated)[/url]
+[h1]重要改动[/h1]
+[h2]API 改动[/h2]
+[b]Destructor_Ben[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4369]添加激活盔甲套装奖励的钩子（ModPlayer.ArmorSetBonusHeld 和 ArmorSetBonusActivated）[/url]
 
-[h1]Bug Fixes[/h1]
-[h2]Quality of Life and Other Fixes[/h2]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4373]Fix money exploit when stacking items sold for shopCustomPrice[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/179110987067c3cc83b2b61367237b43f45e7aec]Fix hard server crash when loading completely broken world file.[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/6ed6552c23f697004716fde81ba11d199929667d]Update serverconfig.txt instructions[/url]
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4373]修复了出售堆叠的 shopCustomPrice 物品可以刷钱的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/179110987067c3cc83b2b61367237b43f45e7aec]修复加载完全损坏的世界文件时服务器严重崩溃的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/6ed6552c23f697004716fde81ba11d199929667d]更新 serverconfig.txt 说明[/url]
 
-[h2]API Fixes and Changes[/h2]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4361]Custom error message for attempting to build in Visual Studio while tModLoader has the .tmod file open[/url]
-[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/9de5bd3a8fd74762703b6eaab46925dccb461527]Fix and maintain automatic release systems[/url]
+[h2]API 修复与改动[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4361]tModLoader 占用了 .tmod 文件时，试图在 Visual Studio 中构建模组会显示专门的错误提示[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/9de5bd3a8fd74762703b6eaab46925dccb461527]维护 tModLoader 版本号的自动更新系统[/url]
 
-[h1]Other[/h1]
-[h2]ExampleMod and API Documentation[/h2]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/4057498ae19201b71fc5e7a411c5fd2dc7260ddc]Added CustomItemDrawingShowcase, fixed ItemDefinition Pre/PostDrawInInventory usage, documentation[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/401efedc1a0c0217535bd1ee2ddf7d5aee664c09]Fix ExampleCoinsUI odd drag behavior, related UIElement documentation[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2675f5d9087b597e86c246620dde6ac5e652459d]Add fruit texture to ExampleCactus[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/b941d9d793d60ce9beeba8038f6a70b2947509f8]Clarify ExampleGun code[/url]
-[b]JavidPack[/b]: Various Documentation Updates: [url=https://github.com/tModLoader/tModLoader/commit/012730a4e1b415b6f76e58d991d55f244c0de9dc]1[/url], [url=https://github.com/tModLoader/tModLoader/commit/31ce01e17445ee89ed6dbc34c1fbd89cffe7a74b]2[/url], [url=https://github.com/tModLoader/tModLoader/commit/5302b9ab94bd2f5ec0eebd6fd5a07d689d4d5235]3[/url]
+[h1]其他改动[/h1]
+[h2]ExampleMod（示例模组）与 API 文档[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/4057498ae19201b71fc5e7a411c5fd2dc7260ddc]添加 CustomItemDrawingShowcase，修复 ItemDefinition Pre/PostDrawInInventory 的用法并补充文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/401efedc1a0c0217535bd1ee2ddf7d5aee664c09]修复 ExampleCoinsUI 奇怪的拖动行为，添加了相关 UIElement 文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2675f5d9087b597e86c246620dde6ac5e652459d]添加 ExampleCactus 的仙人掌果贴图[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b941d9d793d60ce9beeba8038f6a70b2947509f8]校注 ExampleGun 代码[/url]
+[b]JavidPack[/b]：一些文档更新：[url=https://github.com/tModLoader/tModLoader/commit/012730a4e1b415b6f76e58d991d55f244c0de9dc]其一[/url]、[url=https://github.com/tModLoader/tModLoader/commit/31ce01e17445ee89ed6dbc34c1fbd89cffe7a74b]其二[/url]、[url=https://github.com/tModLoader/tModLoader/commit/5302b9ab94bd2f5ec0eebd6fd5a07d689d4d5235]其三[/url]
 
-[h2]Localization[/h2]
-[b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4388]Russian[/url]
+[h2]本地化[/h2]
+[b]RazzSG[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4388]俄语[/url]
+[b][url=https://github.com/Cyrillya]Cyrilly[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2024.09.3.0_zh.txt]本公告的中文翻译[/url]
+[b][url=https://github.com/lace-wing]Lacewing[/url][/b]：本公告的中文校对
 
-We would also like to mention that we have volunteers translating our monthly release announcements into Chinese, Russian, Brazilian Portuguese, and Polish. If you would like to help translate these announcements into another supported language, please reach out on Discord.
+顺带一提，已经有志愿者将我们的每月发布公告翻译成中文、俄语、巴西葡萄牙语和波兰语。如果您想帮助将这些公告翻译成其他受支持的语言，请通过 [url=https://tmodloader.net/discord]Discord[/url] 与我们联系。
