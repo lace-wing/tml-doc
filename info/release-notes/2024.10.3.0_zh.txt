@@ -1,63 +1,66 @@
-Title: December 2024 Stable Update
+Title：2024年12月稳定版更新
 
 ----------------------
 
-It is time for the December 2024 Stable Update. The tModLoader team and our amazing community of contributors continues to improve tModLoader. We've had quite a lot of community contributions this month. 
+2024年12月稳定版 tModLoader 已发布！
 
-This month's release contains support for modded clouds, tiles swaying in the wind, opening up a ModConfig menu directly, and many more changes. We look forward to mod updates using these new features. We've also updated the mod publishing process to ensure that every mod has a custom icon and an adequate description, which should make browsing the workshop a more pleasant experience. 
+tModLoader 团队和我们优秀的贡献者社区一直在不断地完善 tModLoader。这个月有很多社区贡献。
 
-We'd like to remind modders about the preview branch where we test new features before they arrive in stable the following month. Modders interested in new these features, listed both on our GitHub and in the #preview-update-log of our Discord, can join the preview branch to get early access to the new features and test them in their mods. We really appreciate the feedback from modders using the preview branch to try out the new features.
+本月的更新包括模组云、随风摇摆的物块、直接打开 ModConfig 菜单，当然还有更多。我们希望模组能用起这些新功能。我们还更新了模组发布流程，以确保每个模组都有自定义图标和充分的描述，应该可以让浏览创意工坊体验更好。
 
-Major features currently in preview include greatly improved enemy banner support and support for custom data sets. Please give them a test and let us know if you run into any issues.
+如果模组作者想提前测试 tModLoader 的新功能，可以切换到预览版。正式发布前，我们会在 GitHub 上和 Discord #preview-update-log 频道里列出改动，并更新到预览版中。衷心感谢所有在预览版测试、反馈的模组制作者。（使用预览版：Steam 库中右键 tModLoader，进入“属性”→“测试版”，选择想要的“preview”版。）
 
-As always, if you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub[/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+目前，预览版中的主要功能有大幅改进的敌人旗帜和自定义数据集。测试一下，如果遇到任何问题，请告诉我们。
 
-[h1]Changelog[/h1]
-The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202410]Update Migration Guide[/url] to see how to adapt to the new changes after running tModPorter.
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
 
-[h1]Major Changes[/h1]
-[h2]New Features[/h2]
-[b]TechnicalitiesDevelopment and Mirsario[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4424]Increase Workshop Publication Requirements to ensure all mods have icon and useful description[/url]
-[b]MutantWafflez[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4429]Multi-Tile Wind Sway Capabilities[/url]
-[b]ArctanDeveloper and JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4367]ModCloud implementation and Example Mod examples[/url]
-[b]TechnicalitiesDevelopment[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4407]New MountData parameters to allow Minecarts to have custom stats after Minecart Upgrade Ket usage[/url]
-[b]Destructor_Ben and JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4384]Add ModConfig.Open and ExampleFullscreenUI example[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/8c82f194e695a421a2495dcb48644983577e253e]Map backgrounds can now use sky color or custom draw color[/url]
+[h1]改动说明[/h1]
+下面是该版本中最值得注意的改动。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202410]更新适配指南（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
 
-[h2]API Changes[/h2]
-[b]Xetaxheb[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4403]Allow Player.Hurt to be canceled (HurtModifiers.Cancel())[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4352]More BitsByte helper methods for reading and writing[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/0d55bc751d5b2b7c5fabb5ea5e3a028a2215283a]Player.breathMax now resets automatically and related documentation[/url]
-[b]Tyfyter[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4427]Made DynamicSpriteFont.SpriteCharacterData public[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/5c98c602cc0263eccd08ea640b771046dbb5f5d1]Fix a bounds check with ArmorIDs.Front.Sets.DrawsInNeckLayer[/url]
+[h1]重要改动[/h1]
+[h2]新功能[/h2]
+[b]TechnicalitiesDevelopment 和 Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4424]提高发布模组的要求，确保模组有自己的图标和描述[/url]
+[b]MutantWafflez[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4429]使多格物块也能随风摇摆[/url]
+[b]ArctanDeveloper 和 JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4367]ModCloud（模组云）及其示例[/url]
+[b]TechnicalitiesDevelopment[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4407]MountData（坐骑数据）添加参数，自定义玩家使用矿车升级包后的数值[/url]
+[b]Destructor_Ben 和 JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4384]添加 ModConfig.Open 和 ExampleFullscreenUI 示例[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/8c82f194e695a421a2495dcb48644983577e253e]允许地图背景使用天空或自定义颜色[/url]
 
-[h1]Bug Fixes[/h1]
-[h2]Quality of Life and Other Fixes[/h2]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/867e75a30e60384bafe4e4879ac088527eb9c34c]Fix various crate drop rate discrepancies[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/985138a336b3f423a118e9108014598166a09882]Fix full InfoDisplay listing not working correctly[/url]
-[b]TechnicalitiesDevelopment[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4404]Mod Packs now colored bright green if additional mods are enabled[/url]
-[b]Tigerzzz[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4397]Fix MouseText misalignment issue with text using chat tags[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/770d9fdc80bd662e0f79048280a2fad0890576b9]Fix Enum with out of bounds values in ModConfig causing crash[/url]
+[h2]API 改动[/h2]
+[b]Xetaxheb[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4403]允许用 HurtModifiers.Cancel() 取消玩家受击（Player.Hurt）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4352]添加更多 BitsByte 读写方法[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/0d55bc751d5b2b7c5fabb5ea5e3a028a2215283a]使 Player.breathMax 自动重置，添加文档[/url]
+[b]Tyfyter[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4427]将 DynamicSpriteFont.SpriteCharacterData 改为 public[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/5c98c602cc0263eccd08ea640b771046dbb5f5d1]修正 ArmorIDs.Front.Sets.DrawsInNeckLayer 判定[/url]
 
-[h2]API Fixes and Changes[/h2]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/9a3717675250f48d32f1e4765fee41dcf067671a]Show context lines of localization file syntax errors in the error message[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/8eb0065b2b8c9128b0c7f1a8fb324c025bbb8f51]Fix CanStack not being honored for ammo slots on pickup[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/289d286f64fcb87ae0f32e7fff08cde2e21f2d65]Fix array of objects in ModConfig causing crash[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/f773d097be298d2db22d4afec5e6f06b7ed17f05]Add instructions to mod sources menu to do the first mod guide if new[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/2569fc2ce3c862697034cd91e455c769f9f55517]Log client side mods when joining server to facilitate troubleshooting[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/a12b185d0da7732222dc2776ff0f3a3a6abded9f]Fix an issue with setup.bat[/url]
-[b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/commit/0d06bf51bbcf7e0ee5bcfc0b958d602742029e23]More work on launching tModPorter correctly[/url]
-[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/9de5bd3a8fd74762703b6eaab46925dccb461527]Fix and maintain automatic release systems[/url]
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/867e75a30e60384bafe4e4879ac088527eb9c34c]修复宝匣物品掉率不统一的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/985138a336b3f423a118e9108014598166a09882]修复 InfoDisplay 列表显示不过12条的问题[/url]
+[b]TechnicalitiesDevelopment[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4404]以绿色高亮提示有加载模组整合包以外的模组[/url]
+[b]Tigerzzz[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4397]修复有聊天标签（Chat Tag）的光标文本错位的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/770d9fdc80bd662e0f79048280a2fad0890576b9]修复 ModConfig 中超界 Enum 使游戏崩溃的问题[/url]
 
-[h1]Other[/h1]
-[h2]ExampleMod and API Documentation[/h2]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7accd386a4f795fd1df50a02abc88ec1774f8f33]Fix ExampleMod afterimage trail drawing and related docs[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/23a46aa18d3c32160c725b3ff263585acfc847de]ExampleRobe now shows how to load female-specific legs texture[/url]
-[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/e51d555d8843fd9fa69e262e574f586313b252e3]Use UICommon.TooltipMouseText instead of Main.hoverItemName for tooltip example[/url]
-[b]JavidPack[/b]: Various Documentation Updates: [url=https://github.com/tModLoader/tModLoader/commit/d57cf0a6886e880bb1f6ec6c39b56ebe918d55c5]1[/url], [url=https://github.com/tModLoader/tModLoader/commit/b0a5cb1f13ef29ee79007735cbf9b247c4e85f02]2[/url], [url=https://github.com/tModLoader/tModLoader/commit/3c3b51154a54e0f0a4f5f0a24bfbbead052450c4]3[/url], [url=https://github.com/tModLoader/tModLoader/commit/ad0ebdb9628ceb34547002e9375665992275c6cc]4[/url], [url=https://github.com/tModLoader/tModLoader/commit/f75d92dfead3c11d04f7484de7a7713cf1b023d1]5[/url]
+[h2]API 修复与改动[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/9a3717675250f48d32f1e4765fee41dcf067671a]在本地化文件语法的报错信息中显示上下文[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/8eb0065b2b8c9128b0c7f1a8fb324c025bbb8f51]修复将弹药拾进弹药槽时不检查 CanStack 的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/289d286f64fcb87ae0f32e7fff08cde2e21f2d65]修复 ModConfig 中 object 数组使游戏崩溃的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/f773d097be298d2db22d4afec5e6f06b7ed17f05]添加尚无模组源文件时的“首次编写模组”提示[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2569fc2ce3c862697034cd91e455c769f9f55517]加入服务器时，记录客户端模组一遍排查问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/a12b185d0da7732222dc2776ff0f3a3a6abded9f]修复 setup.bat 中编译 GUI 缺少平台选项的问题[/url]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/0d06bf51bbcf7e0ee5bcfc0b958d602742029e23]改进 tModPorter 启动流程[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/9de5bd3a8fd74762703b6eaab46925dccb461527]改进 tModLoader 自动发布流程[/url]
 
-[h2]Localization[/h2]
-[b]Fish[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4393]Chinese[/url]
-[b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4436]Russian[/url]
+[h1]其他[/h1]
+[h2]ExampleMod（示例模组）与 API 文档[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/7accd386a4f795fd1df50a02abc88ec1774f8f33]改进余像绘制示例及其文档[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/23a46aa18d3c32160c725b3ff263585acfc847de]添加 ExampleRobe（示例长袍）加载女性腿部材质的方法[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/e51d555d8843fd9fa69e262e574f586313b252e3]从用 Main.hoverItemName 改成用 UICommon.TooltipMouseText 显示按钮提示[/url]
+[b]JavidPack[/b]：更新文档：[url=https://github.com/tModLoader/tModLoader/commit/d57cf0a6886e880bb1f6ec6c39b56ebe918d55c5]其一[/url]、[url=https://github.com/tModLoader/tModLoader/commit/b0a5cb1f13ef29ee79007735cbf9b247c4e85f02]其二[/url]、[url=https://github.com/tModLoader/tModLoader/commit/3c3b51154a54e0f0a4f5f0a24bfbbead052450c4]其三[/url]、[url=https://github.com/tModLoader/tModLoader/commit/ad0ebdb9628ceb34547002e9375665992275c6cc]其四[/url]、[url=https://github.com/tModLoader/tModLoader/commit/f75d92dfead3c11d04f7484de7a7713cf1b023d1]其五[/url]
 
-We would also like to mention that we have volunteers translating our monthly release announcements into Chinese, Russian, Brazilian Portuguese, and Polish. If you would like to help translate these announcements into another supported language, please reach out on Discord.
+[h2]本地化[/h2]
+[b]Fish[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4393]中译[/url]
+[b]RazzSG[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4436]俄译[/url]
+[b][url=https://github.com/lace-wing]Lacewing[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2024.10.3.0_zh.txt]本公告中译[/url]
+
+顺带一提，已经有志愿者将我们的每月发布公告翻译成中文、俄语、巴西葡萄牙语和波兰语。如果您愿意将这些公告翻译成其他受支持的语言，请通过 [url=https://tmodloader.net/discord]Discord[/url] 与我们联系。
