@@ -1,0 +1,42 @@
+Title: April 2025 Stable Update
+
+----------------------
+
+Hello everyone! This last month tModLoader hit an exciting new player count record. We had 56,000 players playing at the same time! We look forward to even more users enjoying playing tModLoader as new mods continue to come out and existing mods continue to update.
+
+It is time for the April 2025 Stable Update. 
+
+A notable change for this month's release is the AddSpecialDraw changes for tile rendering. This can be used to address some animation frame rate and rendering issues of tiles with custom drawing code. We hope mod makers read the pull request description and apply the fixes to their own tiles if relevant. The full listing of changes is detailed below.
+
+There are several features of note currently in preview for next month. One such feature is support for various biome conversion methods and classes. Another feature is greatly streamlined ModTileEntity code as well as a fully documented BasicTileEntity example. We encourage mod makers to experiment with these new features on the preview branch and provide feedback this month so that they are ready for the stable release next month. 
+
+As always, if you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub[/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+
+[h1]Changelog[/h1]
+The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202502]Update Migration Guide[/url] to see how to adapt to the new changes after running tModPorter.
+
+[h1]Major Changes[/h1]
+[h2]New Features[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4535]TileCounterType.CustomSolid/NonSolid support for AddSpecialDraw, fix blurry example relic tile visuals[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/fb17c04e79c4f55deb486f33a38d01deeca6a194]Added TileID.Sets.NegatesFallDamage for tiles like cloud that prevent fall damage[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4553]Localize custom player death messages (PlayerDeathReason.ByCustomReason)[/url]
+
+[h1]Bug Fixes[/h1]
+[h2]Quality of Life and Other Fixes[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/1bee82f6883e1a43b6967db0b18aeb1a20e2b171]The warning for family share limitations can now be dismissed permanently.[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/fac6753d0018ff362057913d6f82b43060281e4b]Maintaining the monthly release automations[/url]
+
+[h2]API Fixes and Changes[/h2]
+[b]Ebon[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4524]description_workshop.txt now generates by default when creating mods[/url]
+[b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/commit/37cc685bf1960c0e24530a1a2822ef534c0e64e8]Fix an issue preventing accurate log messages[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/8ccb9b54fd0f6de69896bae7686b7d1cf693d557]Mod.GetPacket error message clarification, additional related docs[/url]
+
+[h1]Other[/h1]
+[h2]ExampleMod and API Documentation[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4294]ExampleMod now uses the newer and simpler collection initializer syntax[/url]
+[b]JavidPack[/b]: Various Documentation Updates: [url=https://github.com/tModLoader/tModLoader/commit/6a6cca500591a839f961234eaef227158a1cfd15]1[/url], [url=https://github.com/tModLoader/tModLoader/commit/c0de9e79e17c01a4741ccb3dc09b87612a2a5eca]2[/url], [url=https://github.com/tModLoader/tModLoader/commit/258d61a8a475c7f5009636fda2e94a238d7b9f4a]3[/url], [url=https://github.com/tModLoader/tModLoader/commit/6d8798385f96ad2e10d98c302ed43eca72de21fd]4[/url], [url=https://github.com/tModLoader/tModLoader/commit/661245f271b9df41ac29df66d3ea88de8dd63b7a]5[/url]
+
+[h2]Localization[/h2]
+[b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4555]Russian[/url]
+
+We would also like to mention that we have volunteers translating our monthly release announcements into Chinese, Russian, Brazilian Portuguese, Polish, and Spanish. If you would like to help translate these announcements into another supported language, please reach out on Discord.

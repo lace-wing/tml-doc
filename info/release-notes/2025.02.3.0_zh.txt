@@ -1,0 +1,43 @@
+Title: 2025年4月稳定版更新
+
+----------------------
+
+大家好！上个月，tModLoader 创下了玩家数量新纪录——5,6000名玩家同时在线！不断有新模组发布、旧模组更新，我们期待更多玩家畅游 tModLoader。
+
+2025年4月稳定版 tModLoader 已发布！
+
+本月更新中，最值得注意的是物块绘制方法 AddSpecialDraw 的改动，它能精细调控自定义动画的帧率和绘制。我们希望用到此类绘制的模组作者阅读相应的 PR 描述并修改代码。详情见下“改动说明”。
+
+预览版中，有些下个月就要并入稳定版的功能。其中有控制环境转换的类与方法，还有标准化的 ModTileEntity（模组实体块）和详细注释了的 BasicTileEntity（基础模组实体块）示例。欢迎模组制作者们在预览版测试，帮助改进这些功能，准备下个月的发布。
+
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]改动说明[/h1]
+下面是该版本中最值得注意的改动。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202502]更新适配指南（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
+
+[h1]重要改动[/h1]
+[h2]新功能[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4535]TileCounterType.CustomSolid/NonSolid 的 AddSpecialDraw 方法，修复示例 Boss 圣物物块模糊的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/fb17c04e79c4f55deb486f33a38d01deeca6a194]添加 TileID.Sets.NegatesFallDamage，用于取消物块的摔落伤害，如云[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4553]允许翻译自定义的玩家死亡信息（PlayerDeathReason.ByCustomReason）[/url]
+
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/1bee82f6883e1a43b6967db0b18aeb1a20e2b171]可以不再显示关于家庭分享的警告[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/fac6753d0018ff362057913d6f82b43060281e4b]维护 tModLoader 发布流程[/url]
+
+[h2]API 修复与改动[/h2]
+[b]Ebon[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4524]创建模组时生成 description_workshop.txt[/url]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/37cc685bf1960c0e24530a1a2822ef534c0e64e8]修复日志不准确的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/8ccb9b54fd0f6de69896bae7686b7d1cf693d557]改进 Mod.GetPacket 的报错信息，添加相关文档[/url]
+
+[h1]其他[/h1]
+[h2]ExampleMod（示例模组）与 API 文档[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4294]简化 ExampleMod 中的集合（Collection）初始化语法（C# 新语法糖）[/url]
+[b]JavidPack[/b]：更新文档：[url=https://github.com/tModLoader/tModLoader/commit/6a6cca500591a839f961234eaef227158a1cfd15]其一[/url]、[url=https://github.com/tModLoader/tModLoader/commit/c0de9e79e17c01a4741ccb3dc09b87612a2a5eca]其二[/url]、[url=https://github.com/tModLoader/tModLoader/commit/258d61a8a475c7f5009636fda2e94a238d7b9f4a]其三[/url]、[url=https://github.com/tModLoader/tModLoader/commit/6d8798385f96ad2e10d98c302ed43eca72de21fd]其四[/url]、[url=https://github.com/tModLoader/tModLoader/commit/661245f271b9df41ac29df66d3ea88de8dd63b7a]其五[/url]
+
+[h2]本地化[/h2]
+[b]RazzSG[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4555]俄译[/url]
+[b][url=https://github.com/lace-wing]Lacewing[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2025.02.3.0_zh.txt]本公告中译[/url]
+
+已经有志愿者将我们的每月发布公告翻译成中文、俄语、巴西葡萄牙语和波兰语。如果您愿意将这些公告翻译成其他受支持的语言，请通过 [url=https://tmodloader.net/discord]Discord[/url] 与我们联系。
