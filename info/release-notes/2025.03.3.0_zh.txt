@@ -1,0 +1,64 @@
+Title: 2025年5月稳定版更新
+
+----------------------
+
+2025年4月稳定版 tModLoader 已发布！
+
+再次感谢 tModLoader 社区，每个月开发、测试新功能，你们都积极参与。
+
+本月更新中有几个模组制作者期待的功能，包括全新的环境转化功能和自定义ID集合，以及对自定义物块绘制和物块实体的改进。详情见下“改动说明”。
+
+[b]模组制作者注意：[/b]预览版中，有些下个月就要并入稳定版的功能，模组制作者可以测试并提供反馈。其中之一是新增的 UpdateVisibleAccessory 和 UpdateItemDye 钩子。这些新钩子与 CustomVisualEquipType 一起，提供自定义装备类型绘制的标准化实现，让模组制作者正确、有效地绘制这些内容。另一个是 ExampleMod 中的自定义 ModType 示例。常有人问如何实现，很高兴，终于有一个易于遵循的示例。我们鼓励模组制作者在预览版试验这些新功能，在本月提供反馈，为下个月的稳定版更新做好准备。
+
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+
+[h1]改动说明[/h1]
+下面是该版本中最值得注意的改动。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202503]更新适配指南（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
+
+[h1]重要改动[/h1]
+[h2]新功能[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4381]自定义 ID 集合（给游戏内容“打标签”）；模组可以创建自己的“XXIDSets.YY”或引用其它模组的[/url]
+[b]IbanPlay[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4566]物块和墙的环境转化：添加 ModBlockTypes 的 Convert()、Tile/WallLoader.RegisterConversion() 和相关功能[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4528]基础物块实体示例以及更多辅助方法，简化物块和物块实体操作[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4551]ExampleChandelier（示例吊灯）和相关 ModTile 钩子，允许修改物块摇摆[/url]
+
+[h2]API 改动[/h2]
+[b]Jacob Adams[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4587]允许自定义 ModMapLayer 叠放[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/d28abf0407fdac640812e8f791dd7fb0db329c4d]添加 NPCID.Sets.DoesntDespawnToInactivityAndCountsNPCSlots（离太远不会消失且占用NPC槽）[/url]
+
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他[/h2]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/af8f755774ffe79f6bc4185b4c32fa718587c187]添加警告：订阅的创意工坊模组被隐藏或下架（紧急修复）[/url]
+[b]Harper Stoeckle[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4578]修复数处文本渲染问题[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/99a04bde176f02f3cac485d8c32d024c59147f0f]使游戏内公告只显示社区公告[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4565]显示缺失和新增的模组时，如有 DisplayNameClean，则用之[/url]
+[b]Ben-tal[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4561]修复一些声音 ID 缺失或错位的问题[/url]
+
+[h2]API 修复与改动[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4392]修复原版中南瓜/霜月音乐优先级错误的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/7b2985519106c3c203fbde39cf0647b389f4db7a]修复对有泛型参数的方法 MonoModHooks.DumpIL 的相关问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/1153a093720525f9d514da65616fdd39cd27102b]修复服务器在玩家加入前就更新游戏的问题[/url]
+[b]CornHusker89[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4574]验证模组时检查损坏的 tModLoader 方法，改正报错信息[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b835440794a947e719ef05614bf4b8da0a6e18b7]修复分别掉落的物品被 NPCLoader.blockLoot 取消时阻塞物品同步的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/fd66d5f92143eb8e9354fbf20d6e11ed5aaa694f]暴露方法 ContentSamples.AddItemResearchOverride（添加共享研究数的物品）, 修复 ContentSamples.CreativeResearchItemPersistentIdOverride 卸载时不清除的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4576]修复 ModSources 文件夹外的模组重复显示的问题[/url]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/1e6974804b8411be1c4829d092053307a5cf4f35]使 TagSerializableSerializer 在依赖的 DLL 中寻找标签子类的解编器[/url]
+[b]Tyfyter[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4572]使伤害类型默认能接受通用前缀[/url]
+[b]IbanPlay[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4570]允许小动物笼盖贴图使用多列贴图[/url]
+[b]Lion8cake[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4475]TileLoader.DrawEffects 改为在 drawData.colorTint/finalColor 赋值后调用[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/423868fb391c9184fde4d6b756120a7c116986e1]修复 NPC 的 BuffLoader.Update 不考虑 buffIndex 变化的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/df88885f020ffa6422e1ee179c8e7590817839a6]修复错误的 build.txt 值导致游戏崩溃的问题（紧急修复）[/url]
+
+[h1]其它[/h1]
+[h2]ExampleMod（示例模组）与 API 文档[/h2]
+[b]hezuo1hao[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4487]为 ExampleMod 內硬编码的文本改用本地化系统[/url]
+[b]Thanatos[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4585]修复 ExampleSoul（示例魂）不以最高亮度渲染的问题[/url]
+[b]JavidPack[/b]：更新文档：[url=https://github.com/tModLoader/tModLoader/commit/08733e3896b70b6e3e89938f118f3f5f0996d116]其一[/url]、[url=https://github.com/tModLoader/tModLoader/commit/1972545329777ba3dfa9355472d073088c8079bf]其二[/url]
+
+[h2]本地化[/h2]
+[b]Fish[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4580]中译[/url]
+[b]RazzSG[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4591]俄译[/url]
+[b][url=https://github.com/lace-wing]Lacewing[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2025.03.3.0_zh.txt]本公告中译[/url]
+
+已经有志愿者将我们的每月发布公告翻译成中文、俄语、巴西葡萄牙语、波兰语、西班牙语。如果您愿意将这些公告翻译成其他受支持的语言，请通过 [url=https://tmodloader.net/discord]Discord[/url] 与我们联系。

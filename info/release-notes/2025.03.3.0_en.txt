@@ -1,0 +1,62 @@
+Title: May 2025 Stable Update
+
+----------------------
+
+Hello everyone! It is time for the May 2025 Stable Update. 
+
+We are once again grateful for the massive amount of community participation in developing and testing new features each month.
+
+This month's release contains several notable features that mod makers can look forward to using. Features include brand new support for biome conversions and custom ID sets as well as improved support for custom tile drawing and tile entities. The full listing of changes is detailed below.
+
+[b]Modders: [/b]There are several features of note currently in preview for next month that modders can test and provide feedback for. One new feature is the new UpdateVisibleAccessory and UpdateItemDye hooks. These new hooks along with the CustomVisualEquipType showcase show off how to properly implement custom player drawing for custom equip types. This will allow modders to draw these things in the correct and working manner. Another new feature is the custom ModType example in ExampleMod. This has been a frequently requested feature and we're happy to finally have an easy to follow example for this. We encourage mod makers to experiment with these new features on the preview branch and provide feedback this month so that they are ready for the stable release next month. 
+
+As always, if you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub[/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+
+[h1]Changelog[/h1]
+The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202503]Update Migration Guide[/url] to see how to adapt to the new changes after running tModPorter.
+
+[h1]Major Changes[/h1]
+[h2]New Features[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4381]Custom and Named ID Sets ("content tags"). Mods can now create their own "Sets" and collaborate easily using them.[/url]
+[b]IbanPlay[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4566]Biome conversion support. Added Convert() hook for ModBlockTypes, Tile/WallLoader.RegisterConversion(), and other related features[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4528]Basic tile entity example and many more new helper methods to make working with tiles and tile entities easier[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4551]ExampleChandelier and several new related ModTile hooks. Swaying tiles are now customizable.[/url]
+
+[h2]API Changes[/h2]
+[b]Jacob Adams[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4587]ModMapLayer positioning can now be customized[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/d28abf0407fdac640812e8f791dd7fb0db329c4d]Added NPCID.Sets.DoesntDespawnToInactivityAndCountsNPCSlots[/url]
+
+[h1]Bug Fixes[/h1]
+[h2]Quality of Life and Other Fixes[/h2]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/af8f755774ffe79f6bc4185b4c32fa718587c187]Add warning message if subscribed workshop mod has been removed from workshop (Hotfix)[/url]
+[b]Harper Stoeckle[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4578]Fix incorrect text rendering in several places[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/99a04bde176f02f3cac485d8c32d024c59147f0f]Only show community announcements in-game[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4565]Use DisplayNameClean if available for Missing and New Mods messages[/url]
+[b]Ben-tal[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4561]Fix Missing Sound Mappings, fixing some sounds that were not playing correctly[/url]
+
+[h2]API Fixes and Changes[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4392]Fix vanilla frost and pumpkin moon music priority[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/7b2985519106c3c203fbde39cf0647b389f4db7a]Fix issue with using MonoModHooks.DumpIL on methods with generic parameters[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/1153a093720525f9d514da65616fdd39cd27102b]Fix issue with game update methods being called on server before any player connects[/url]
+[b]CornHusker89[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4574]Add check for broken tModLoader methods when verifying mod assemblies, fixing misleading error messages[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/b835440794a947e719ef05614bf4b8da0a6e18b7]Fix instanced item drops becoming stuck while using NPCLoader.blockLoot[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/fd66d5f92143eb8e9354fbf20d6e11ed5aaa694f]Expose ContentSamples.AddItemResearchOverride, Fix ContentSamples.CreativeResearchItemPersistentIdOverride not clearing[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4576]Fix mods located outside ModSources folder showing up twice in menu[/url]
+[b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/commit/1e6974804b8411be1c4829d092053307a5cf4f35]TagSerializableSerializer is now able to find subtype serializers in dll references[/url]
+[b]Tyfyter[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4572]Let damage classes inherit generic prefixes[/url]
+[b]IbanPlay[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4570]Made critter cage lids account for multi-column spritesheets[/url]
+[b]Lion8cake[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4475]TileLoader.DrawEffects now called after drawData.colorTint/finalColor assignment[/url]
+[b]Mirsario[/b]: [url=https://github.com/tModLoader/tModLoader/commit/423868fb391c9184fde4d6b756120a7c116986e1]Fixed NPC BuffLoader.Update not accounting for buffIndex changes[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/df88885f020ffa6422e1ee179c8e7590817839a6]Fix crash from bad build.txt values (Hotfix)[/url]
+
+[h1]Other[/h1]
+[h2]ExampleMod and API Documentation[/h2]
+[b]hezuo1hao[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4487]Localize hard-coded text within ExampleMod[/url]
+[b]Thanatos[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4585]Fix ExampleSoul item not rendering at the expected full brightness[/url]
+[b]JavidPack[/b]: Various Documentation Updates: [url=https://github.com/tModLoader/tModLoader/commit/08733e3896b70b6e3e89938f118f3f5f0996d116]1[/url], [url=https://github.com/tModLoader/tModLoader/commit/1972545329777ba3dfa9355472d073088c8079bf]2[/url]
+
+[h2]Localization[/h2]
+[b]Fish[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4580]Chinese[/url]
+[b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4591]Russian[/url]
+
+We would also like to mention that we have volunteers translating our monthly release announcements into Chinese, Russian, Brazilian Portuguese, Polish, and Spanish. If you would like to help translate these announcements into another supported language, please reach out on Discord.
