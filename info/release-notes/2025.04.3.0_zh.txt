@@ -1,0 +1,54 @@
+Hello everyone! We've hit another impressive milestone this month. The workshop now has over 10,000 mods available! That's amazing! Be sure to regularly check the workshop for newly released mods, we're positive you'll always find something fun and interesting to try out.
+
+Each month hundreds of new mods are released, each a result of countless hours of work put into them by their creators. Here is a collage of the icons of most of the new mods released this last month alone. 
+
+[img]{STEAM_CLAN_IMAGE}/37627134/d31c847435c256408f67ebfb30dcafff77df0d37.png[/img]
+
+It is time for the June 2025 Stable Update. 
+
+We are once again grateful for the massive amount of community participation in developing and testing new features each month. Modders can look forward to new hooks and learning examples showcasing new capabilities. Some notable new features include a full custom ModType example in ExampleMod and new hooks for properly implementing custom equipment layers and draw flags. The full listing of changes is detailed below.
+
+[b]Preview:[/b] There are several features of note currently in preview for next month that modders can test and provide feedback for. One new feature is equipment loadout support for ModAccessorySlot. We'd like to encourage modders to test this new feature so we know it is ready for release. Other features in preview include support for custom death messages for town NPC and bosses as well as support for clearing a world of tiles from unloaded mods. We encourage mod makers to experiment with these new features on the preview branch and provide feedback this month so that they are ready for the stable release next month. 
+
+As always, if you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub[/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+
+[h1]Changelog[/h1]
+The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202504]Update Migration Guide[/url] to see how to adapt to the new changes after running tModPorter.
+
+[h1]Major Changes[/h1]
+[h2]New Features[/h2]
+[b]Ebon[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4606]UpdateVisibleAccessory and UpdateItemDye hooks for items, CustomVisualEquipType example showcase[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4611]Added a Custom ModType Example to ExampleMod[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4399]Added Player.breathEffectiveness to facilitate "extends underwater breathing" effects[/url]
+
+[h2]API Changes[/h2]
+[b]Ebon[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4618]Uncapped sound effect pitch property[/url]
+[b]Ebon[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4619]Long and ulong type support for ModConfig[/url]
+[b]Ebon[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4612]Added (Mod|Global)Wall/ModPlayer.CanBeTeleportedTo() to support preventing teleporting to specific locations[/url]
+[b]Jacob Adams[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4602]Expose MapOverlayDrawContext state for use in custom map layers[/url]
+
+[h1]Bug Fixes[/h1]
+[h2]Quality of Life and Other Fixes[/h2]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4607]Show a message if a subscribed workshop mod has been delisted[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/afe595b8acac59bab184be5a9ec3650adec1af3f]Deleting a mod will no longer scroll back to top of the mods menu[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/82ab69fdbbe906ddf0e4ab25f63c8a163e6b37cc]Fix clipboard feature not properly clearing existing clipboard data[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4626]Fix text wrapping not working for Main.NewText when zoomed in or out[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/31d28a0ae292b57bc3ca83f816363cd20e6bc24b]Mods with only hidden NPC will no longer show up in the bestiary filters[/url]
+
+[h2]API Fixes and Changes[/h2]
+[b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4604]Throw exception when player draw layers attempt to position relative to other movable layers[/url]
+[b]Silencersn[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4600]Fix a game crash caused by attempting to save special list types[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/8725a82bec8eb4261e0eeb11db62e590980409ef]Make some requested wind and tile drawing related fields/methods public[/url]
+
+[h1]Other[/h1]
+[h2]ExampleMod and API Documentation[/h2]
+[b]stormytuna[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4593]Add documentation noting which hooks are called where in multiplayer[/url]
+[b]Ebon[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4601]ExampleCameraModifier added, showcasing a custom camera modifier[/url]
+
+[b]JavidPack[/b]: Various Documentation Updates: [url=https://github.com/tModLoader/tModLoader/commit/95f125d929a7e2d9ccd7c622c3dd065e7674849d]1[/url], [url=https://github.com/tModLoader/tModLoader/commit/79ea61824a19cd5d52d40889bd33adf6af2542ea]2[/url], [url=https://github.com/tModLoader/tModLoader/commit/64e7998e5e15c290943783b1fd5a45940108e01c]3[/url]
+
+[h2]Localization[/h2]
+[b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4637]Russian[/url]
+[b]Silencersn[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4599]Chinese[/url]
+
+We would also like to mention that we have volunteers translating our monthly release announcements into Chinese, Russian, Brazilian Portuguese, Polish, and Spanish. If you would like to help translate these announcements into another supported language, please reach out on Discord.
