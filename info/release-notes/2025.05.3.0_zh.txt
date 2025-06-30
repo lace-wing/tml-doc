@@ -1,0 +1,52 @@
+Title: 2025年7月稳定版更新
+
+----------------------
+
+2025年7月稳定版 tModLoader 已发布！
+
+进入正题前，先看看上个月又发布了什么模组。来得及尝鲜吗？常来创意工坊找新模组，一定有能惊艳到你的。[url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&days=30&actualsort=trend&p=1]点这里[/url]看月内最热门的新模组。
+
+[img]{STEAM_CLAN_IMAGE}/37627134/e12b69a7fb1b2489f4388b828989f68f6e35bbf3.png[/img]
+
+再次感谢 tModLoader 社区，每个月开发、测试新功能，你们都积极参与。
+
+本月的更新也有模组制作者期待的功能：ModAccessorySlot 换装和渲染物块预览的钩子，更多见下。玩家还能用新增的指令“/purgeunloaded”移除世界中卸载了的模组物块。
+
+[b]模组制作者注意：[/b]预览版中，有些下个月就要并入稳定版的功能，模组制作者可以测试并提供反馈。影响最大的是修复了大量声音ID，现在它们与原版行为一致。模组原有的效果可能变化，请测试一下声音修复后你的模组是否还正常。我们鼓励模组制作者在预览版试验这些新功能，在本月提供反馈，为下个月的稳定版更新做好准备。
+
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]改动说明[/h1]
+下面是该版本中最值得注意的改动。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202505]更新适配指南（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
+
+[h1]重要改动[/h1]
+[h2]新功能[/h2]
+[b]Adrian Lück[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4340]ModAccessorySlot 换装[/url]
+[b]queue[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4598]物块放置前预览的绘制钩子[/url]
+[b]Ebonfly[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4629]NPC死亡信息相关：ModNPC.DeathMessage、ModNPC.ModifyDeathMessage()、NPCID.Sets.IsTownChild[/url]
+
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/cae9ce0d00471c26bca48a5c7420752d8920d9a8]修复加载异常地图文件时的保存问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4325]完成移除卸载物块的功能，添加 VanillaFallbackOnModDeletion（移除模组物块后默认生成的原版物块）示例[/url]
+
+[h2]API 修复与改动[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/304e5c71d25e7a266270bd69657a2ff632a12558]修复多帧射弹的 ModProjectile.GlowTexture 不绘制的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4655]修复模组墙与周围墙融合异常的问题（Main.wallBlend）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/9dea3ac7b136dd80fd9115fb0571f4a88d443d50]修复 ModGore 有时完全变为原版遗块的问题[/url]
+[b]IbanPlay[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4640]修正 Worldgen.TileFrame() 中的物块更新检测[/url]
+
+[h1]其他[/h1]
+[h2]ExampleMod（示例模组）与 API 文档[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/c5130b3a44b33c467257a12ed84e932687c152e9]使 ExampleStatue 能正常转向[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/e95f2fa8ca19d863454f5081f5b44fafa815a351]添加 TileID.Sets.BreakableWhenPlacing/ReplaceTileBreakUp（放置时可破坏）文档与正确示例[/url]
+[b]TerrorPenguin[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4649]ExampleBar 下方是锤变形的锭时，自身随即破坏[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/97b738ac27d977ec3ad563373333e88a16c688f7]注明 ItemID.Sets.Deprecated 还不有完全有效[/url]
+[b]JavidPack[/b]：文档更新：[url=https://github.com/tModLoader/tModLoader/commit/7cacddb248c9c278ef8f33bf8841c87dda0630d7]其一[/url]、[url=https://github.com/tModLoader/tModLoader/commit/e9a147d582ebe1d8d7b0d2fdc166ad5525625a6e]其二[/url]、[url=https://github.com/tModLoader/tModLoader/commit/bb628a3a66830a1813b34881d4c1a4b9c3fbe59c]其三[/url]
+
+[h2]本地化[/h2]
+[b]Fish[/b]：中译：[url=https://github.com/tModLoader/tModLoader/pull/4643]其一[/url]、[url=https://github.com/tModLoader/tModLoader/pull/4666]其二[/url]
+[b]RazzSG[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4661]俄译[/url]
+[b][url=https://github.com/lace-wing]Lacewing[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2025.05.3.0_zh.txt]本公告中译[/url]
+
+已经有志愿者将我们的每月发布公告翻译成中文、俄语、巴西葡萄牙语、波兰语、西班牙语。如果您愿意将这些公告翻译成其他受支持的语言，请通过 [url=https://tmodloader.net/discord]Discord[/url] 与我们联系。
