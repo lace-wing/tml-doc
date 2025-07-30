@@ -1,0 +1,54 @@
+Title: 2025年8月稳定版更新
+
+----------------------
+
+2025年8月稳定版 tModLoader 已发布！
+
+先告诉你：上个月我们在 Discord 上成功举办了第一场官方 mod jam（限时开发模组的比赛），超乎想象！比赛的主题是“敬你热爱的游戏”，我们收到了许多高质量作品，远超预期。感谢所有参赛者，希望你们都玩得开心，有所收获！大家都可以去[url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&requiredtags%5B0%5D=Mod+Jam+Entry&actualsort=trend&p=1&days=-1]创意工坊[/url]看看参赛的模组。如果你想参加之后的 mod jam，加入我们的 Discord 服务器，获取“ModJam Ping”身份标签，接收相关通知。
+
+接下来是上个月的模组。不止400个，快去找找有没有宝藏模组吧！[url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&days=30&actualsort=trend&p=1]点这里[/url]查看月内的热门模组。
+
+[img]{STEAM_CLAN_IMAGE}/37627134/7522632ce0360d239466dad70d9511a56faebe41.png[/img]
+
+再次感谢 tModLoader 社区，每个月开发、测试新功能，你们都积极参与。
+
+本月的更新也有模组制作者期待的功能，比如 ModConfig.SaveConfig（保存模组配置）。玩家也终于能不受各种声音漏洞困扰了，像音效彼此覆盖或提前停止的问题已被修复。
+
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]改动说明[/h1]
+下面是该版本中最值得注意的改动。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202506]更新适配指南（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
+
+[h1]重要改动[/h1]
+[h2]新功能[/h2]
+[b]Destructor_Ben[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4212]添加 ModConfig.SaveChanges（保存模组配置）[/url]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/pull/2566]音效修复，丰富 SoundStyle 的选项[/url]
+
+[h2]API 改动[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/c46147b02c0307e1552ad124d12db73d00c1deb0]支持来世音乐选择逻辑，添加相关示例[/url]
+[b]KaidenJoy[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4684]使 NPCDefinition 支持负 NPCID[/url]
+
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他[/h2]
+[b]Harper Stoeckle[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4654]修复非 Windows 系统下 ESC 在输入文本时失效的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/d1b4c1532396cdbda3483b9b155009ab6986b73d]修复2*2物块大小的丛林植物隐形的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/9d7a71d6a00ae0b78ba8fc617ad46e821ed54311]修复天龙之怒右键攻击不受攻速影响的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/f58c54c7a7d09247c59903b819864a3975e51827]修复与暗影焰妖娃和攻速钩子有关的问题[/url]
+
+[h2]API 修复与改动[/h2]
+[b]Jacob Adams[/b]：[url=https://github.com/tModLoader/tModLoader/pull/3222]使物块涂漆不受大小限制[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/de0ca799418ed3047d8a4f6de6e1468111570539]NPCDefinition 改用生物图鉴排序；各色史莱姆在图鉴中也能显示对应颜色[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/f7b407982b77af2a6ac5774284b07c990e2de2ac]将 ShadowFlame（暗影焰）加入 Main.debuff[/url]
+[b]CactusDuper[/b]：[url=https://github.com/tModLoader/tModLoader/commit/945a6e9b0e111b7e4355fb41d573b90adba9f126]将 LongMoss（长苔藓）加入 TileID.Sets.IgnoredByGrowingSaplings（树苗生长应无视的物块）[/url]
+
+[h1]其他[/h1]
+[h2]ExampleMod（示例模组）与 API 文档[/h2]
+[b]JackerAcid[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4128]改进 MessageID 文档和 netcode 方法[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/2423e8f47efb751cbf38c7f4f67a81d40b27e2fb]改进文档，建议不要使用 FindChestByGuessing（靠猜找箱子）[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/8f4a15ed8e471707b08ff1609ff6472e5236c3a9]添加物品使用和动画的文档[/url]
+[b]JavidPack[/b]：文档更新：[url=https://github.com/tModLoader/tModLoader/commit/b3f2354b25de3814f3156f2271ceadbf0b314d79]其一[/url]、[url=https://github.com/tModLoader/tModLoader/commit/a1054f6b83757cd626b452fbc16794113eeb79c8]其二[/url]、[url=https://github.com/tModLoader/tModLoader/commit/f3ed51cb2f7d52ccc98227f0e8ddc0c8d16be7e5]其三[/url]、[url=https://github.com/tModLoader/tModLoader/commit/181017cec561afe77a82c7b282ae3057f5d14417]其四[/url]、[url=https://github.com/tModLoader/tModLoader/commit/45261897abd26c7cc433f1eff38bea90acc7fc4a]其五[/url]、[url=https://github.com/tModLoader/tModLoader/commit/f0697ae115b38ae0ed8b19ee63f81a998d745c52]其六[/url]、[url=https://github.com/tModLoader/tModLoader/commit/bceb0c1d66ab176894a6999df9d96e225ecc5dcd]其七[/url]、[url=https://github.com/tModLoader/tModLoader/commit/5ebd3f36ee37ae3f823205f3af7326eca7550a5b]其八[/url]、[url=https://github.com/tModLoader/tModLoader/commit/23c44d6241cf238770f9df44bc90b1e5b64500dd]其九[/url]
+
+[h2]本地化[/h2]
+[b][url=https://github.com/lace-wing]Lacewing[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2025.06.3.0_zh.txt]本公告中译[/url]
+
+已经有志愿者将我们的每月发布公告翻译成数种语言。如果您愿意将这些公告翻译成其他受支持的语言，请通过 [url=https://tmodloader.net/discord]Discord[/url] 与我们联系。
