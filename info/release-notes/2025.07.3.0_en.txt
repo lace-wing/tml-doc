@@ -1,0 +1,48 @@
+Title: September 2025 Stable Update
+
+----------------------
+
+Hello everyone! It is time for the September 2025 Stable Update. 
+
+But first, here is a collage of new mods released this past month. There were 390 new mods this month! Have you tried any of these mods yet? Find any hidden gems? Be sure to regularly check the workshop for newly released mods, we're positive you'll always find something fun and interesting to try out. [url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&days=30&actualsort=trend&p=1]Click here[/url] to see the most popular new mods from this month. 
+
+[img]{STEAM_CLAN_IMAGE}/37627134/7ab4112a24871cacd6504c99b638ece2a6d2b4f3.png[/img]
+
+As always we are grateful for the massive amount of community participation in developing and testing new features each month.
+
+This month's release contains new interaction options for NPC and projectiles, as well as a full rework of our code analyzer now called tModCodeAssist. The full listing of changes is detailed below.
+
+[b]Modders:[/b] We'd like to encourage modders to experiment with the new ModAchievement feature that is currently available on the preview branch. We know modded achievements have been a highly requested feature for some time, so we are excited to see mods use them. We encourage mod makers to experiment with this and other new features on the preview branch and provide feedback this month so that they are ready for the stable release next month. 
+
+As always, if you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub[/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+
+[h1]Changelog[/h1]
+The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202507]Update Migration Guide[/url] to see how to adapt to the new changes after running tModPorter.
+
+[h1]Major Changes[/h1]
+[h2]New Features[/h2]
+[b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4727]tModCodeAssist (formerly tModLoader.CodeAssist) has been reworked and is now directly included in tModLoader releases. It will now be able to receive frequent updates. This is the code analyzer that fixes various code issues, most notably it fixes "magic numbers" to their correct ID values.[/url]
+[b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4539](Mod|GlobalNPC).PreHoverInteract hooks. Lets modders override or piggyback off of right clicking on or hovering over an NPC.[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4701]Add ExampleInteractableProjectile and ProjectileID.Sets.IsInteractable. Projectiles can now be targeted by smart select and draw a smart select highlight.[/url]
+
+[h2]API Changes[/h2]
+[b]Ebonfly[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4715]An icon_small.png will now generate by default when creating mods. The icon_small will now show up in the config listing[/url]
+[b]Destructor_Ben[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4731]Add opt-out of mod building in tModLoader.targets[/url]
+
+[h1]Bug Fixes[/h1]
+[h2]API Fixes and Changes[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/772b896fb572f0794e38ced17fa6caaa4e44a697]Fix wrong item issue with Player.QuickMana_GetItemToUse, Void Bag, and CanUseItem[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/076a502c4d6eb648a8516a2e98fe1148c2d88e10]Fix support for manually setting bestiary stars[/url]
+[b]Mirsario[/b]: [url=https://github.com/tModLoader/tModLoader/commit/e7d4c935213cc8db3ee8c8d716b8f798c30427f4]Additional updates for uncapping sound effect pitch[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/30f5a915208ab1baab62b92089b6eb12b5a3ce82]Update HookGen[/url]
+
+[h1]Other[/h1]
+[h2]ExampleMod and API Documentation[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4704]Add ExampleVine[/url]
+
+[h2]Localization[/h2]
+[b]Fish[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4694]Chinese[/url]
+[b]Fabricio-CL[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4720]French[/url]
+[b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4693]Russian[/url]
+
+We would also like to mention that we have volunteers translating our monthly release announcements into several other languages. If you would like to help translate these announcements into a supported language, please reach out on Discord.

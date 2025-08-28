@@ -1,0 +1,49 @@
+Title: 2025年9月稳定版更新
+
+----------------------
+
+2025年8月稳定版 tModLoader 已发布！
+
+先看上个月发布的模组，足足有390个！常来创意工坊找新模组，一定有能惊艳到你的。[url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&days=30&actualsort=trend&p=1]点这里[/url]看月内最热门的新模组。
+
+[img]{STEAM_CLAN_IMAGE}/37627134/7ab4112a24871cacd6504c99b638ece2a6d2b4f3.png[/img]
+
+再次感谢 tModLoader 社区，每个月开发、测试新功能，你们都积极参与。
+
+本月的更新有 NPC 和射弹新的互动功能；我们还重写了模组用的代码分析器——tModCodeAssist。详情见下。
+
+[b]模组制作者注意：[/b]预览版新增了模组成就。不少模组制作者想要这个功能，很高兴看到它实现。我们鼓励模组制作者在预览版试验这个新功能，在本月提供反馈，为下个月的稳定版更新做好准备。
+
+像往常一样，如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]改动说明[/h1]
+下面是该版本中最值得注意的改动。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202507]更新适配指南（Update Migration Guide）[/url]，了解如何在运行 tModPorter 后适配余下的改动。
+
+[h1]重要改动[/h1]
+[h2]新功能[/h2]
+[b]BasicallyIAmFox[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4727]重写 tModCodeAssist（前tModLoader.CodeAssist），并入 tModLoader 发行循环以加速更新（这是那个检测代码问题，提示你改掉“魔法数字”的分析器）[/url]
+[b]BasicallyIAmFox[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4539]添加钩子 (Mod|GlobalNPC).PreHoverInteract（与 NPC 光标交互前），用于修改或禁用 NPC 光标交互[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4701]添加 ExampleInteractableProjectile（示例交互射弹）和 ProjectileID.Sets.IsInteractable（可交互的射弹）：射弹可被智能光标选中，画一圈高亮[/url]
+
+[h2]API 改动[/h2]
+[b]Ebonfly[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4715]创建模组时，生成文件 icon_small.png，用于模组配置列表、生物图鉴等[/url]
+[b]Destructor_Ben[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4731]添加 tModLoader.targets 条目，可引用 tModLoader 而不构建模组[/url]
+
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/772b896fb572f0794e38ced17fa6caaa4e44a697]修复快速魔力选择虚空袋中物品时，反而检测背包中物品的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/076a502c4d6eb648a8516a2e98fe1148c2d88e10]修复模组无法手动设置图鉴中生物稀有度的问题[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/e7d4c935213cc8db3ee8c8d716b8f798c30427f4]继续解除音效声调的限制[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/30f5a915208ab1baab62b92089b6eb12b5a3ce82]更新 HookGen[/url]
+
+[h1]其他[/h1]
+[h2]ExampleMod（示例模组）与 API 文档[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4704]添加 ExampleVine（示例藤蔓）[/url]
+
+[h2]本地化[/h2]
+[b]Fish[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4694]中译[/url]
+[b]Fabricio-CL[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4720]法译[/url]
+[b]RazzSG[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4693]俄译[/url]
+[b][url=https://github.com/lace-wing]Lacewing[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2025.07.3.0_zh.txt]本公告中译[/url]
+
+已经有志愿者将我们的每月发布公告翻译成数种语言。如果您愿意将这些公告翻译成其他受支持的语言，请通过 [url=https://tmodloader.net/discord]Discord[/url] 与我们联系。
