@@ -21,7 +21,7 @@ Title: 20254年10月稳定版更新
 如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
 
 [h1]改动说明[/h1]
-下面是该版本中最值得注意的改动。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202508]更新适配指南（Update Migration Guide）[/url]，了解如何应对新版本的改动。
+下面是该版本中最值得注意的改动。模组制作者请务必阅读[url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202508]更新适配指南（Update Migration Guide）[/url]，了解如何应对新版本的改动。
 
 [h1]重要改动[/h1]
 [h2]新功能[/h2]
