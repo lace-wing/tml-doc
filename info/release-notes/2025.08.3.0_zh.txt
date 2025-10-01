@@ -1,0 +1,64 @@
+Title: 20254年10月稳定版更新
+
+----------------------
+
+2025年10月稳定版 tModLoader 已发布！
+
+先看上个月发布的模组，足足有260个！常来创意工坊找新模组，一定有能惊艳到你的。[url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&days=30&actualsort=trend&p=1]点这里[/url]看月内最热门的新模组。
+
+[img]{STEAM_CLAN_IMAGE}/37627134/0529b1dc13a12f2aaac1fa7853fc45380f7a5441.png[/img]
+
+再次感谢 tModLoader 社区，每个月开发、测试新功能，你们都积极参与。
+
+本月的更新新增了 ModeAchieveiment（模组成就），希望能方便模组给玩家定长期目标。已经有不少模组制作者展示了他们的自定义成就，期待在稳定版中实现。改动详情见下。
+
+[b]模组制作者注意：[/b]我们在 Discord 服务器的 preview-update-log 频道公布预览版的主要改动，鼓励模组制作者试验新功能，在本月提供反馈，为下个月的稳定版更新做好准备。下个月的更新会修复药水病时长调整的问题，还为模组配置的 Enum 字段提供新显示方法。
+
+如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]改动说明[/h1]
+下面是该版本中最值得注意的改动。模组制作者请务必阅读 [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202508]更新适配指南（Update Migration Guide）[/url]，了解如何应对新版本的改动。
+
+[h1]重要改动[/h1]
+[h2]新功能[/h2]
+[b]Hexic、Midnight295[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4515]添加 ModAchievement，模组可以添加成就了[/url]
+[b]Tyfyter[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4709]添加物块和墙转化的默认值，改进溶液和生物群系转化的兼容性[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/3860]添加本地化模组的创意工坊标签[/url]
+[b]direwolf420[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4776]添加 ModSystem.PostWorldLoad（世界加载后）和 TileID.Sets.ClearedOnWorldLoad（加载世界时清除的物块）[/url]
+
+[h2]API 改动[/h2]
+[b]efcawesome[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4686]添加 (Mod|Global)Tile.ReplaceTile 钩子，“物块交换”时调用[/url]
+[b]Stardust9681[/b]：[url=https://github.com/tModLoader/tModLoader/pull/3760]添加 ExampleCustomUseStyleWeapon（自定义 useStyle 的武器）和 ItemLoader.RegisterUseStyle（注册 useStyle）[/url]
+
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/51e327612acd198d92af20c04883c31beb33afbe]修复菜单音效不一致，使用对话框时 ESC 键异常，对话框背景颜色异常的问题[/url]
+[b]mathica[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4744]修复丛林草向腐化转化异常的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/41eb759f76edc30493ced51a13a84eeb92844221]修复石平台物块无法被“物块交换”替换的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/79ea94f42605144b1a068fdb4451521bf9e3d01c]改写被踢出服务器时的消息，使表达清晰[/url]
+
+[h2]API 修复与改动[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/85e232256c13fb361002a8399dea788f6f056612]使 UIGrid 与 UIList 功能一致：支持 ManualSortMethod 和 iterator[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/a72e6c8cafacf2aaf9b51f62c873ed9ab11c8da8]修复数层 PlayerDrawLayer 字段 Mod 为 null 的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/04b5ad105667b55abe69e6b9dd51b8e4f9afb31a]修复 MonoModHooks.DumpIL 对长名方法无效的问题[/url]
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commit/16552e65e18bdd32b230210ac48e89b3233c985d]更新 MonoMod.RuntimeDetour 版本至 25.3.0，以便将来支持 Arm[/url]
+[b]Sergwest[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4767]改进 SDK 日志[/url]
+[b]Destructor_Ben[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4732]修复模组模版里的拼误[/url]
+[b]BasicallyIAmFox[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4742]让 tModCodeAssist 检测错配的 XXID 类[/url]
+[b]BasicallyIAmFox[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4743]让 tModCodeAssist 修复负 ID[/url]
+[b]BasicallyIAmFox[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4746]让 tModCodeAssist 检测常被误用的命名空间，以防模组不小心引用 Terraria 的符号[/url]
+[b]Stephen T[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4748]让 tModCodeAssist 把 Main.player[Main.myPlayer] 简化成 Main.LocalPlayer[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4741]让 tModCodeAssist 检测 XXID.Sets 索引是否可以由硬编码转化为 XXID 成员[/url]
+[b]JavidPack[/b]：更多 tModCodeAssist 的好东西：[url=https://github.com/tModLoader/tModLoader/commit/dbb8a6b4682f68373e544a9df41d8fc77b3952f1]其一[/url]、[url=https://github.com/tModLoader/tModLoader/commit/5c9c09fa843a954d18ea196cbe746933e09df74d]其二[/url]、[url=https://github.com/tModLoader/tModLoader/commit/369699748adf8568884a0ee4a6e08ec2455264c3]其三[/url]、[url=https://github.com/tModLoader/tModLoader/pull/4747]其四[/url]、[url=https://github.com/tModLoader/tModLoader/commit/45d5a1d8c00f6da3b4390a0ac90ddc4590c6837f]其五[/url]
+
+[h1]其他改动[/h1]
+[h2]示例模组（ExampleMod）与 API 文档[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4762]哨兵示例[/url]
+[b]JavidPack[/b]：更新文档：[url=https://github.com/tModLoader/tModLoader/commit/6798978ee31520926fa5da5c1a2fc4667f37fee8]其一[/url]、[url=https://github.com/tModLoader/tModLoader/commit/fa1af16da507bdff28b4e58a49a0e4d57de757a2]其二[/url]、[url=https://github.com/tModLoader/tModLoader/commit/300d6160bd872e5e92647632b04ad5a5daaa296c]其三[/url]、[url=https://github.com/tModLoader/tModLoader/commit/ae64e5e68b3f45114b303498b5b366e21475afd9]其四[/url]
+
+[h2]本地化[/h2]
+[b]RazzSG[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4766]俄译[/url]
+[b]ayuyoiM[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4763]中译[/url]
+[b][url=https://github.com/lace-wing]Lacewing[/url][/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2025.08.3.0_zh.txt]本公告中译[/url]
+
+已经有志愿者将我们的每月发布公告翻译成数种语言。如果您愿意将这些公告翻译成其他受支持的语言，请通过 [url=https://tmodloader.net/discord]Discord[/url] 与我们联系。
