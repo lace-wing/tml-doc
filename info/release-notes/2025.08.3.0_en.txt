@@ -1,0 +1,63 @@
+Title: October 2025 Stable Update
+
+----------------------
+
+Hello everyone! It is time for the October 2025 Stable Update. 
+
+But first, here is a collage of new mods released this past month. There were 260 new mods this month! Have you tried any of these mods yet? Find any hidden gems? Be sure to regularly check the workshop for newly released mods, we're positive you'll always find something fun and interesting to try out. [url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&days=30&actualsort=trend&p=1]Click here[/url] to see the most popular new mods from this month. 
+
+[img]{STEAM_CLAN_IMAGE}/37627134/0529b1dc13a12f2aaac1fa7853fc45380f7a5441.png[/img]
+
+We are grateful for the massive amount of community participation in developing and testing new features each month.
+
+This month's release contains the new ModAchievement feature. We are excited to see how mods use ModAchievement and how they'll give players long-term goals to work towards. We've seen many mod makers showcasing their new achievement art this last month and look forward to seeing them in-game. The full listing of other features and changes is detailed below. 
+
+[b]Modders:[/b] As usual, we'd like to encourage modders to test out new tModLoader features on the preview branch if they are relevant to your mod. Major features in preview are announced in the preview-update-log channel on our Discord. Some features in preview for next month include support for properly adjusting potion delay and new options for presenting Enums in configs. We encourage mod makers to experiment with these and other new features on the preview branch and provide feedback this month so that they are ready for the stable release next month. 
+
+If you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub[/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+
+[h1]Changelog[/h1]
+The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202508]Update Migration Guide[/url] to see how to adapt to the new changes.
+
+[h1]Major Changes[/h1]
+[h2]New Features[/h2]
+[b]Hexic, Midnight295[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4515]ModAchievement added. Mods can now add their own achievements.[/url]
+[b]Tyfyter[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4709]Tile and Wall Conversion Fallback/Inheritance. Better solution and biome conversion compatibility.[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/3860]Add new workshop tag for translation mods[/url]
+[b]direwolf420[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4776]Add ModSystem.PostWorldLoad and TileID.Sets.ClearedOnWorldLoad[/url]
+
+[h2]API Changes[/h2]
+[b]efcawesome[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4686]Add (Mod|Global)Tile.ReplaceTile hook for when a tile is being replaced via block swap[/url]
+[b]Stardust9681[/b]: [url=https://github.com/tModLoader/tModLoader/pull/3760]Added ExampleCustomUseStyleWeapon, an example of a custom useStyle. Also added ItemLoader.RegisterUseStyle[/url]
+
+[h1]Bug Fixes[/h1]
+[h2]Quality of Life and Other Fixes[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/51e327612acd198d92af20c04883c31beb33afbe]Fix menu sound inconsistencies, fix escape when dialog is open behavior, fix dialog background tint feature[/url]
+[b]mathica[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4744]Fix jungle grass corruption conversion[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/41eb759f76edc30493ced51a13a84eeb92844221]Fix blockswap not working with stone platforms[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/79ea94f42605144b1a068fdb4451521bf9e3d01c]Fix misleading message when kicked[/url]
+
+[h2]API Fixes and Changes[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/85e232256c13fb361002a8399dea788f6f056612]UIGrid updated to match all UIList features. Now supports ManualSortMethod, iterator[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/a72e6c8cafacf2aaf9b51f62c873ed9ab11c8da8]Fix null issue with PlayerDrawLayer's Multiple Position[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/04b5ad105667b55abe69e6b9dd51b8e4f9afb31a]Fix MonoModHooks.DumpIL failing with long method names[/url]
+[b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/commit/16552e65e18bdd32b230210ac48e89b3233c985d]Update MonoMod.RuntimeDetour to 25.3.0 to work towards ARM support[/url]
+[b]Sergwest[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4767]Make SDK logs more clear[/url]
+[b]Destructor_Ben[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4732]Fix some mod template typos[/url]
+[b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4742]tModCodeAssist: Now detects using an incorrect XID class[/url]
+[b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4743]tModCodeAssist: Fixed negative IDs not being fixed[/url]
+[b]BasicallyIAmFox[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4746]tModCodeAssist: Common Collision Name analyzer, prevents mods accidentally using Terraria namespaces[/url]
+[b]Stephen T[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4748]tModCodeAssist: Simplify Main.player[Main.myPlayer] -> Main.LocalPlayer[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4741]tModCodeAssist: Now supports converting XID.Sets array index values[/url]
+[b]JavidPack[/b]: More tModCodeAssist support: [url=https://github.com/tModLoader/tModLoader/commit/dbb8a6b4682f68373e544a9df41d8fc77b3952f1]1[/url], [url=https://github.com/tModLoader/tModLoader/commit/5c9c09fa843a954d18ea196cbe746933e09df74d]2[/url], [url=https://github.com/tModLoader/tModLoader/commit/369699748adf8568884a0ee4a6e08ec2455264c3]3[/url], [url=https://github.com/tModLoader/tModLoader/pull/4747]4[/url], [url=https://github.com/tModLoader/tModLoader/commit/45d5a1d8c00f6da3b4390a0ac90ddc4590c6837f]5[/url]
+
+[h1]Other[/h1]
+[h2]ExampleMod and API Documentation[/h2]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4762]Example sentry[/url]
+[b]JavidPack[/b]: Various Documentation Updates: [url=https://github.com/tModLoader/tModLoader/commit/6798978ee31520926fa5da5c1a2fc4667f37fee8]1[/url], [url=https://github.com/tModLoader/tModLoader/commit/fa1af16da507bdff28b4e58a49a0e4d57de757a2]2[/url], [url=https://github.com/tModLoader/tModLoader/commit/300d6160bd872e5e92647632b04ad5a5daaa296c]3[/url], [url=https://github.com/tModLoader/tModLoader/commit/ae64e5e68b3f45114b303498b5b366e21475afd9]4[/url]
+
+[h2]Localization[/h2]
+[b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4766]Russian[/url]
+[b]ayuyoiM[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4763]Chinese[/url]
+
+We would also like to mention that we have volunteers translating our monthly release announcements into several other languages. If you would like to help translate these announcements into a supported language, please reach out on Discord.
