@@ -4,13 +4,20 @@ Title: October 2025 Stable Update
 
 Hello everyone! It is time for the October 2025 Stable Update. 
 
-But first, here is a collage of new mods released this past month. There were 260 new mods this month! Have you tried any of these mods yet? Find any hidden gems? Be sure to regularly check the workshop for newly released mods, we're positive you'll always find something fun and interesting to try out. [url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&days=30&actualsort=trend&p=1]Click here[/url] to see the most popular new mods from this month. 
+But first, some news. This last week we hosted our second official mod jam on our Discord server. The theme was "It's Dangerous to Go Alone, Take This!" and it involved creating a small environment to explore. We thank everyone who participated and hope it was fun and a great practice! We encourage players to check out the mod jam submissions on the [url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&admin_view=1&requiredtags%5B0%5D=Mod+Jam+Entry&created_date_range_filter_start=1756706400&created_date_range_filter_end=1759212000&updated_date_range_filter_start=NaN&updated_date_range_filter_end=NaN&actualsort=trend&p=1&days=-1
+]workshop here[/url]. 
+
+If you are interested in participating in the next mod jam, be sure to come to Discord and grab the "ModJam Ping" role to be notified. We intend to host the 3rd mod jam near the end of October and will make sure to announce it earlier on Discord so modders can plan time for it.
+
+Also, here is a collage of new mods released this past month. There were 260 new mods this month! Have you tried any of these mods yet? Find any hidden gems? Be sure to regularly check the workshop for newly released mods, we're positive you'll always find something fun and interesting to try out. [url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&days=30&actualsort=trend&p=1]Click here[/url] to see the most popular new mods from this month. 
 
 [img]{STEAM_CLAN_IMAGE}/37627134/0529b1dc13a12f2aaac1fa7853fc45380f7a5441.png[/img]
 
 We are grateful for the massive amount of community participation in developing and testing new features each month.
 
 This month's release contains the new ModAchievement feature. We are excited to see how mods use ModAchievement and how they'll give players long-term goals to work towards. We've seen many mod makers showcasing their new achievement art this last month and look forward to seeing them in-game. The full listing of other features and changes is detailed below. 
+
+Another change this month is new warnings and checks when downloading mods from multiplayer servers. We want to encourage players to exercise caution when downloading mods directly from servers, especially with strangers, as this is risky due to the mods having the potential to run malicious code. We've updated the mod publishing process to facilitate verifying the validity of mods downloaded directly from servers.
 
 [b]Modders:[/b] As usual, we'd like to encourage modders to test out new tModLoader features on the preview branch if they are relevant to your mod. Major features in preview are announced in the preview-update-log channel on our Discord. Some features in preview for next month include support for properly adjusting potion delay and new options for presenting Enums in configs. We encourage mod makers to experiment with these and other new features on the preview branch and provide feedback this month so that they are ready for the stable release next month. 
 
@@ -32,6 +39,8 @@ The following is a list of the most noteworthy changes made for this release. As
 
 [h1]Bug Fixes[/h1]
 [h2]Quality of Life and Other Fixes[/h2]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4345]Store Mod Hash Data in Developer Metadata. This feature facilitates verifying the validity of mods downloaded directly from servers.[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4801]Warning messages for downloading mods directly from servers. When joining a server, appropriate warnings are now shown to inform users of the risk of downloading mods from strangers.[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/51e327612acd198d92af20c04883c31beb33afbe]Fix menu sound inconsistencies, fix escape when dialog is open behavior, fix dialog background tint feature[/url]
 [b]mathica[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4744]Fix jungle grass corruption conversion[/url]
 [b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/41eb759f76edc30493ced51a13a84eeb92844221]Fix blockswap not working with stone platforms[/url]

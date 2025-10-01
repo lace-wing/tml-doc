@@ -4,13 +4,17 @@ Title: 20254年10月稳定版更新
 
 2025年10月稳定版 tModLoader 已发布！
 
-先看上个月发布的模组，足足有260个！常来创意工坊找新模组，一定有能惊艳到你的。[url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&days=30&actualsort=trend&p=1]点这里[/url]看月内最热门的新模组。
+不过，你知道上周在我们 Discord 服务器举办的 mod jam（限时模组开发比赛）吗？这次的主题是“独行危险，拿上这个！”；模组至少要添加一个有意思的小环境。感谢所有参赛人员，希望你们玩得开心，有所收获！[url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&admin_view=1&requiredtags%5B0%5D=Mod+Jam+Entry&created_date_range_filter_start=1756706400&created_date_range_filter_end=1759212000&updated_date_range_filter_start=NaN&updated_date_range_filter_end=NaN&actualsort=trend&p=1&days=-1]点这里[/url]看本次参赛模组。
+
+如果你准备参加下次 mod jam，请加入 tModLoader 官方 Discord 服务器，加入“ModJam Ping”身份组。我们计划在十月末举办第三场 mod jam；我们会提前通知参赛者，留足准备时间。
+
+再看上个月发布的模组，足足有260个！常来创意工坊找新模组，一定有能惊艳到你的。[url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=trend&section=readytouseitems&days=30&actualsort=trend&p=1]点这里[/url]看月内最热门的新模组。
 
 [img]{STEAM_CLAN_IMAGE}/37627134/0529b1dc13a12f2aaac1fa7853fc45380f7a5441.png[/img]
 
 再次感谢 tModLoader 社区，每个月开发、测试新功能，你们都积极参与。
 
-本月的更新添加了 ModAchieveiment（模组成就），希望能方便模组给玩家定长期目标。已经有不少模组制作者展示了他们的自定义成就，期待在稳定版中实现。改动详情见下。
+本月的更新添加了 ModAchieveiment（模组成就），希望能方便模组给玩家定长期目标。已经有不少模组制作者展示了他们的自定义成就，期待在稳定版中实现。另外，进入多人模式世界，下载模组前，tModLoader 会检查模组并警告用户。我们希望以此提醒玩家谨慎对待直接从服务器，特别是从陌生服务器下载的模组，因为它们可能执行恶意代码。改动详情见下。
 
 [b]模组制作者注意：[/b]我们在 Discord 服务器的 preview-update-log 频道公布预览版的主要改动，鼓励模组制作者试验新功能，在本月提供反馈，为下个月的稳定版更新做好准备。下个月的更新会修复药水病时长调整的问题，还为模组配置的 Enum 字段提供新显示方法。
 
@@ -32,6 +36,8 @@ Title: 20254年10月稳定版更新
 
 [h1]漏洞修复[/h1]
 [h2]游戏体验及其他[/h2]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4345]在 Steam DeveloperMetadata 里储存模组的哈希吗，用于验证直接从服务器下载的模组[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4801]添加直接从服务器下载模组时的警告；加入服务器时，告知玩家从陌生服务器下载模组的风险[/url]
 [b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/51e327612acd198d92af20c04883c31beb33afbe]修复菜单音效不一致，使用对话框时 ESC 键异常，对话框背景颜色异常的问题[/url]
 [b]mathica[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4744]修复丛林草向腐化转化异常的问题[/url]
 [b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/41eb759f76edc30493ced51a13a84eeb92844221]修复石平台物块无法被“物块交换”替换的问题[/url]
