@@ -36,7 +36,7 @@ Title: 2025年10月稳定版更新
 
 [h1]漏洞修复[/h1]
 [h2]游戏体验及其他[/h2]
-[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4345]在 Steam DeveloperMetadata 里储存模组的哈希吗，用于验证直接从服务器下载的模组[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4345]在 Steam DeveloperMetadata 里储存模组的哈希码，用于验证直接从服务器下载的模组[/url]
 [b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4801]添加直接从服务器下载模组时的警告；加入服务器时，告知玩家从陌生服务器下载模组的风险[/url]
 [b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/51e327612acd198d92af20c04883c31beb33afbe]修复菜单音效不一致，使用对话框时 ESC 键异常，对话框背景颜色异常的问题[/url]
 [b]mathica[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4744]修复丛林草向腐化转化异常的问题[/url]
