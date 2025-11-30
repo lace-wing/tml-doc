@@ -12,8 +12,7 @@ Title: 2025年12月稳定版更新
 
 本月，我们修了一些漏洞，像上次更新导致的液体渲染效果倒退，以及一些交互界面的问题。有几个小功能给模组制作者：模组压力板、物块交互，套装残影效果，玩家整体渲染的新钩子。
 
-[b]模组制作者注意：[/b]
-我们照例在 Discord 服务器的 preview-update-log 频道公布预览版的主要改动，鼓励模组制作者试验新功能，现在反馈，为下个月的稳定版更新做好准备。
+[b]模组制作者注意：[/b]我们照例在 Discord 服务器的 preview-update-log 频道公布预览版的主要改动，鼓励模组制作者试验新功能，现在反馈，为下个月的稳定版更新做好准备。
 
 如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
 
