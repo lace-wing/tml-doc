@@ -1,0 +1,60 @@
+Title: 2025年12月稳定版更新
+
+----------------------
+
+2025年12月稳定版 tModLoader 已发布！
+
+先看上个月发布的模组，三百个有余！常来创意工坊看新模组，一定有能惊艳到你的。[url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=totaluniquesubscribers&section=readytouseitems&admin_view=1&created_date_range_filter_start=1761804000&created_date_range_filter_end=1764140400&updated_date_range_filter_start=NaN&updated_date_range_filter_end=NaN&actualsort=totaluniquesubscribers&p=1]点这里[/url]看月内最热门的新模组。
+
+[img]{STEAM_CLAN_IMAGE}/37627134/af23edc9114bca4c157fa2daa7628f7e281ba303.png[/img]
+
+感谢 tModLoader 社区，每个月开发、测试新功能，你们都积极参与。
+
+本月，我们修了一些漏洞，像上次更新导致的液体渲染效果倒退，以及一些交互界面的问题。有几个小功能给模组制作者：模组压力板、物块交互，套装残影效果，玩家整体渲染的新钩子。
+
+[b]模组制作者注意：[/b]
+我们照例在 Discord 服务器的 preview-update-log 频道公布预览版的主要改动，鼓励模组制作者试验新功能，现在反馈，为下个月的稳定版更新做好准备。
+
+如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=https://fs49.org/sample-page/]FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]改动说明[/h1]
+下面是该版本中最值得注意的改动。模组制作者请务必阅读[url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202510]更新适配指南（Update Migration Guide）[/url]，了解如何应对新版本的改动。
+
+[h1]重要改动[/h1]
+[h2]新功能[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4823]新钩子 ModPlayer.DrawPlayer，用于自定义人物残影效果[/url]
+[b]Tyfyter[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4774]新钩子 (Mod|Global)Tile.HitSwitch 和 (Mod|Global)Tile.SwitchTiles，还有 PressurePlate（压力板）物块组[/url]
+
+[h2]API 改动[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4795]如果方法有新重载而旧重载被标为过时，其 MonoMod 钩子也会被标为过时，运行时警告，编译时报错[/url]
+[b]Stephen Thiebaud[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4845]排除模组 MSBuild 任务中复制的私有 tModLodaer 引用，给模组制作者省下存储空间[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/44677f47721f815e2e685a8724012f0959dbffbb]使钩子 (ModTile|ModWall).PlaceInWorld 反映实际放置的物块，而非 Item.createTile/Wall（物品声称其对应的物块）[/url]
+
+[h1]漏洞修复[/h1]
+[h2]游戏体验及其他[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/9cae00b72eb949447888e7e54302375becc9a220]修复城镇 NPC 超过 99 个导致的住房分配界面问题[/url]
+[b]Kevin Pugliese[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4815]修复反重力时其他任务的聊天气泡位置异常的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/83848e1b6a33fb4c002402304906446ab9fe6f6e]写清楚“重新下载缺失的模组”消息和按钮的意思[/url]
+[b]Stephen Thiebaud[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4860]修复很多罕见的液体渲染漏洞[/url]
+[b]Ivan Ortiz[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4851]修复斜坡上渲染液体的问题[/url]
+[b]Stephen Thiebaud[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4850]修复世界边缘渲染液体的问题[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b8a5a286c8bcf872e7d836f3f0238f97331d17c9]补回 TileID.Sets.Snow（雪物块）选帧逻辑[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/8fb68e9e52595a4fad7df52d61ef6ec7b9f447d9]修复“修复 libnfd 返还内存时崩溃”的后续问题[/url]
+
+[h2]API 修复与改动[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/168cd649ef7f79c595392051810596f4e6548f5b]将 MonoMod 更新到 25.3.2——修复更新执行中的 ILHook 产生竞争危害的问题（“Referenced cell no longer exists”）[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4868]独立每个线程的 Main.CurrentPlayerOverride，预防相关的多线程问题[/url]
+[b]Qther[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4811]让 tModCodeAssist 修复更多 XXID 问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/e0a5e068335aad81ff9a97495637be809fdc138f]让 tModCodeAssist 在修复 XXID 问题时保留空格和注释[/url]
+
+[h1]其他改动[/h1]
+[h2]示例模组（ExampleMod）与 API 文档[/h2]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/90328a735a367dde8faf76c9542b020844841548]改进 ModPlayer 同步和其他文档[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commit/b9b4ddc753115cdd5dadb3e9664339369a45325b]改进 ExampleCustomCurrency（自定义货币）示例[/url]
+
+[h2]本地化[/h2]
+[b]ayuyoiM and Cyrilly[/b]：中译：[url=https://github.com/tModLoader/tModLoader/pull/4836]其一[/url]、[url=https://github.com/tModLoader/tModLoader/pull/4825]其二[/url]
+[b]RazzSG[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4833]俄译[/url]
+[b]Lacewing[/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2025.10.3.0_zh.txt]本公告中译[/url]
+
+已经有志愿者将我们的每月发布公告翻译成数种语言。如果您愿意贡献更多公告翻译，请通过 [url=https://tmodloader.net/discord]Discord[/url] 与我们联系。
