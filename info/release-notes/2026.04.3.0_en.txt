@@ -1,0 +1,149 @@
+Title: June 2026 Stable Update
+
+----------------------
+
+Hello everyone! It is time for the June 2026 Stable Update, as well as some other news. 
+
+This month's announcement contains news about 1.4.5 update progress, a quick showcase of new mods from the past month, and the changelog for the new stable release.
+
+[h1]Future Terraria 1.4.5 Support[/h1]
+
+As mentioned previously, the process of updating tModLoader to all of the new content and features of the Terraria 1.4.5 update (Bigger and Boulder) will take some time. This process as well as any other big changes desired by the modding community for this update will take many months still.
+
+[h2]Terraria 1.4.5 Support Progress[/h2]
+
+Progress on the update this month has been very productive. We've seen many community contributions this month from experienced modders. We are extremely grateful for those willing to help with this process. The tModLoader team will continue to work with experienced modders to progress towards the tModLoader 1.4.5 update. 
+
+There are still many tasks to be done, if you are interested in contributing code for the 1.4.5 update, the [url=https://github.com/tModLoader/tModLoader/issues/5070]1.4.5 Update Information[/url] page has information on how to contribute and what tasks remain to be done. That page also explains how to join the "1.4.5-dev" beta branch. Users can join that beta branch to help identify and report remaining bugs, but please don't expect that version of the game to be stable.
+
+We'd like to encourage modders to take this opportunity to come discuss any tModLoader API shortcomings with the tModLoader team and contributors on Discord, even if they are not able to personally contribute the changes. Major releases present an opportunity to fix issues that couldn't be addressed properly in regular monthly releases.
+
+As usual, community contributions are discussed mainly on Discord initially and then on GitHub to be implemented. 
+
+[h2]Terraria 1.4.5 Update Changelog[/h2]
+
+Here is a listing of progress made on the 1.4.5 update since we've started the beta branch, ordered alphabetically by contributor name:
+
+[b]AjuliDev[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5051]Updated documentation for StartRain and StopRain[/url]
+[b]Antonino Grasso[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5122]Resolve WorldGenerator._seed PortingNotes TODO[/url]
+[b]Caio Peluti[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5154]Expand BossLoot hook to include heart and potion drop amount[/url]
+[b]direwolf420[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5158]Move blockLoot.Clear to latest possible place[/url]
+[b]Jacob Adams[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5163]Fix item flasks[/url]
+[b]Jacob Adams[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5080]Fix mannequins[/url]
+[b]Jacob Adams[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5066]Added 1.4.5 MapLayers[/url]
+[b]Jerry An[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5160]Fix CanBeTeleportedTo hook for potion/conch teleports[/url]
+[b]Jerry An[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5157]Merge ItemLoader.CanStack into Item.CanStack, fix stack-related bugs[/url]
+[b]Jerry An[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5152]Restore OnStack hooks[/url]
+[b]Jerry An[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5147]Restore CanStack, CanStackInWorld, and OnStack hooks for WorldItem stacking[/url]
+[b]Jerry An[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5146]Restore ItemLoader.Update and PostUpdate hooks for WorldItem[/url]
+[b]lost-werewolf[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5072]Extra array resizes[/url]
+[b]lost-werewolf[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5068]Publicize SceneState.ManageSpecialBiomeVisuals[/url]
+[b]lost-werewolf[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5058]Fix null sound paths for new LegacySoundStyles[/url]
+[b]lost-werewolf[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5079]Fix ModBiome[/url]
+[b]Nicolas Bissig[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5123]Check for `= new Tile();` not gated by null checks[/url]
+[b]noahDP1911[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5131]Remove pylon danger teleport hooks[/url]
+[b]noahDP1911[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5117]Complete NPCSpawnInfo migration to NPC.Spawner[/url]
+[b]noahDP1911[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5109]Debuff Length Migration[/url]
+[b]noahDP1911[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5104]Fix slime body ore drop stack size[/url]
+[b]noahDP1911[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5090]Implemented tModPorter Journeymode-check changes[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5164]Updated GlobalNPC.BuffTownNPC[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5155]Boulder Logo ModMenu[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5096]Town NPC Chat Buttons[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5151]Move mod warning icon left on world select[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5145]Updated Example Jousting Lance[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5128]Fix exception with too many tooltip lines[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5124]Restore petting settings[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5057]Town NPC Portraits[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5061]Fix Modded Town NPCs not showing up in the housing UI[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5054]New Conditions and Update Town NPC Shops[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5063]Fix Modded Town NPCs' NoHome Dialogue[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5050]tModPorter Additions[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5048]Fixed Menu Link Icons[/url]
+[b]Rijam[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5045]Some ID Updates[/url]
+[b]tomat[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5120]Update hair count[/url]
+[b]tomat[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5064]Update liquid edge rendering and make it work again[/url]
+[b]tomat[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5065]Correct typo in max screen size calculation[/url]
+[b]tomat[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5035]Implement FileWatcherPath/Refresh for ContentSources[/url]
+[b]tomat[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5034]Fix AssetRepository compilation errors and fix hot reloading[/url]
+[b]tomat[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5036]Use sdl3 to update window icon [/url]
+[b]tomat[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5037]Clear out unused TileBatch patches[/url]
+[b]tomat[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5033]Remove redundant window implementations, make windows use native console APIs[/url]
+[b]tomat[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5028]Bump Terraria/TerrariaNetCore to 1.4.5.6[/url]
+[b]tomat[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4986]Clean Up `Terraria`/`TerrariaNetCore` Patches[/url]
+[b]tomat[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4985]Bump `Terraria`/`TerrariaNetCore` Patches to 1.4.5.5[/url]
+[b]tomat[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4952]Update Terraria and TerrariaNetCore Patches to 1.4.5[/url]
+[b]Tyfyter[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5052]Modded tile conversion completely updated[/url]
+
+In addition to these code contributions from modders, the tModLoader team has also been working on 1.4.5 code changes. These have been summarized this time for brevity. 
+
+[b]Chicken-Bones[/b]: [url=https://github.com/tModLoader/tModLoader/commits?author=Chicken-Bones]Work on patcher and setup tools, modernizing dependencies, and resolving porting TODOs[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commits?author=JavidPack]Work on porting code patches, implementing tModPorter migrations, managing porting efforts, and resolving porting TODOs[/url]
+[b]Mirsario[/b]: [url=https://github.com/tModLoader/tModLoader/commits?author=Mirsario]Work on support for NixOS[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commits?author=Solxanich]Work on new workshop capabilities and related fixes[/url]
+
+[h2]Terraria 1.4.5 Support FAQ[/h2]
+[b]Q: "Will all of my mods still work on v1.4.5 immediately?"[/b]
+A: Due to how much has changed in the Terraria v1.4.5 update, the short answer to this is "no". Modders will, however, have ample opportunity to update their mods to v1.4.5 before it is officially released, so as long as the mods you are using are still maintained by the modder, they should be available on v1.4.5 once it has a stable release for players.
+
+[b]Q: "What will happen to 1.4.4?"[/b]
+A: 1.4.4 mods and the 1.4.4 version of tModLoader will continue to exist and be available for players both during porting and after. It will be supported as a Legacy version like 1.3 and 1.4.3.
+
+[b]Q: "When will 1.4.4 stop receiving updates?"[/b]
+A: 1.4.4 will continue to receive maintenance updates to ensure it stays functional. We do not have a date for when content updates will stop; in the near-term 1.4.4 will continue to receive regular updates until we are ready to 'Preview' the 1.4.5 beta build to modders.
+
+[b]Q: "Will 1.4.5 be backwards compatible with my worlds and players from 1.4.4?"[/b]
+A: From tModLoader's side, one of our guiding principles is to ensure the player experience is as seamless as possible. We aim to maintain backwards compatibility in tModLoader and encourage modders to keep this in mind when it comes time.
+
+[h1]New Mods Showcase[/h1]
+
+Here is a collage of new mods released this past month. There were over 300 new mods this month! Have you tried any of these mods yet? Find any hidden gems? Be sure to regularly check the workshop for newly released mods, we're positive you'll always find something fun and interesting to try out. [url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=totaluniquesubscribers&section=readytouseitems&p=1&num_per_page=30&days=7&created_date_range_filter_start=1777248000&created_date_range_filter_end=1779926400&childpublishedfileid=0&admin_view=1]Click here[/url] to see the most popular new mods from this month. 
+
+[img]{STEAM_CLAN_IMAGE}/37627134/23d67d073601b2366c5dc092912b07bfbe9eb879.png[/img]
+
+[h1]Stable Release[/h1]
+
+We will continue to update the 1.4.4 version of tModLoader with bug fixes as we work on updating tModLoader to the Terraria v1.4.5 update (Bigger and Boulder). We are grateful for the massive amount of community participation in developing and testing new features each month.
+
+If you are having issues of any sort, definitely don't hesitate to check out our [url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]FAQ on GitHub[/url] or reach out to us at [url=https://discord.com/invite/tmodloader]our Discord[/url]. 
+
+[h1]Stable Release Changelog[/h1]
+The following is a list of the most noteworthy changes made for this release. As a reminder, modders should consult the [url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202604]Update Migration Guide[/url] to see how to adapt to the new changes.
+
+[h2]Major Changes[/h2]
+[h3]New Features[/h3]
+None
+
+[h3]API Changes[/h3]
+[b]Mark[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5087]Add NPC.StrikeOtherNPC helper method[/url]
+
+[h2]Bug Fixes[/h2]
+[h3]Quality of Life and Other Fixes[/h3]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/4482578c9c5565b892bcd19378fe0273b5a10348]Prevent startup crash for when Workshop is offline but Steam is online[/url]
+[b]Solxan[/b]: [url=https://github.com/tModLoader/tModLoader/commit/4a6d36c5c9f2aa22459a826a5cb1246f40ca871b]Fix recent issue with GOG users experiencing launch crashes[/url]
+[b]错数螺线[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5097]Fixed Host and Play console encoding to fix garbled Chinese characters[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5111]Fixed launch issue for users with very high resolution displays[/url]
+[b]Mark[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5074]Fix Linux multi-client logging by enforcing FileShare.None[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/ce6ae2ceb2bd29426dcc9f5eaa2d35359be197b8]Localize text for copying over worlds and players[/url]
+
+[h3]API Fixes and Changes[/h3]
+[b]Tyfyter[/b]: [url=https://github.com/tModLoader/tModLoader/pull/4977]Fix issue with NoSync library syncing[/url]
+[b]Mark[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5078]Add Debian Steam Installation path to Linux auto-detection for developer tools[/url]
+[b]Mellohi[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5113]Fix Glowing Mushroom conversion interactions[/url]
+
+[h2]Other[/h2]
+[h3]ExampleMod and API Documentation[/h3]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/82f4bf840a26839ddea04011fc07fa69bc152938]ExampleGemsparkBlock, showcasing Framing.SelfFrame8Way and more[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/34748f49e64be1591bcf6022b31095ed0a62ce8e]Fix ExampleJavelinProjectile drawing in the incorrect draw order[/url]
+[b]A5TR0spud[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5101]Update ExampleFoodItem and related documentation[/url]
+[b]hezuo1hao[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5093]Fixed commented out example in ExemplarAdvancedFailProjectile[/url]
+[b]hezuo1hao[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5107]Fix url typo[/url]
+[b]JavidPack[/b]: [url=https://github.com/tModLoader/tModLoader/commit/884d15a66f018c34b23fddc90c6d3c5fe72ed9a2]Documentation[/url]
+
+[h3]Localization[/h3]
+[b]ayuyoiM[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5115]Chinese[/url]
+[b]Alino4kaHvoshch[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5102]Russian[/url]
+[b]RazzSG[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5116]Russian[/url]
+[b]NicolasPL[/b]: [url=https://github.com/tModLoader/tModLoader/pull/5094]Spanish[/url]
+
+We would also like to mention that we have volunteers translating our monthly release announcements into several other languages. If you would like to help translate these announcements into a supported language, please reach out on Discord.
+

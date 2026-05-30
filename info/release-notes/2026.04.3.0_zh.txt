@@ -1,0 +1,152 @@
+Title: 2026年6月稳定版更新
+
+----------------------
+
+2026年6月稳定版已发布！
+
+本月公告内容有1.4.5更新进度、月内新模组展示、稳定版更新日志。
+
+[h1]尚未支持泰拉瑞亚1.4.5[/h1]
+
+如上次公告所说，让 tModLoader 跟上泰拉瑞亚1.4.5（更大更石）的大量新内容、新机制要些时间。这些更新连带模组制作社区想要的大改动，实在得花好几个月。
+
+[h2]泰拉瑞亚1.4.5支持进度[/h2]
+
+这个月的更新卓有成效，我们收到了许多资深模组制作者的贡献。十分感谢助力的社区成员。tModLoader 团队将继续与模组制作者共同推进1.4.5更新。
+
+项目仍有很多待办，如果你想为1.4.5更新贡献代码，看[url=https://github.com/tModLoader/tModLoader/issues/5070]1.4.5更新信息[/url]了解更新细节和任务清单。用户也可以按此页面说明的方法加入“1.4.5-dev”测试版游戏，帮忙找漏洞，反馈问题。不过别期待这个版本能正常游玩。
+
+即使不能亲自贡献代码，作为模组制作者，你也可以加入 Discord，与 tModLoader 团队和贡献者讨论 API 的不足之处。我们希望借这次重大更新拔除常规月度更新不便修改的问题。
+
+社区贡献内容一般先经过 Discord 讨论，再搬到 GitHub 上准备实现。
+
+[h2]泰拉瑞亚1.4.5改动说明[/h2]
+
+自1.4.5测试版上线以来，有下列更新（按贡献者名字母顺序）：
+
+[b]AjuliDev[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5051]更新 StartRain 和 StopRain 的文档[/url]
+[b]Antonino Grasso[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5122]完成移植 WorldGenerator._seed 的剩余内容[/url]
+[b]Caio Peluti[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5154]更新 BossLoot 钩子，加入心和药水的掉落量[/url]
+[b]direwolf420[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5158]尽可能晚调用 blockLoot.Clear，使其清除所有掉落[/url]
+[b]Jacob Adams[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5163]修复物品瓶导致世界存档异常的问题[/url]
+[b]Jacob Adams[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5080]修复人体模型新槽位不保存的问题[/url]
+[b]Jacob Adams[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5066]添加1.4.5的新 MapLayers（宝藏袋，团队出生点）[/url]
+[b]Jerry An[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5160]修复恶魔海螺和传送药水不检查 CanBeTeleportedTo 的问题[/url]
+[b]Jerry An[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5157]将 ItemLoader.CanStack 并入 Item.CanStack，修复相关问题[/url]
+[b]Jerry An[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5152]修复 OnStack 钩子[/url]
+[b]Jerry An[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5147]修复 WorldItem 的 CanStack、CanStackInWorld、OnStack 钩子[/url]
+[b]Jerry An[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5146]修复 WorldItem 的 ItemLoader.Update、PostUpdate 钩子[/url]
+[b]lost-werewolf[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5072]修复多个数组过短导致模组 NPC 无法生成的问题[/url]
+[b]lost-werewolf[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5068]将 SceneState.ManageSpecialBiomeVisuals 改成 public[/url]
+[b]lost-werewolf[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5058]修正新 LegacySoundStyles 的声音文件路径[/url]
+[b]lost-werewolf[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5079]修复多个 ModBiome 问题[/url]
+[b]Nicolas Bissig[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5123]修复 new Tile() 结果不为空导致的液体渲染问题，将来可能由原版改进[/url]
+[b]noahDP1911[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5131]移除晶塔传送前检查“危险”状态的钩子（原版1.4.5不检查）[/url]
+[b]noahDP1911[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5117]完成将 NPCSpawnInfo 改为 NPC.Spawner 的剩余内容[/url]
+[b]noahDP1911[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5109]改正“时长随难度增长的减益”数组名称[/url]
+[b]noahDP1911[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5104]修复史莱姆掉落的矿石堆叠错误的问题[/url]
+[b]noahDP1911[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5090]更新 tModPorter 的旅行模式检查[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5164]更新 GlobalNPC.BuffTownNPC 钩子，加入1.4.5的新增幅[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5155]添加“巨石”ModMenu[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5096]更新城镇 NPC 聊天按钮，用1.4.5的新系统[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5151]调整选择世界时模组警告图标的位置[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5145]更新示例骑枪[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5128]修复物品描述超过30行导致异常的问题[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5124]修复撸宠物行为[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5057]添加城镇 NPC 头像相关功能[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5061]修复住房界面不显示模组城镇 NPC 的问题[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5054]添加多个条件，用于1.4.5的新检查；更新城镇 NPC 商店[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5063]修复模组城镇 NPC 无家可归对话的翻译键[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5050]更新 tModPorter[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5048]修复主界面外链图标[/url]
+[b]Rijam[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5045]更新多个 ID 数组[/url]
+[b]tomat[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5120]修复发型数组过短的问题[/url]
+[b]tomat[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5064]修复液体边缘渲染的问题[/url]
+[b]tomat[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5065]改正屏幕大小上限计算中的笔误[/url]
+[b]tomat[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5035]为 ContentSources 添加 FileWatcherPath/Refresh[/url]
+[b]tomat[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5034]修复 AssetRepository 编译和热重载相关问题[/url]
+[b]tomat[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5036]改用 SDL3 更新窗口图标[/url]
+[b]tomat[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5037]移除多余的 TileBatch 补丁[/url]
+[b]tomat[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5033]移除多余的窗口实现，改用原生 API[/url]
+[b]tomat[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4952]升级 Terraria/TerrariaNetCore 的补丁至 1.4.5[/url]
+[b]tomat[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4985]升级 Terraria/TerrariaNetCore 的补丁至 1.4.5.5[/url]
+[b]tomat[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4986]清理 Terraria/TerrariaNetCore 的补丁[/url]
+[b]tomat[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5028]升级 Terraria/TerrariaNetCore 的补丁至 1.4.5.6[/url]
+[b]Tyfyter[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5052]更新模组物块的转化[/url]
+
+以上是来自社区的贡献，tModLoader 团队自己也写了1.4.5代码。下面是缩略版改动说明：
+
+[b]Chicken-Bones[/b]：[url=https://github.com/tModLoader/tModLoader/commits?author=Chicken-Bones]改进补丁和开发环境工具，更新依赖，完成待办[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commits?author=JavidPack]开发并管理1.4.5升级工作，实现对应的 tModPorter 功能[/url]
+[b]Mirsario[/b]：[url=https://github.com/tModLoader/tModLoader/commits?author=Mirsario]支持 NixOS 上的模组开发[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commits?author=Solxanich]添加和修复创意工坊功能[/url]
+
+[h2]关于泰拉瑞亚1.4.5支持的常见问题[/h2]
+[b]问：“我的模组到1.4.5也都马上能玩吧？”[/b]
+答：泰拉瑞亚1.4.5更新量很大，所以我们不敢肯定。不过，模组制作者有充足机会在1.4.5正式上线前更新模组。只要你玩的模组有人维护，到时大概能正常游玩。
+
+[b]问：“那1.4.4呢？”[/b]
+答：就像1.3和1.4.3一样，更新后1.4.4会作为旧版本供大家游玩。
+
+[b]问：“不更新1.4.4了吗？”[/b]
+答：我们会继续维护1.4.4，确保功能正常。何时停止添加内容，还没有确切日期；直到1.4.5可供模组制作者试用，我们会照常更新1.4.4。
+
+[b]问：“1.4.4的人物和世界搬到1.4.5会炸吗？”[/b]
+答：tModLoader 视保障玩家体验为己任。我们尽力确保新旧兼容，届时也会鼓励模组制作者考虑兼容性。
+
+[h1]新模组秀[/h1]
+
+这些是上个月发布的模组，三百个有余！来得及尝鲜吗？常来创意工坊看新模组，一定有能惊艳到你的。[url=https://steamcommunity.com/workshop/browse/?appid=1281930&browsesort=totaluniquesubscribers&section=readytouseitems&p=1&num_per_page=30&days=7&created_date_range_filter_start=1777248000&created_date_range_filter_end=1779926400&childpublishedfileid=0&admin_view=1]点这里[/url]看月内最热门的新模组。
+
+[img]{STEAM_CLAN_IMAGE}/37627134/23d67d073601b2366c5dc092912b07bfbe9eb879.png[/img]
+
+[h1]稳定版[/h1]
+
+tModLoader 移植到泰拉瑞亚1.4.5（更大更石）的同时，我们会继续更新1.4.4，修复漏洞。感谢 tModLoader 社区，每个月开发、测试新功能，你们都积极参与。
+
+如果你有任何问题，欢迎随时查看我们的[url=https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-FAQ]常见问题解答[/url]或者加入[url=https://discord.com/invite/tmodloader]我们的 Discord 服务器[/url]。（当然，如果你不方便使用 GitHub、Discord 或者不擅长阅读英文，你也可以在 [url=http://fs49.net/]新FS49[/url] 或者其他中文论坛/群组寻求帮助。）
+
+[h1]稳定版改动说明[/h1]
+下面是该版本中最值得注意的改动。模组制作者请务必阅读[url=https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v202604]更新适配指南（Update Migration Guide）[/url]，了解如何应对新版本的改动。
+
+[h2]重要改动[/h2]
+
+[h3]新功能[/h3]
+无。
+
+[h3]API 改动[/h3]
+[b]Mark[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5087]添加 NPC.StrikeOtherNPC[/url]
+
+[h2]漏洞修复[/h2]
+
+[h3]游戏体验及其他[/h3]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/4482578c9c5565b892bcd19378fe0273b5a10348]修复启动游戏时 Steam 在线但创意工坊不在线导致游戏崩溃的问题[/url]
+[b]Solxan[/b]：[url=https://github.com/tModLoader/tModLoader/commit/4a6d36c5c9f2aa22459a826a5cb1246f40ca871b]修复 GOG 用户的游戏启动时崩溃的问题[/url]
+[b]错数螺线[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5097]修复“开服并游玩”控制台的文本编码[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5111]修复超高分辨率屏导致的异常[/url]
+[b]Mark[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5074]修复 Linux 上各本地客户端的日志写入同一文件的问题[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/ce6ae2ceb2bd29426dcc9f5eaa2d35359be197b8]让复制人物和世界的按钮使用本地化文本[/url]
+
+[h3]API 修复与改动[/h3]
+[b]Tyfyter[/b]：[url=https://github.com/tModLoader/tModLoader/pull/4977]修复取模组依赖反而取自己的问题[/url]
+[b]Mark[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5078]让开发环境工具自动检测 Debian 上的 Steam 安装路径[/url]
+[b]Mellohi[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5113]修复转化发光蘑菇的行为[/url]
+
+[h2]其他改动[/h2]
+[h3]示例模组与 API 文档[/h3]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/82f4bf840a26839ddea04011fc07fa69bc152938]添加 ExampleGemsparkBlock，展示 Framing.SelfFrame8Way 和其他的用法[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/34748f49e64be1591bcf6022b31095ed0a62ce8e]修复 ExampleJavelinProjectile 的绘制顺序[/url]
+[b]A5TR0spud[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5101]更新 ExampleFoodItem 及其文档[/url]
+[b]hezuo1hao[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5093]修复 ExemplarAdvancedFailProjectile[/url]
+[b]hezuo1hao[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5107]修复某 URL 笔误[/url]
+[b]JavidPack[/b]：[url=https://github.com/tModLoader/tModLoader/commit/884d15a66f018c34b23fddc90c6d3c5fe72ed9a2]更新文档[/url]
+
+[h3]本地化[/h3]
+[b]ayuyoiM[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5115]中译[/url]
+[b]Alino4kaHvoshch[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5102]俄译[/url]
+[b]RazzSG[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5116]俄译[/url]
+[b]NicolasPL[/b]：[url=https://github.com/tModLoader/tModLoader/pull/5094]西译[/url]
+[b]Lacewing[/b]：[url=https://github.com/lace-wing/tml-doc/blob/master/info/release-notes/2026.04.3.0_zh.txt]本公告中译[/url]
+
+已经有志愿者将我们的每月发布公告翻译成数种语言。如果您愿意贡献更多公告翻译，请通过 [url=https://tmodloader.net/discord]Discord[/url] 与我们联系。
+
